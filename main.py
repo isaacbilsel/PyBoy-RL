@@ -38,7 +38,7 @@ gameNames = [f.replace(".gb", "") for f in os.listdir(gamesFolder) if (os.path.i
 print("Avaliable games: ", games)
 for cnt, gameName in enumerate(games, 1):
 	sys.stdout.write("[%d] %s\n\r" % (cnt, gameName))
-
+cnt = 2
 choice = int(input("Select game[1-%s]: " % cnt)) - 1
 game = games[choice]
 gameName = gameNames[choice]
