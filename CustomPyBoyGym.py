@@ -37,7 +37,7 @@ class CustomPyBoyGym(PyBoyGymEnv):
     def setAISettings(self, aisettings: AISettingsInterface):
         self.aiSettings = aisettings
 
-    def reset(self):
+    def reset(self, **kwargs):
         """ Reset (or start) the gym environment throught the game_wrapper """
         if not self._started:
             self.game_wrapper.start_game(**self._kwargs)
