@@ -213,7 +213,7 @@ elif not train and not playtest:
 
 	player = aiPlayer
 	for e in range(episodes):
-		observation = env.reset()
+		observation, info = env.reset()
 		while True:
 			if aiSettings.IsBossActive(pyboy):
 				player = bossAiPlayer
