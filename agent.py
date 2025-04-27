@@ -29,7 +29,9 @@ class AIPlayer:
         """
             Memory
         """
-        self.memory = deque(maxlen=self.config.deque_size)
+        # 
+        self.memory = PrioritizedReplayBuffer(capacity=self.config.deque_size)
+        # self.memory = deque(maxlen=self.config.deque_size)
         self.batch_size = self.config.batch_size
         self.save_every = self.config.save_every  # no. of experiences between saving Mario Net
 
@@ -100,13 +102,18 @@ class AIPlayer:
     def recall(self):
         """
         Retrieve a batch of experiences from memory
-        """
+        
         batch = random.sample(self.memory, self.batch_size)
         state, next_state, action, reward, done = map(torch.stack, zip(*batch))
         return state, next_state, action.squeeze(), reward.squeeze(), done.squeeze()
+        """
+        batch, indices, weights = self.memory.sample(self.batch_size)
+        states, next_states, actions, rewards, dones = map(torch.stack, zip(*batch))
+        return states, next_states, actions.squeeze(), rewards.squeeze(), dones.squeeze(), indices, weights.to(self.device)
+
 
     def learn(self):
-        """Update online action value (Q) function with a batch of experiences"""
+        """Update online action value (Q) function with a batch of experiences
         if self.curr_step % self.sync_every == 0:
             self.sync_Q_target()
 
@@ -132,6 +139,33 @@ class AIPlayer:
         loss = self.update_Q_online(td_est, td_tgt)
 
         return (td_est.mean().item(), loss)
+        """
+        if self.curr_step % self.sync_every == 0:
+            self.sync_Q_target()
+        if self.curr_step % self.save_every == 0:
+            self.save()
+        if self.curr_step < self.burnin or self.curr_step % self.learn_every != 0:
+            return None, None
+
+        # Updated recall
+        state, next_state, action, reward, done, indices, weights = self.recall()
+
+        td_est = self.td_estimate(state, action)
+        td_tgt = self.td_target(reward, next_state, done)
+
+        td_errors = (td_est - td_tgt).detach().cpu().numpy()
+        new_priorities = np.abs(td_errors) + 1e-6
+        self.memory.update_priorities(indices, new_priorities)
+
+        # Loss weighted by importance-sampling weights
+        loss = (weights * (td_est - td_tgt).pow(2)).mean()
+
+        self.optimizer.zero_grad()
+        loss.backward()
+        self.optimizer.step()
+        self.scheduler.step()
+
+        return td_est.mean().item(), loss.item()
 
     def update_Q_online(self, td_estimate, td_target):
         loss = self.loss_fn(td_estimate, td_target)
@@ -195,3 +229,4 @@ class AIPlayer:
             save_path,
         )
         print(f"MarioNet saved to {save_path} at step {self.curr_step}")
+
