@@ -97,7 +97,7 @@ class AIPlayer:
         reward = torch.tensor([reward]).to(device=self.device)
         done = torch.tensor([done]).to(device=self.device)
 
-        self.memory.append((state, next_state, action, reward, done))
+        self.memory.push((state, next_state, action, reward, done))
 
     def recall(self):
         """
