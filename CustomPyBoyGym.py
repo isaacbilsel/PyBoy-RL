@@ -1,5 +1,6 @@
 from pyboy.pyboy import *
 from AISettings.AISettingsInterface import AISettingsInterface
+
 class CustomPyBoyGym(PyBoyGymEnv):
     def step(self, list_actions):
         """

@@ -4,109 +4,152 @@ import sys
 import numpy as np
 import torch
 from AISettings.AISettingsInterface import Config
-from model import DDQN
+from model import DDQN, DuelDDQN, NoisyDDQN
 
-#based on pytorch RL tutorial by yfeng997: https://github.com/yfeng997/MadMario/blob/master/agent.py
 class AIPlayer:
-    def __init__(self, state_dim, action_space_dim, save_dir, date, config: Config):
+    def __init__(self, state_dim, action_space_dim, save_dir, date, config: Config, duel_dqn=False, use_per=False, use_noisy=False, n_step=1):
         self.state_dim = state_dim
         self.action_space_dim = action_space_dim
         self.save_dir = save_dir
         self.date = date
-        self.device = "cpu"
-        if torch.cuda.is_available():
-            self.device = "cuda"
+        self.device = "cuda" if torch.cuda.is_available() else "cpu"
 
-        self.net = DDQN(self.state_dim, self.action_space_dim).to(device=self.device)
+        if use_noisy:
+            self.net = NoisyDDQN(self.state_dim, self.action_space_dim).to(device=self.device)
+        elif duel_dqn:
+            self.net = DuelDDQN(self.state_dim, self.action_space_dim).to(device=self.device)
+        else:
+            self.net = DDQN(self.state_dim, self.action_space_dim).to(device=self.device)
+
+        self.use_noisy = use_noisy
 
         self.config = config
 
-        self.exploration_rate = self.config.exploration_rate 
+        self.exploration_rate = self.config.exploration_rate
         self.exploration_rate_decay = self.config.exploration_rate_decay
         self.exploration_rate_min = self.config.exploration_rate_min
         self.curr_step = 0
 
-        """
-            Memory
-        """
-        self.memory = deque(maxlen=self.config.deque_size)
-        self.batch_size = self.config.batch_size
-        self.save_every = self.config.save_every  # no. of experiences between saving Mario Net
+        self.use_per = use_per
 
-        """
-            Q learning
-        """
+        if self.use_per:
+            self.memory = []
+            self.priorities = []
+        else:
+            self.memory = deque(maxlen=self.config.deque_size)
+
+        self.batch_size = self.config.batch_size
+        self.save_every = self.config.save_every
+
         self.gamma = self.config.gamma
         self.optimizer = torch.optim.Adam(self.net.parameters(), lr=self.config.learning_rate)
         self.scheduler = torch.optim.lr_scheduler.ExponentialLR(self.optimizer, gamma=self.config.learning_rate_decay)
         self.loss_fn = torch.nn.SmoothL1Loss()
-        self.burnin = self.config.burnin  # min. experiences before training
-        self.learn_every = self.config.learn_every  # no. of experiences between updates to Q_online
-        self.sync_every = self.config.sync_every  # no. of experiences between Q_target & Q_online sync
+        self.burnin = self.config.burnin
+        self.learn_every = self.config.learn_every
+        self.sync_every = self.config.sync_every
+
+        self.n_step = n_step
+        self.n_step_buffer = deque(maxlen=self.n_step)
+
+        # C51 specific parameters
+        self.V_min = -10  # Minimum possible reward
+        self.V_max = 10   # Maximum possible reward
+        self.num_atoms = 51
+        self.delta_z = (self.V_max - self.V_min) / (self.num_atoms - 1)
+        self.support = torch.linspace(self.V_min, self.V_max, self.num_atoms).to(self.device)
+
 
     def act(self, state):
-        """
-            Given a state, choose an epsilon-greedy action and update value of step.
-
-            Inputs:
-            state(LazyFrame): A single observation of the current state, dimension is (state_dim)
-            Outputs:
-            action_idx (int): An integer representing which action Mario will perform
-        """
-        # EXPLORE
-        if (random.random() < self.exploration_rate):
-            actionIdx = random.randint(0, self.action_space_dim-1)
-        # EXPLOIT
-        else:
+        
+        if self.use_noisy:
             state = np.array(state)
-            state = torch.tensor(state).float().to(device=self.device)
-            state = state.unsqueeze(0)
-            
-
+            state = torch.tensor(state).float().to(device=self.device).unsqueeze(0)
             neuralNetOutput = self.net(state, model="online")
-            actionIdx = torch.argmax(neuralNetOutput, axis=1).item()
+            # actionIdx = torch.argmax(neuralNetOutput, axis=1).item()
+            with torch.no_grad():
+                probs = torch.softmax(neuralNetOutput, dim=2)  # softmax over atoms
+                q_values = torch.sum(probs * self.support, dim=2)  # expected value
+                actionIdx = torch.argmax(q_values, axis=1).item()
 
-        # decrease exploration_rate
-        self.exploration_rate *= self.exploration_rate_decay
-        self.exploration_rate = max(self.exploration_rate_min, self.exploration_rate)
+        else:
+            if random.random() < self.exploration_rate:
+                actionIdx = random.randint(0, self.action_space_dim - 1)
+            else:
+                state = np.array(state)
+                state = torch.tensor(state).float().to(device=self.device).unsqueeze(0)
+                neuralNetOutput = self.net(state, model="online")
+                # actionIdx = torch.argmax(neuralNetOutput, axis=1).item()
+                with torch.no_grad():
+                    probs = torch.softmax(neuralNetOutput, dim=2)  # softmax over atoms
+                    q_values = torch.sum(probs * self.support, dim=2)  # expected value
+                    actionIdx = torch.argmax(q_values, axis=1).item()
 
-        # increment step
+            self.exploration_rate *= self.exploration_rate_decay
+            self.exploration_rate = max(self.exploration_rate_min, self.exploration_rate)
+
         self.curr_step += 1
 
         return actionIdx
 
     def cache(self, state, next_state, action, reward, done):
-        """
-        Store the experience to self.memory (replay buffer)
+        state = torch.tensor(np.array(state)).float().to(self.device)
+        next_state = torch.tensor(np.array(next_state)).float().to(self.device)
+        action = torch.tensor([action]).to(self.device)
+        reward = torch.tensor([reward]).to(self.device)
+        done = torch.tensor([done]).to(self.device)
 
-        Inputs:
-        state (LazyFrame),
-        next_state (LazyFrame),
-        action (int),
-        reward (float),
-        done(bool))
-        """
-        state = np.array(state)
-        next_state = np.array(next_state)
+        self.n_step_buffer.append((state, next_state, action, reward, done))
 
-        state = torch.tensor(state).float().to(device=self.device)
-        next_state = torch.tensor(next_state).float().to(device=self.device)
-        action = torch.tensor([action]).to(device=self.device)
-        reward = torch.tensor([reward]).to(device=self.device)
-        done = torch.tensor([done]).to(device=self.device)
+        if len(self.n_step_buffer) < self.n_step:
+            return
 
-        self.memory.append((state, next_state, action, reward, done))
+        state_n, next_state_n, action_n, reward_n, done_n = self._get_n_step_info()
+
+        if self.use_per:
+            self.memory.append((state_n, next_state_n, action_n, reward_n, done_n))
+            max_priority = max(self.priorities, default=1.0)
+            self.priorities.append(max_priority)
+            if len(self.memory) > self.config.deque_size:
+                self.memory.pop(0)
+                self.priorities.pop(0)
+        else:
+            self.memory.append((state_n, next_state_n, action_n, reward_n, done_n))
+
+        if done:
+            self.n_step_buffer.clear()
+
+    def _get_n_step_info(self):
+        reward, next_state, done = self.n_step_buffer[-1][3], self.n_step_buffer[-1][1], self.n_step_buffer[-1][4]
+        for transition in reversed(list(self.n_step_buffer)[:-1]):
+            r, n_s, d = transition[3], transition[1], transition[4]
+            reward = r + self.gamma * reward * (1 - d.float())
+            next_state, done = (n_s, d) if d else (next_state, done)
+
+        state, _, action, _, _ = self.n_step_buffer[0]
+        return state, next_state, action, reward, done
 
     def recall(self):
-        """
-        Retrieve a batch of experiences from memory
-        """
-        batch = random.sample(self.memory, self.batch_size)
-        state, next_state, action, reward, done = map(torch.stack, zip(*batch))
-        return state, next_state, action.squeeze(), reward.squeeze(), done.squeeze()
+        if self.use_per:
+            priorities = np.array(self.priorities)
+            probs = priorities ** 0.6
+            probs /= probs.sum()
+
+            indices = np.random.choice(len(self.memory), self.batch_size, p=probs)
+            batch = [self.memory[idx] for idx in indices]
+
+            weights = (len(self.memory) * probs[indices]) ** (-0.4)
+            weights /= weights.max()
+            weights = torch.tensor(weights, device=self.device, dtype=torch.float)
+
+            state, next_state, action, reward, done = map(torch.stack, zip(*batch))
+            return state, next_state, action.squeeze(), reward.squeeze(), done.squeeze(), indices, weights
+        else:
+            batch = random.sample(self.memory, self.batch_size)
+            state, next_state, action, reward, done = map(torch.stack, zip(*batch))
+            return state, next_state, action.squeeze(), reward.squeeze(), done.squeeze()
 
     def learn(self):
-        """Update online action value (Q) function with a batch of experiences"""
         if self.curr_step % self.sync_every == 0:
             self.sync_Q_target()
 
@@ -119,50 +162,102 @@ class AIPlayer:
         if self.curr_step % self.learn_every != 0:
             return None, None
 
-        # Sample from memory get self.batch_size number of memories
-        state, next_state, action, reward, done = self.recall()
+        if self.use_per:
+            state, next_state, action, reward, done, indices, weights = self.recall()
+        else:
+            state, next_state, action, reward, done = self.recall()
 
-        # Get TD Estimate, make predictions for the each memory
+        self.actions_taken = action  # <-- Save actions from recall
+
         td_est = self.td_estimate(state, action)
-
-        # Get TD Target make predictions for next state of each memory
         td_tgt = self.td_target(reward, next_state, done)
 
-        # Backpropagate loss through Q_online
-        loss = self.update_Q_online(td_est, td_tgt)
+        # Save current td_est.mean() before backward
+        td_estimate_mean = td_est.mean().item()
 
-        return (td_est.mean().item(), loss)
+        if self.use_per:
+            loss = self.update_Q_online(td_est, td_tgt, weights)
+        else:
+            loss = self.update_Q_online(td_est, td_tgt)
 
-    def update_Q_online(self, td_estimate, td_target):
-        loss = self.loss_fn(td_estimate, td_target)
+        if self.use_noisy:
+            self.net.reset_noise()
+
+        return td_estimate_mean, loss
+
+
+    def update_Q_online(self, predicted_dist, target_dist, weights=None):
+        predicted_probs = torch.softmax(predicted_dist, dim=2)  # (batch, n_actions, 51)
+
+        # You MUST select the probs for the taken actions
+        # So pass the `action` tensor (taken actions) into this function
+        actions = self.actions_taken  # Save actions when learning starts
+
+        chosen_action_probs = predicted_probs[range(self.batch_size), actions]  # (batch, 51)
+
+        if weights is None:
+            loss = - (target_dist * chosen_action_probs.log()).sum(dim=1).mean()
+        else:
+            loss = - (weights * (target_dist * chosen_action_probs.log()).sum(dim=1)).mean()
+
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
 
-        self.scheduler.step() #
+        self.scheduler.step()
 
         return loss.item()
+
+
 
     def sync_Q_target(self):
         self.net.target.load_state_dict(self.net.online.state_dict())
 
     def td_estimate(self, state, action):
-        """
-            Output is batch_size number of rewards = Q_online(s,a) * 32
-        """
-        modelOutPut = self.net(state, model="online")
-        current_Q = modelOutPut[np.arange(0, self.batch_size), action]  # Q_online(s,a)
-        return current_Q
+        modelOutPut = self.net(state, model="online")  # (batch, n_actions, 51)
+        # We DON'T collapse the action dimension here
+        return modelOutPut
+
 
     @torch.no_grad()
     def td_target(self, reward, next_state, done):
-        """
-            Output is batch_size number of Q*(s,a) = r + (1-done) * gamma * Q_target(s', argmax_a'( Q_online(s',a') ) )
-        """
-        next_state_Q = self.net(next_state, model="online") 
-        best_action = torch.argmax(next_state_Q, axis=1) # argmax_a'( Q_online(s',a') ) 
-        next_Q = self.net(next_state, model="target")[np.arange(0, self.batch_size), best_action] # Q_target(s', argmax_a'( Q_online(s',a') ) )
-        return (reward + (1 - done.float()) * self.gamma * next_Q).float() # Q*(s,a)
+        batch_size = reward.size(0)
+
+        next_dist = self.net(next_state, model="online")  # (batch, actions, 51)
+        next_probs = torch.softmax(next_dist, dim=2)  # turn logits into probabilities
+
+        next_q = torch.sum(next_probs * self.support, dim=2)  # expected value for each action
+        next_action = torch.argmax(next_q, dim=1)  # (batch_size)
+
+        next_dist_target = self.net(next_state, model="target")  # (batch, actions, 51)
+        next_dist_target = torch.softmax(next_dist_target, dim=2)
+
+        # Get the probability distribution of the best actions
+        next_dist_target = next_dist_target[range(batch_size), next_action]  # (batch_size, 51)
+
+        # Perform distributional projection
+        projected_dist = self._projection(next_dist_target, reward, done)
+
+        return projected_dist
+
+    def _projection(self, next_dist, rewards, dones):
+        batch_size = rewards.size(0)
+
+        projected_dist = torch.zeros((batch_size, self.num_atoms), device=self.device)
+
+        for j in range(self.num_atoms):
+            tz_j = torch.clamp(rewards + (1 - dones.float()) * (self.gamma ** self.n_step) * (self.V_min + j * self.delta_z), self.V_min, self.V_max)
+            b_j = (tz_j - self.V_min) / self.delta_z
+            l = b_j.floor().long()
+            u = b_j.ceil().long()
+
+            eq_mask = (u == l)
+
+            projected_dist.view(-1).index_add_(0, (l + self.num_atoms * torch.arange(batch_size, device=self.device)).view(-1), next_dist[:, j] * (u.float() - b_j + eq_mask.float()))
+            projected_dist.view(-1).index_add_(0, (u + self.num_atoms * torch.arange(batch_size, device=self.device)).view(-1), next_dist[:, j] * (b_j - l.float() + eq_mask.float()))
+        
+        return projected_dist
+
 
     def loadModel(self, path):
         dt = torch.load(path, map_location=torch.device(self.device))
@@ -183,13 +278,11 @@ class AIPlayer:
             f.write(f"learning_rate_decay = {self.config.learning_rate_decay}\n")
             f.write(f"burnin = {self.config.burnin}\n")
             f.write(f"learn_every = {self.config.learn_every}\n")
-            f.write(f"sync_every = {self.config.sync_every}")
+            f.write(f"sync_every = {self.config.sync_every}\n")
+            f.write(f"n_step = {self.n_step}\n")
 
     def save(self):
-        """
-            Save the state to directory
-        """
-        save_path = (self.save_dir / f"mario_net_0{int(self.curr_step // self.save_every)}.chkpt")
+        save_path = self.save_dir / f"mario_net_0{int(self.curr_step // self.save_every)}.chkpt"
         torch.save(
             dict(model=self.net.state_dict(), exploration_rate=self.exploration_rate),
             save_path,
