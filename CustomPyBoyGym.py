@@ -1,5 +1,6 @@
 from pyboy.pyboy import *
 from AISettings.AISettingsInterface import AISettingsInterface
+import os
 
 class CustomPyBoyGym(PyBoyGymEnv):
     def step(self, list_actions):
@@ -52,3 +53,54 @@ class CustomPyBoyGym(PyBoyGymEnv):
         self.button_is_pressed = {button: False for button in self._buttons} # reset all buttons
 
         return self._get_observation()
+
+
+class KirbyGymEnv(CustomPyBoyGym):
+    def __init__(self, mode="platformer", *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        assert mode in ["platformer", "boss"], "Invalid mode for KirbyGymEnv"
+        self.mode = mode
+        self.state_path = {
+            "platformer": "states/kirby_platform.gb.state",
+            "boss": "states/kirby_boss.gb.state"
+        }
+
+    def step(self, list_actions):
+        observation, reward, done, info = super().step(list_actions)
+        done = done or self.aiSettings.IsDone()
+        return observation, reward, done, info
+
+    def reset(self, **kwargs):
+        if not self._started:
+            self.game_wrapper.start_game(**self._kwargs)
+            self._started = True
+            for _ in range(50):  # let game initialize for 200 frames
+                self.pyboy.tick()
+            # After first launch, load checkpoint
+            self.load_state()
+        else:
+            self.load_state()
+
+        # Reset buttons
+        for pressedFromBefore in [
+            pressed for pressed in self._button_is_pressed
+            if self._button_is_pressed[pressed]
+        ]:
+            self.pyboy.send_input(self._release_button[pressedFromBefore])
+        self._button_is_pressed = {button: False for button in self._buttons}
+
+        self.aiSettings.Reset()
+        
+        return self._get_observation()
+
+    def load_state(self):
+        path = self.state_path[self.mode]
+        if not os.path.exists(path):
+            raise FileNotFoundError(f"State file not found: {path}")
+        with open(path, "rb") as f:
+            self.pyboy.load_state(f)
+
+
+    def register_state(self, mode, path):
+        self.state_path[mode] = path
+

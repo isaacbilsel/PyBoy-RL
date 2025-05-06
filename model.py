@@ -143,6 +143,8 @@ class NoisyDDQN(nn.Module):
         value = value.view(batch_size, 1, 51)
         advantage = advantage.view(batch_size, self.action_space_dim, 51)
 
+        advantage = advantage - advantage.mean(dim=2, keepdim=True)
+
         # Combine dueling streams
         qvals = value + (advantage - advantage.mean(dim=1, keepdim=True))
 

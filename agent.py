@@ -1,6 +1,5 @@
 from collections import deque
 import random
-import sys
 import numpy as np
 import torch
 from AISettings.AISettingsInterface import Config
@@ -52,44 +51,35 @@ class AIPlayer:
         self.n_step = n_step
         self.n_step_buffer = deque(maxlen=self.n_step)
 
-        # C51 specific parameters
-        self.V_min = -10  # Minimum possible reward
-        self.V_max = 10   # Maximum possible reward
+        self.V_min = -10000
+        self.V_max = 10000
         self.num_atoms = 51
         self.delta_z = (self.V_max - self.V_min) / (self.num_atoms - 1)
         self.support = torch.linspace(self.V_min, self.V_max, self.num_atoms).to(self.device)
 
-
     def act(self, state):
-        
         if self.use_noisy:
             state = np.array(state)
             state = torch.tensor(state).float().to(device=self.device).unsqueeze(0)
-            neuralNetOutput = self.net(state, model="online")
-            # actionIdx = torch.argmax(neuralNetOutput, axis=1).item()
             with torch.no_grad():
-                probs = torch.softmax(neuralNetOutput, dim=2)  # softmax over atoms
-                q_values = torch.sum(probs * self.support, dim=2)  # expected value
+                neuralNetOutput = self.net(state, model="online")
+                probs = torch.softmax(neuralNetOutput, dim=2)
+                q_values = torch.sum(probs * self.support, dim=2)
                 actionIdx = torch.argmax(q_values, axis=1).item()
-
         else:
             if random.random() < self.exploration_rate:
                 actionIdx = random.randint(0, self.action_space_dim - 1)
             else:
                 state = np.array(state)
                 state = torch.tensor(state).float().to(device=self.device).unsqueeze(0)
-                neuralNetOutput = self.net(state, model="online")
-                # actionIdx = torch.argmax(neuralNetOutput, axis=1).item()
                 with torch.no_grad():
-                    probs = torch.softmax(neuralNetOutput, dim=2)  # softmax over atoms
-                    q_values = torch.sum(probs * self.support, dim=2)  # expected value
+                    neuralNetOutput = self.net(state, model="online")
+                    probs = torch.softmax(neuralNetOutput, dim=2)
+                    q_values = torch.sum(probs * self.support, dim=2)
                     actionIdx = torch.argmax(q_values, axis=1).item()
-
             self.exploration_rate *= self.exploration_rate_decay
             self.exploration_rate = max(self.exploration_rate_min, self.exploration_rate)
-
         self.curr_step += 1
-
         return actionIdx
 
     def cache(self, state, next_state, action, reward, done):
@@ -125,7 +115,6 @@ class AIPlayer:
             r, n_s, d = transition[3], transition[1], transition[4]
             reward = r + self.gamma * reward * (1 - d.float())
             next_state, done = (n_s, d) if d else (next_state, done)
-
         state, _, action, _, _ = self.n_step_buffer[0]
         return state, next_state, action, reward, done
 
@@ -134,14 +123,11 @@ class AIPlayer:
             priorities = np.array(self.priorities)
             probs = priorities ** 0.6
             probs /= probs.sum()
-
             indices = np.random.choice(len(self.memory), self.batch_size, p=probs)
             batch = [self.memory[idx] for idx in indices]
-
             weights = (len(self.memory) * probs[indices]) ** (-0.4)
             weights /= weights.max()
             weights = torch.tensor(weights, device=self.device, dtype=torch.float)
-
             state, next_state, action, reward, done = map(torch.stack, zip(*batch))
             return state, next_state, action.squeeze(), reward.squeeze(), done.squeeze(), indices, weights
         else:
@@ -152,13 +138,10 @@ class AIPlayer:
     def learn(self):
         if self.curr_step % self.sync_every == 0:
             self.sync_Q_target()
-
         if self.curr_step % self.save_every == 0:
             self.save()
-
         if self.curr_step < self.burnin:
             return None, None
-
         if self.curr_step % self.learn_every != 0:
             return None, None
 
@@ -167,12 +150,10 @@ class AIPlayer:
         else:
             state, next_state, action, reward, done = self.recall()
 
-        self.actions_taken = action  # <-- Save actions from recall
-
+        self.actions_taken = action
         td_est = self.td_estimate(state, action)
         td_tgt = self.td_target(reward, next_state, done)
 
-        # Save current td_est.mean() before backward
         td_estimate_mean = td_est.mean().item()
 
         if self.use_per:
@@ -185,79 +166,60 @@ class AIPlayer:
 
         return td_estimate_mean, loss
 
-
     def update_Q_online(self, predicted_dist, target_dist, weights=None):
-        predicted_probs = torch.softmax(predicted_dist, dim=2)  # (batch, n_actions, 51)
-
-        # You MUST select the probs for the taken actions
-        # So pass the `action` tensor (taken actions) into this function
-        actions = self.actions_taken  # Save actions when learning starts
-
-        chosen_action_probs = predicted_probs[range(self.batch_size), actions]  # (batch, 51)
-
+        EPS = 1e-5
+        probs = torch.softmax(predicted_dist, dim=2)
+        actions = self.actions_taken
+        action_probs = probs[range(self.batch_size), actions]
+        action_probs = torch.clamp(action_probs, EPS, 1.0)
+        target_dist = torch.clamp(target_dist, EPS, 1.0)
         if weights is None:
-            loss = - (target_dist * chosen_action_probs.log()).sum(dim=1).mean()
+            loss = - (target_dist * action_probs.log()).sum(dim=1).mean()
         else:
-            loss = - (weights * (target_dist * chosen_action_probs.log()).sum(dim=1)).mean()
-
+            loss = - (weights * (target_dist * action_probs.log()).sum(dim=1)).mean()
         self.optimizer.zero_grad()
+        if not torch.isfinite(loss):
+            print("NaN/Inf loss detected – skipping this update")
+            return loss.item()
         loss.backward()
+        torch.nn.utils.clip_grad_norm_(self.net.parameters(), 1.0)
         self.optimizer.step()
-
         self.scheduler.step()
-
         return loss.item()
-
-
 
     def sync_Q_target(self):
         self.net.target.load_state_dict(self.net.online.state_dict())
 
     def td_estimate(self, state, action):
-        modelOutPut = self.net(state, model="online")  # (batch, n_actions, 51)
-        # We DON'T collapse the action dimension here
-        return modelOutPut
-
+        return self.net(state, model="online")
 
     @torch.no_grad()
     def td_target(self, reward, next_state, done):
         batch_size = reward.size(0)
-
-        next_dist = self.net(next_state, model="online")  # (batch, actions, 51)
-        next_probs = torch.softmax(next_dist, dim=2)  # turn logits into probabilities
-
-        next_q = torch.sum(next_probs * self.support, dim=2)  # expected value for each action
-        next_action = torch.argmax(next_q, dim=1)  # (batch_size)
-
-        next_dist_target = self.net(next_state, model="target")  # (batch, actions, 51)
+        next_dist = self.net(next_state, model="online")
+        next_probs = torch.softmax(next_dist, dim=2)
+        next_q = torch.sum(next_probs * self.support, dim=2)
+        next_action = torch.argmax(next_q, dim=1)
+        next_dist_target = self.net(next_state, model="target")
         next_dist_target = torch.softmax(next_dist_target, dim=2)
-
-        # Get the probability distribution of the best actions
-        next_dist_target = next_dist_target[range(batch_size), next_action]  # (batch_size, 51)
-
-        # Perform distributional projection
+        next_dist_target = next_dist_target[range(batch_size), next_action]
         projected_dist = self._projection(next_dist_target, reward, done)
-
         return projected_dist
 
     def _projection(self, next_dist, rewards, dones):
         batch_size = rewards.size(0)
-
         projected_dist = torch.zeros((batch_size, self.num_atoms), device=self.device)
-
         for j in range(self.num_atoms):
             tz_j = torch.clamp(rewards + (1 - dones.float()) * (self.gamma ** self.n_step) * (self.V_min + j * self.delta_z), self.V_min, self.V_max)
             b_j = (tz_j - self.V_min) / self.delta_z
             l = b_j.floor().long()
             u = b_j.ceil().long()
-
             eq_mask = (u == l)
-
             projected_dist.view(-1).index_add_(0, (l + self.num_atoms * torch.arange(batch_size, device=self.device)).view(-1), next_dist[:, j] * (u.float() - b_j + eq_mask.float()))
             projected_dist.view(-1).index_add_(0, (u + self.num_atoms * torch.arange(batch_size, device=self.device)).view(-1), next_dist[:, j] * (b_j - l.float() + eq_mask.float()))
-        
+        projected_dist = projected_dist / projected_dist.sum(dim=1, keepdim=True)
+        projected_dist = torch.clamp(projected_dist, 1e-5, 1.0)
         return projected_dist
-
 
     def loadModel(self, path):
         dt = torch.load(path, map_location=torch.device(self.device))
@@ -268,23 +230,20 @@ class AIPlayer:
     def saveHyperParameters(self):
         save_HyperParameters = self.save_dir / "hyperparameters"
         with open(save_HyperParameters, "w") as f:
-            f.write(f"exploration_rate = {self.config.exploration_rate}\n")
-            f.write(f"exploration_rate_decay = {self.config.exploration_rate_decay}\n")
-            f.write(f"exploration_rate_min = {self.config.exploration_rate_min}\n")
-            f.write(f"deque_size = {self.config.deque_size}\n")
-            f.write(f"batch_size = {self.config.batch_size}\n")
-            f.write(f"gamma (discount parameter) = {self.config.gamma}\n")
-            f.write(f"learning_rate = {self.config.learning_rate}\n")
-            f.write(f"learning_rate_decay = {self.config.learning_rate_decay}\n")
-            f.write(f"burnin = {self.config.burnin}\n")
-            f.write(f"learn_every = {self.config.learn_every}\n")
-            f.write(f"sync_every = {self.config.sync_every}\n")
-            f.write(f"n_step = {self.n_step}\n")
+            f.write(f"exploration_rate = {self.config.exploration_rate}\\n")
+            f.write(f"exploration_rate_decay = {self.config.exploration_rate_decay}\\n")
+            f.write(f"exploration_rate_min = {self.config.exploration_rate_min}\\n")
+            f.write(f"deque_size = {self.config.deque_size}\\n")
+            f.write(f"batch_size = {self.config.batch_size}\\n")
+            f.write(f"gamma = {self.config.gamma}\\n")
+            f.write(f"learning_rate = {self.config.learning_rate}\\n")
+            f.write(f"learning_rate_decay = {self.config.learning_rate_decay}\\n")
+            f.write(f"burnin = {self.config.burnin}\\n")
+            f.write(f"learn_every = {self.config.learn_every}\\n")
+            f.write(f"sync_every = {self.config.sync_every}\\n")
+            f.write(f"n_step = {self.n_step}\\n")
 
     def save(self):
         save_path = self.save_dir / f"mario_net_0{int(self.curr_step // self.save_every)}.chkpt"
-        torch.save(
-            dict(model=self.net.state_dict(), exploration_rate=self.exploration_rate),
-            save_path,
-        )
+        torch.save(dict(model=self.net.state_dict(), exploration_rate=self.exploration_rate), save_path)
         print(f"MarioNet saved to {save_path} at step {self.curr_step}")

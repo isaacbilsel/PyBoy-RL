@@ -17,44 +17,56 @@ class GameState:
         self.health = game_wrapper.health
         self.lives_left = game_wrapper.lives_left
         self.score = game_wrapper.score
+        self._done = False
 
 
 class KirbyAI(AISettingsInterface):
     def GetReward(self, previous_kirby: GameState, pyboy):
         current_kirby = GameState(pyboy)
+        reward = -0.5
 
-        if current_kirby.boss_health == 0 and previous_kirby.boss_health > 0:
-            return 10000
-
+        # Boss damage
         if current_kirby.boss_health < previous_kirby.boss_health:
-            return 1000
+            damage = previous_kirby.boss_health - current_kirby.boss_health
+            reward += damage * 1200
 
-        if current_kirby.health < previous_kirby.health and current_kirby.health == 1:
-            return -100
+        # Player damage
+        if current_kirby.health < previous_kirby.health:
+            hp_lost = previous_kirby.health - current_kirby.health
+            reward -= hp_lost * 400
 
+        # Boss defeated
+        if current_kirby.boss_health == 0 and previous_kirby.boss_health > 0:
+            self._done = True
+            reward += 6000
+
+        # Kirby died
         if current_kirby.health == 0 and previous_kirby.health != 0:
-            return -1000
+            reward -= 6000
 
-        if current_kirby.health > 0 and current_kirby.game_state == 6 and previous_kirby.game_state != 6:  # if reached warpstar
-            return 1000
+        # Warpstar (platfor won)
+        if current_kirby.health > 0 and current_kirby.game_state == 6 and previous_kirby.game_state != 6:
+            self._done = True
+            reward += 1000
 
-        if not self.IsBossActive(pyboy) and current_kirby.game_state != 6:  # if boss is dead or not active, punish for not moving right
-            if current_kirby.kirby_x_position < previous_kirby.kirby_x_position:  # moving left
-                return -1
+        # Movement incentives (only if boss is inactive)
+        if not self.IsBossActive(pyboy) and current_kirby.game_state != 6:
+            if current_kirby.kirby_x_position < previous_kirby.kirby_x_position:
+                reward -= 1
+            elif current_kirby.level_progress != previous_kirby.level_progress and current_kirby.kirby_x_position == 68:
+                reward -= 5
+            elif current_kirby.level_progress == previous_kirby.level_progress:
+                reward -= 1
+            elif current_kirby.kirby_x_position == 76:
+                reward += 5
+            else:
+                reward += 1
 
-            if current_kirby.level_progress != previous_kirby.level_progress and current_kirby.kirby_x_position == 68:  # moving most left
-                return -5
+        # Score increase bonus
+        if current_kirby.score > previous_kirby.score:
+            reward += 100
 
-            if current_kirby.level_progress == previous_kirby.level_progress:  # standing still
-                return -1
-
-            if current_kirby.kirby_x_position == 76:  # moving most right
-                return 5
-            return 1  # moving right
-        else:
-            if current_kirby.score>previous_kirby.score:
-                return 100
-        return 0
+        return reward
 
     def GetActions(self):
         baseActions = [WindowEvent.PRESS_BUTTON_A,
@@ -109,3 +121,9 @@ class KirbyAI(AISettingsInterface):
         config = self.GetHyperParameters()
         config.exploration_rate_decay = 0.99999975
         return config
+
+    def IsDone(self):
+        return getattr(self, "_done", False)
+
+    def Reset(self):
+        self._done = False
