@@ -66,9 +66,9 @@ class MarioAI(AISettingsInterface):
 
 		# reward function simple
 		clock = current_mario.time_left - prevGameState.time_left
-		movement = current_mario.real_x_pos - prevGameState.real_x_pos
-		death = -15*(current_mario.lives_left - prevGameState.lives_left)
-		levelReward = 15*max((current_mario.world[0] - prevGameState.world[0]), (current_mario.world[1] - prevGameState.world[1])) # +15 if either new level or new world
+		movement = 2*current_mario.real_x_pos - prevGameState.real_x_pos
+		death = -20*(current_mario.lives_left - prevGameState.lives_left)
+		levelReward = 1000*max((current_mario.world[0] - prevGameState.world[0]), (current_mario.world[1] - prevGameState.world[1])) # +15 if either new level or new world
 
 		reward = clock + death + movement + levelReward
 
