@@ -1,0 +1,2973 @@
+nohup: ignoring input
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.0
+
+Training Kirby mode: TREE
+3162     pyboy.plugins.window_headless  WARNING  This window type does not support frame-limiting. `pyboy.set_emulation_speed(...)` will have no effect, as it's always running at full speed.
+/root/PyBoy-RL/agent.py:229: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  dt = torch.load(path, map_location=torch.device(self.device))
+Loading model at checkpoints/Kirby_Dream_Land/2025-05-07T06-59-56-tree/mario_net_01.chkpt with exploration rate 1
+Starting Kirby training (headless)
+Total Episodes: 500
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+/opt/conda/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3440: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/opt/conda/lib/python3.10/site-packages/numpy/core/_methods.py:189: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Episode 0 - Steps this episode 497 - Epsilon 1 - Learning Rate nan - Cummulative Reward 2718.0 - Max Length 3 - Mean Loss 0.0 - Mean Q Value 0.0 - Time Delta 3.006 - Time 2025-05-07T14:59:35
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 1 - Steps this episode 1138 - Epsilon 1 - Learning Rate 0.00019999295015862248 - Cummulative Reward 5984.25 - Max Length 2 - Mean Loss 1.63 - Mean Q Value 2122.966 - Time Delta 5.76 - Time 2025-05-07T14:59:41
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 2 - Steps this episode 1486 - Epsilon 1 - Learning Rate 0.00019996865268566142 - Cummulative Reward 6656.5 - Max Length 2 - Mean Loss 2.158 - Mean Q Value 2826.449 - Time Delta 5.658 - Time 2025-05-07T14:59:47
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 3 - Steps this episode 2121 - Epsilon 1 - Learning Rate 0.00019991946700053436 - Cummulative Reward 13783.625 - Max Length 0 - Mean Loss 2.419 - Mean Q Value 3181.609 - Time Delta 8.814 - Time 2025-05-07T14:59:56
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 4 - Steps this episode 3139 - Epsilon 1 - Learning Rate 0.00019983686859818906 - Cummulative Reward 16945.2 - Max Length 0 - Mean Loss 2.567 - Mean Q Value 3422.391 - Time Delta 14.101 - Time 2025-05-07T15:00:10
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 5 - Steps this episode 3322 - Epsilon 1 - Learning Rate 0.00019977692440174255 - Cummulative Reward 12863.417 - Max Length 5 - Mean Loss 2.658 - Mean Q Value 3594.277 - Time Delta 4.247 - Time 2025-05-07T15:00:14
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 6 - Steps this episode 3512 - Epsilon 1 - Learning Rate 0.0001997583460023931 - Cummulative Reward 9832.714 - Max Length 5 - Mean Loss 2.724 - Mean Q Value 3716.967 - Time Delta 2.915 - Time 2025-05-07T15:00:17
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 7 - Steps this episode 3848 - Epsilon 1 - Learning Rate 0.00019973212958088502 - Cummulative Reward 8191.938 - Max Length 4 - Mean Loss 2.773 - Mean Q Value 3804.318 - Time Delta 4.791 - Time 2025-05-07T15:00:22
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 8 - Steps this episode 4163 - Epsilon 1 - Learning Rate 0.00019969962576904673 - Cummulative Reward 6458.333 - Max Length 5 - Mean Loss 2.808 - Mean Q Value 3871.607 - Time Delta 4.87 - Time 2025-05-07T15:00:27
+Episode 9 - Steps this episode 4468 - Epsilon 1 - Learning Rate 0.0001996686247737847 - Cummulative Reward 4658.45 - Max Length 6 - Mean Loss 2.834 - Mean Q Value 3933.042 - Time Delta 4.666 - Time 2025-05-07T15:00:31
+Episode 10 - Steps this episode 4752 - Epsilon 1 - Learning Rate 0.00019963912586582437 - Cummulative Reward 2782.455 - Max Length 6 - Mean Loss 2.854 - Mean Q Value 4005.364 - Time Delta 4.329 - Time 2025-05-07T15:00:35
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 11 - Steps this episode 5048 - Epsilon 1 - Learning Rate 0.00019961023018289506 - Cummulative Reward 1889.375 - Max Length 5 - Mean Loss 2.87 - Mean Q Value 4075.367 - Time Delta 4.434 - Time 2025-05-07T15:00:40
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 12 - Steps this episode 5875 - Epsilon 1 - Learning Rate 0.00019955424856875012 - Cummulative Reward 2895.0 - Max Length 1 - Mean Loss 2.88 - Mean Q Value 4146.992 - Time Delta 11.213 - Time 2025-05-07T15:00:51
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 13 - Steps this episode 6327 - Epsilon 1 - Learning Rate 0.0001994903505065547 - Cummulative Reward 2462.321 - Max Length 4 - Mean Loss 2.887 - Mean Q Value 4208.696 - Time Delta 7.3 - Time 2025-05-07T15:00:58
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 14 - Steps this episode 6800 - Epsilon 1 - Learning Rate 0.00019944427355768064 - Cummulative Reward 2851.467 - Max Length 2 - Mean Loss 2.893 - Mean Q Value 4258.796 - Time Delta 6.972 - Time 2025-05-07T15:01:05
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 15 - Steps this episode 7477 - Epsilon 1 - Learning Rate 0.00019938699186867578 - Cummulative Reward 4815.594 - Max Length 0 - Mean Loss 2.899 - Mean Q Value 4304.787 - Time Delta 9.655 - Time 2025-05-07T15:01:15
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 16 - Steps this episode 7892 - Epsilon 1 - Learning Rate 0.00019933256600986667 - Cummulative Reward 4401.412 - Max Length 4 - Mean Loss 2.904 - Mean Q Value 4348.453 - Time Delta 6.711 - Time 2025-05-07T15:01:22
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 17 - Steps this episode 8589 - Epsilon 1 - Learning Rate 0.00019927711005599756 - Cummulative Reward 4650.167 - Max Length 2 - Mean Loss 2.909 - Mean Q Value 4380.952 - Time Delta 10.05 - Time 2025-05-07T15:01:32
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 18 - Steps this episode 9184 - Epsilon 1 - Learning Rate 0.00019921270381031197 - Cummulative Reward 5186.921 - Max Length 1 - Mean Loss 2.914 - Mean Q Value 4400.066 - Time Delta 8.969 - Time 2025-05-07T15:01:41
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 19 - Steps this episode 10214 - Epsilon 1 - Learning Rate 0.00019913189105588597 - Cummulative Reward 6505.3 - Max Length 0 - Mean Loss 2.92 - Mean Q Value 4418.008 - Time Delta 14.468 - Time 2025-05-07T15:01:55
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 20 - Steps this episode 10538 - Epsilon 1 - Learning Rate 0.00019906454405567016 - Cummulative Reward 6318.952 - Max Length 3 - Mean Loss 2.924 - Mean Q Value 4436.074 - Time Delta 6.069 - Time 2025-05-07T15:02:01
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 21 - Steps this episode 11257 - Epsilon 1 - Learning Rate 0.00019901259580741242 - Cummulative Reward 6709.341 - Max Length 1 - Mean Loss 2.928 - Mean Q Value 4448.615 - Time Delta 10.017 - Time 2025-05-07T15:02:11
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 22 - Steps this episode 11932 - Epsilon 1 - Learning Rate 0.00019894320208370086 - Cummulative Reward 7984.826 - Max Length 0 - Mean Loss 2.932 - Mean Q Value 4459.722 - Time Delta 10.18 - Time 2025-05-07T15:02:22
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 23 - Steps this episode 12734 - Epsilon 1 - Learning Rate 0.00019886980591484325 - Cummulative Reward 9191.771 - Max Length 0 - Mean Loss 2.935 - Mean Q Value 4477.398 - Time Delta 11.624 - Time 2025-05-07T15:02:33
+Episode 24 - Steps this episode 13144 - Epsilon 1 - Learning Rate 0.00019880955646767908 - Cummulative Reward 8363.68 - Max Length 6 - Mean Loss 2.938 - Mean Q Value 4499.411 - Time Delta 6.958 - Time 2025-05-07T15:02:40
+Episode 25 - Steps this episode 13487 - Epsilon 1 - Learning Rate 0.00019877213395552262 - Cummulative Reward 7611.442 - Max Length 6 - Mean Loss 2.941 - Mean Q Value 4519.334 - Time Delta 5.351 - Time 2025-05-07T15:02:45
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 26 - Steps this episode 14037 - Epsilon 1 - Learning Rate 0.0001987277137030975 - Cummulative Reward 7463.019 - Max Length 3 - Mean Loss 2.943 - Mean Q Value 4539.172 - Time Delta 7.933 - Time 2025-05-07T15:02:53
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 27 - Steps this episode 14414 - Epsilon 1 - Learning Rate 0.00019868166351756327 - Cummulative Reward 7282.143 - Max Length 3 - Mean Loss 2.945 - Mean Q Value 4554.495 - Time Delta 6.015 - Time 2025-05-07T15:02:59
+Episode 28 - Steps this episode 14662 - Epsilon 1 - Learning Rate 0.00019865067140955022 - Cummulative Reward 6591.534 - Max Length 6 - Mean Loss 2.947 - Mean Q Value 4572.761 - Time Delta 4.142 - Time 2025-05-07T15:03:04
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 29 - Steps this episode 15142 - Epsilon 1 - Learning Rate 0.0001986144709448361 - Cummulative Reward 6149.1 - Max Length 5 - Mean Loss 2.948 - Mean Q Value 4592.671 - Time Delta 6.908 - Time 2025-05-07T15:03:10
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 30 - Steps this episode 15719 - Epsilon 1 - Learning Rate 0.0001985620438155816 - Cummulative Reward 6225.661 - Max Length 2 - Mean Loss 2.95 - Mean Q Value 4610.273 - Time Delta 8.8 - Time 2025-05-07T15:03:19
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 31 - Steps this episode 16148 - Epsilon 1 - Learning Rate 0.00019851216102591892 - Cummulative Reward 5957.594 - Max Length 4 - Mean Loss 2.952 - Mean Q Value 4621.809 - Time Delta 6.727 - Time 2025-05-07T15:03:26
+Episode 32 - Steps this episode 16491 - Epsilon 1 - Learning Rate 0.00019847375247567181 - Cummulative Reward 5427.848 - Max Length 6 - Mean Loss 2.955 - Mean Q Value 4630.04 - Time Delta 5.467 - Time 2025-05-07T15:03:31
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 33 - Steps this episode 17061 - Epsilon 1 - Learning Rate 0.00019842835718861558 - Cummulative Reward 5522.309 - Max Length 2 - Mean Loss 2.957 - Mean Q Value 4642.694 - Time Delta 8.457 - Time 2025-05-07T15:03:40
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 34 - Steps this episode 17534 - Epsilon 1 - Learning Rate 0.00019837672267617254 - Cummulative Reward 5436.1 - Max Length 3 - Mean Loss 2.959 - Mean Q Value 4651.633 - Time Delta 7.316 - Time 2025-05-07T15:03:47
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 35 - Steps this episode 18020 - Epsilon 1 - Learning Rate 0.0001983292667164861 - Cummulative Reward 6268.139 - Max Length 0 - Mean Loss 2.961 - Mean Q Value 4657.977 - Time Delta 7.37 - Time 2025-05-07T15:03:55
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 36 - Steps this episode 18634 - Epsilon 1 - Learning Rate 0.00019827468435051052 - Cummulative Reward 6323.27 - Max Length 2 - Mean Loss 2.963 - Mean Q Value 4661.884 - Time Delta 8.996 - Time 2025-05-07T15:04:04
+Episode 37 - Steps this episode 19047 - Epsilon 1 - Learning Rate 0.0001982236842827547 - Cummulative Reward 5863.066 - Max Length 6 - Mean Loss 2.965 - Mean Q Value 4665.186 - Time Delta 6.746 - Time 2025-05-07T15:04:10
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 38 - Steps this episode 19378 - Epsilon 1 - Learning Rate 0.00019818681794947228 - Cummulative Reward 5513.423 - Max Length 5 - Mean Loss 2.967 - Mean Q Value 4668.806 - Time Delta 5.221 - Time 2025-05-07T15:04:16
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 39 - Steps this episode 20010 - Epsilon 1 - Learning Rate 0.0001981391107825622 - Cummulative Reward 5326.4 - Max Length 4 - Mean Loss 2.97 - Mean Q Value 4668.817 - Time Delta 9.145 - Time 2025-05-07T15:04:25
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 40 - Steps this episode 20459 - Epsilon 1 - Learning Rate 0.00019808561998956484 - Cummulative Reward 5020.427 - Max Length 5 - Mean Loss 2.972 - Mean Q Value 4668.65 - Time Delta 7.104 - Time 2025-05-07T15:04:32
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 41 - Steps this episode 20878 - Epsilon 1 - Learning Rate 0.00019804268950369727 - Cummulative Reward 4965.25 - Max Length 3 - Mean Loss 2.975 - Mean Q Value 4668.011 - Time Delta 6.436 - Time 2025-05-07T15:04:38
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 42 - Steps this episode 21323 - Epsilon 1 - Learning Rate 0.00019799991691306406 - Cummulative Reward 5036.279 - Max Length 2 - Mean Loss 2.977 - Mean Q Value 4669.717 - Time Delta 6.695 - Time 2025-05-07T15:04:45
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 43 - Steps this episode 21856 - Epsilon 1 - Learning Rate 0.00019795151199633663 - Cummulative Reward 4873.852 - Max Length 4 - Mean Loss 2.979 - Mean Q Value 4673.802 - Time Delta 7.904 - Time 2025-05-07T15:04:53
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 44 - Steps this episode 22370 - Epsilon 1 - Learning Rate 0.00019789970488443695 - Cummulative Reward 4826.589 - Max Length 3 - Mean Loss 2.981 - Mean Q Value 4678.192 - Time Delta 7.794 - Time 2025-05-07T15:05:01
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 45 - Steps this episode 22741 - Epsilon 1 - Learning Rate 0.0001978559241281103 - Cummulative Reward 4669.402 - Max Length 4 - Mean Loss 2.983 - Mean Q Value 4680.118 - Time Delta 6.043 - Time 2025-05-07T15:05:07
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 46 - Steps this episode 23153 - Epsilon 1 - Learning Rate 0.0001978171976553255 - Cummulative Reward 4419.915 - Max Length 5 - Mean Loss 2.985 - Mean Q Value 4680.65 - Time Delta 6.531 - Time 2025-05-07T15:05:13
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 47 - Steps this episode 23856 - Epsilon 1 - Learning Rate 0.00019776201499012878 - Cummulative Reward 5079.927 - Max Length 0 - Mean Loss 2.988 - Mean Q Value 4678.994 - Time Delta 10.153 - Time 2025-05-07T15:05:23
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 48 - Steps this episode 24374 - Epsilon 1 - Learning Rate 0.00019770165682710136 - Cummulative Reward 5044.622 - Max Length 3 - Mean Loss 2.99 - Mean Q Value 4677.37 - Time Delta 8.145 - Time 2025-05-07T15:05:32
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 49 - Steps this episode 24882 - Epsilon 1 - Learning Rate 0.00019765095280449048 - Cummulative Reward 5255.43 - Max Length 1 - Mean Loss 2.992 - Mean Q Value 4675.761 - Time Delta 7.751 - Time 2025-05-07T15:05:39
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 50 - Steps this episode 25526 - Epsilon 1 - Learning Rate 0.00019759403779658568 - Cummulative Reward 5459.99 - Max Length 1 - Mean Loss 2.994 - Mean Q Value 4672.146 - Time Delta 9.558 - Time 2025-05-07T15:05:49
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 51 - Steps this episode 26215 - Epsilon 1 - Learning Rate 0.00019752825001850797 - Cummulative Reward 6025.26 - Max Length 0 - Mean Loss 2.996 - Mean Q Value 4669.105 - Time Delta 10.338 - Time 2025-05-07T15:05:59
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 52 - Steps this episode 26973 - Epsilon 1 - Learning Rate 0.00019745670852070173 - Cummulative Reward 6201.0 - Max Length 1 - Mean Loss 2.998 - Mean Q Value 4667.701 - Time Delta 11.382 - Time 2025-05-07T15:06:11
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 53 - Steps this episode 27616 - Epsilon 1 - Learning Rate 0.00019738756102975115 - Cummulative Reward 6271.361 - Max Length 2 - Mean Loss 3.0 - Mean Q Value 4669.123 - Time Delta 10.269 - Time 2025-05-07T15:06:21
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 54 - Steps this episode 27928 - Epsilon 1 - Learning Rate 0.00019734048902747013 - Cummulative Reward 6021.755 - Max Length 5 - Mean Loss 3.002 - Mean Q Value 4671.57 - Time Delta 5.388 - Time 2025-05-07T15:06:26
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 55 - Steps this episode 28409 - Epsilon 1 - Learning Rate 0.00019730141972281682 - Cummulative Reward 5978.071 - Max Length 3 - Mean Loss 3.004 - Mean Q Value 4674.857 - Time Delta 7.135 - Time 2025-05-07T15:06:33
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 56 - Steps this episode 28583 - Epsilon 1 - Learning Rate 0.00019726916314228112 - Cummulative Reward 5744.009 - Max Length 5 - Mean Loss 3.005 - Mean Q Value 4678.032 - Time Delta 3.3 - Time 2025-05-07T15:06:37
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 57 - Steps this episode 29231 - Epsilon 1 - Learning Rate 0.00019722862926441385 - Cummulative Reward 5816.371 - Max Length 2 - Mean Loss 3.007 - Mean Q Value 4682.011 - Time Delta 9.136 - Time 2025-05-07T15:06:46
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 58 - Steps this episode 29784 - Epsilon 1 - Learning Rate 0.0001971693213987325 - Cummulative Reward 5776.178 - Max Length 3 - Mean Loss 3.008 - Mean Q Value 4684.62 - Time Delta 8.653 - Time 2025-05-07T15:06:54
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 59 - Steps this episode 30375 - Epsilon 1 - Learning Rate 0.00019711284052178484 - Cummulative Reward 5934.1 - Max Length 1 - Mean Loss 3.009 - Mean Q Value 4686.501 - Time Delta 9.069 - Time 2025-05-07T15:07:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 60 - Steps this episode 30735 - Epsilon 1 - Learning Rate 0.00019706598202832263 - Cummulative Reward 6430.91 - Max Length 0 - Mean Loss 3.01 - Mean Q Value 4687.19 - Time Delta 5.942 - Time 2025-05-07T15:07:09
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 61 - Steps this episode 31215 - Epsilon 1 - Learning Rate 0.0001970246026929425 - Cummulative Reward 6211.282 - Max Length 5 - Mean Loss 3.011 - Mean Q Value 4687.244 - Time Delta 7.251 - Time 2025-05-07T15:07:17
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 62 - Steps this episode 31837 - Epsilon 1 - Learning Rate 0.00019697037941176942 - Cummulative Reward 6687.881 - Max Length 0 - Mean Loss 3.012 - Mean Q Value 4688.239 - Time Delta 9.361 - Time 2025-05-07T15:07:26
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 63 - Steps this episode 32138 - Epsilon 1 - Learning Rate 0.0001969250315622514 - Cummulative Reward 6461.461 - Max Length 5 - Mean Loss 3.014 - Mean Q Value 4689.58 - Time Delta 5.466 - Time 2025-05-07T15:07:32
+Episode 64 - Steps this episode 32641 - Epsilon 1 - Learning Rate 0.00019688545391532413 - Cummulative Reward 6202.585 - Max Length 6 - Mean Loss 3.015 - Mean Q Value 4690.663 - Time Delta 7.515 - Time 2025-05-07T15:07:39
+Episode 65 - Steps this episode 32948 - Epsilon 1 - Learning Rate 0.00019684558828864972 - Cummulative Reward 5932.667 - Max Length 6 - Mean Loss 3.016 - Mean Q Value 4692.187 - Time Delta 5.178 - Time 2025-05-07T15:07:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 66 - Steps this episode 33655 - Epsilon 1 - Learning Rate 0.00019679569505455936 - Cummulative Reward 5994.396 - Max Length 2 - Mean Loss 3.017 - Mean Q Value 4693.495 - Time Delta 10.291 - Time 2025-05-07T15:07:55
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 67 - Steps this episode 34195 - Epsilon 1 - Learning Rate 0.00019673430389944267 - Cummulative Reward 5955.353 - Max Length 3 - Mean Loss 3.018 - Mean Q Value 4694.251 - Time Delta 8.701 - Time 2025-05-07T15:08:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 68 - Steps this episode 34996 - Epsilon 1 - Learning Rate 0.00019666836044613525 - Cummulative Reward 6305.304 - Max Length 0 - Mean Loss 3.019 - Mean Q Value 4696.549 - Time Delta 12.051 - Time 2025-05-07T15:08:15
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 69 - Steps this episode 35571 - Epsilon 1 - Learning Rate 0.0001966006683298495 - Cummulative Reward 6429.564 - Max Length 1 - Mean Loss 3.02 - Mean Q Value 4696.398 - Time Delta 9.327 - Time 2025-05-07T15:08:25
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 70 - Steps this episode 36079 - Epsilon 1 - Learning Rate 0.00019654744571130523 - Cummulative Reward 6453.014 - Max Length 2 - Mean Loss 3.021 - Mean Q Value 4696.1 - Time Delta 8.102 - Time 2025-05-07T15:08:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 71 - Steps this episode 36774 - Epsilon 1 - Learning Rate 0.0001964883433760751 - Cummulative Reward 6859.285 - Max Length 0 - Mean Loss 3.022 - Mean Q Value 4695.608 - Time Delta 10.539 - Time 2025-05-07T15:08:43
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 72 - Steps this episode 37267 - Epsilon 1 - Learning Rate 0.00019642999446361223 - Cummulative Reward 7274.384 - Max Length 0 - Mean Loss 3.023 - Mean Q Value 4693.716 - Time Delta 8.271 - Time 2025-05-07T15:08:51
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 73 - Steps this episode 37964 - Epsilon 1 - Learning Rate 0.00019637166386984525 - Cummulative Reward 7235.115 - Max Length 3 - Mean Loss 3.024 - Mean Q Value 4693.958 - Time Delta 10.583 - Time 2025-05-07T15:09:02
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 74 - Steps this episode 38678 - Epsilon 1 - Learning Rate 0.00019630245505710162 - Cummulative Reward 7622.927 - Max Length 0 - Mean Loss 3.025 - Mean Q Value 4694.431 - Time Delta 11.286 - Time 2025-05-07T15:09:13
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 75 - Steps this episode 39281 - Epsilon 1 - Learning Rate 0.00019623783276545974 - Cummulative Reward 7646.513 - Max Length 2 - Mean Loss 3.026 - Mean Q Value 4694.291 - Time Delta 9.67 - Time 2025-05-07T15:09:23
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 76 - Steps this episode 39824 - Epsilon 1 - Learning Rate 0.0001961816184967553 - Cummulative Reward 7578.961 - Max Length 3 - Mean Loss 3.026 - Mean Q Value 4693.936 - Time Delta 8.663 - Time 2025-05-07T15:09:32
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 77 - Steps this episode 40678 - Epsilon 1 - Learning Rate 0.00019611306584114724 - Cummulative Reward 7920.237 - Max Length 0 - Mean Loss 3.027 - Mean Q Value 4693.812 - Time Delta 12.874 - Time 2025-05-07T15:09:45
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 78 - Steps this episode 41427 - Epsilon 1 - Learning Rate 0.00019603439085549596 - Cummulative Reward 8258.911 - Max Length 0 - Mean Loss 3.028 - Mean Q Value 4694.083 - Time Delta 11.991 - Time 2025-05-07T15:09:57
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 79 - Steps this episode 42091 - Epsilon 1 - Learning Rate 0.00019596515363375916 - Cummulative Reward 8596.975 - Max Length 0 - Mean Loss 3.029 - Mean Q Value 4694.897 - Time Delta 10.666 - Time 2025-05-07T15:10:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 80 - Steps this episode 42561 - Epsilon 1 - Learning Rate 0.00019590960490106134 - Cummulative Reward 8521.994 - Max Length 3 - Mean Loss 3.029 - Mean Q Value 4694.901 - Time Delta 7.981 - Time 2025-05-07T15:10:15
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 81 - Steps this episode 43070 - Epsilon 1 - Learning Rate 0.0001958617108938649 - Cummulative Reward 8864.384 - Max Length 0 - Mean Loss 3.03 - Mean Q Value 4693.825 - Time Delta 8.001 - Time 2025-05-07T15:10:23
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 82 - Steps this episode 43572 - Epsilon 1 - Learning Rate 0.00019581221305867865 - Cummulative Reward 8856.048 - Max Length 2 - Mean Loss 3.031 - Mean Q Value 4691.424 - Time Delta 8.029 - Time 2025-05-07T15:10:31
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 83 - Steps this episode 44196 - Epsilon 1 - Learning Rate 0.00019575700203436512 - Cummulative Reward 9178.982 - Max Length 0 - Mean Loss 3.032 - Mean Q Value 4689.934 - Time Delta 9.678 - Time 2025-05-07T15:10:41
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 84 - Steps this episode 44516 - Epsilon 1 - Learning Rate 0.0001957109060661116 - Cummulative Reward 9500.788 - Max Length 0 - Mean Loss 3.033 - Mean Q Value 4689.978 - Time Delta 5.64 - Time 2025-05-07T15:10:47
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 85 - Steps this episode 44980 - Epsilon 1 - Learning Rate 0.00019567259961151463 - Cummulative Reward 9427.541 - Max Length 3 - Mean Loss 3.034 - Mean Q Value 4691.377 - Time Delta 7.201 - Time 2025-05-07T15:10:54
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 86 - Steps this episode 45546 - Epsilon 1 - Learning Rate 0.000195622122769278 - Cummulative Reward 9419.713 - Max Length 2 - Mean Loss 3.034 - Mean Q Value 4694.376 - Time Delta 8.916 - Time 2025-05-07T15:11:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 87 - Steps this episode 46395 - Epsilon 1 - Learning Rate 0.00019555288555514713 - Cummulative Reward 9496.96 - Max Length 1 - Mean Loss 3.035 - Mean Q Value 4697.151 - Time Delta 13.056 - Time 2025-05-07T15:11:16
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 88 - Steps this episode 46691 - Epsilon 1 - Learning Rate 0.00019549701296734816 - Cummulative Reward 9801.815 - Max Length 0 - Mean Loss 3.036 - Mean Q Value 4699.432 - Time Delta 5.689 - Time 2025-05-07T15:11:21
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 89 - Steps this episode 47067 - Epsilon 1 - Learning Rate 0.00019546417231817387 - Cummulative Reward 9715.639 - Max Length 3 - Mean Loss 3.037 - Mean Q Value 4701.409 - Time Delta 5.939 - Time 2025-05-07T15:11:27
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 90 - Steps this episode 47493 - Epsilon 1 - Learning Rate 0.00019542488801684826 - Cummulative Reward 10014.077 - Max Length 0 - Mean Loss 3.038 - Mean Q Value 4703.716 - Time Delta 6.773 - Time 2025-05-07T15:11:34
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 91 - Steps this episode 48113 - Epsilon 1 - Learning Rate 0.0001953738891464635 - Cummulative Reward 10275.886 - Max Length 0 - Mean Loss 3.038 - Mean Q Value 4706.983 - Time Delta 9.524 - Time 2025-05-07T15:11:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 92 - Steps this episode 48508 - Epsilon 1 - Learning Rate 0.00019532436764746973 - Cummulative Reward 10135.753 - Max Length 4 - Mean Loss 3.039 - Mean Q Value 4709.791 - Time Delta 6.945 - Time 2025-05-07T15:11:51
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 93 - Steps this episode 49058 - Epsilon 1 - Learning Rate 0.00019527822797561425 - Cummulative Reward 10121.745 - Max Length 2 - Mean Loss 3.039 - Mean Q Value 4712.419 - Time Delta 8.53 - Time 2025-05-07T15:11:59
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 94 - Steps this episode 49360 - Epsilon 1 - Learning Rate 0.0001952366376850901 - Cummulative Reward 9934.716 - Max Length 5 - Mean Loss 3.04 - Mean Q Value 4716.434 - Time Delta 5.354 - Time 2025-05-07T15:12:04
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 95 - Steps this episode 50034 - Epsilon 1 - Learning Rate 0.00019518890886627375 - Cummulative Reward 10189.958 - Max Length 0 - Mean Loss 3.04 - Mean Q Value 4720.623 - Time Delta 10.203 - Time 2025-05-07T15:12:15
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 96 - Steps this episode 50524 - Epsilon 1 - Learning Rate 0.00019513211667472846 - Cummulative Reward 10458.16 - Max Length 0 - Mean Loss 3.04 - Mean Q Value 4725.113 - Time Delta 8.181 - Time 2025-05-07T15:12:23
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 97 - Steps this episode 51055 - Epsilon 1 - Learning Rate 0.00019508236437841642 - Cummulative Reward 10722.133 - Max Length 0 - Mean Loss 3.04 - Mean Q Value 4730.462 - Time Delta 8.508 - Time 2025-05-07T15:12:31
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 98 - Steps this episode 51412 - Epsilon 1 - Learning Rate 0.00019503906055399887 - Cummulative Reward 10588.152 - Max Length 4 - Mean Loss 3.04 - Mean Q Value 4735.371 - Time Delta 6.15 - Time 2025-05-07T15:12:38
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 99 - Steps this episode 52151 - Epsilon 1 - Learning Rate 0.00019498567672586128 - Cummulative Reward 10634.19 - Max Length 1 - Mean Loss 3.04 - Mean Q Value 4740.269 - Time Delta 11.206 - Time 2025-05-07T15:12:49
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 100 - Steps this episode 52702 - Epsilon 1 - Learning Rate 0.00019492280344955937 - Cummulative Reward 10978.02 - Max Length 0 - Mean Loss 3.071 - Mean Q Value 4792.721 - Time Delta 9.257 - Time 2025-05-07T15:12:58
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 101 - Steps this episode 53116 - Epsilon 1 - Learning Rate 0.00019487573497033086 - Cummulative Reward 11245.635 - Max Length 0 - Mean Loss 3.069 - Mean Q Value 4801.983 - Time Delta 6.964 - Time 2025-05-07T15:13:05
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 102 - Steps this episode 53772 - Epsilon 1 - Learning Rate 0.0001948235644660347 - Cummulative Reward 11262.995 - Max Length 2 - Mean Loss 3.067 - Mean Q Value 4813.112 - Time Delta 10.194 - Time 2025-05-07T15:13:15
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 103 - Steps this episode 54527 - Epsilon 1 - Learning Rate 0.0001947549014852782 - Cummulative Reward 11265.77 - Max Length 0 - Mean Loss 3.065 - Mean Q Value 4824.117 - Time Delta 11.902 - Time 2025-05-07T15:13:27
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 104 - Steps this episode 54899 - Epsilon 1 - Learning Rate 0.00019470013346084583 - Cummulative Reward 10990.43 - Max Length 3 - Mean Loss 3.064 - Mean Q Value 4832.283 - Time Delta 6.889 - Time 2025-05-07T15:13:34
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 105 - Steps this episode 55549 - Epsilon 1 - Learning Rate 0.0001946503458100284 - Cummulative Reward 11424.81 - Max Length 0 - Mean Loss 3.064 - Mean Q Value 4838.661 - Time Delta 9.989 - Time 2025-05-07T15:13:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 106 - Steps this episode 56259 - Epsilon 1 - Learning Rate 0.00019458407876585284 - Cummulative Reward 11855.03 - Max Length 0 - Mean Loss 3.063 - Mean Q Value 4845.475 - Time Delta 11.347 - Time 2025-05-07T15:13:55
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 107 - Steps this episode 56787 - Epsilon 1 - Learning Rate 0.00019452381517655697 - Cummulative Reward 12245.07 - Max Length 0 - Mean Loss 3.062 - Mean Q Value 4852.47 - Time Delta 8.823 - Time 2025-05-07T15:14:04
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 108 - Steps this episode 57507 - Epsilon 1 - Learning Rate 0.0001944631336529773 - Cummulative Reward 12689.32 - Max Length 0 - Mean Loss 3.062 - Mean Q Value 4859.447 - Time Delta 11.255 - Time 2025-05-07T15:14:15
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 109 - Steps this episode 58085 - Epsilon 1 - Learning Rate 0.0001944001373783994 - Cummulative Reward 12945.93 - Max Length 1 - Mean Loss 3.062 - Mean Q Value 4864.703 - Time Delta 9.549 - Time 2025-05-07T15:14:25
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 110 - Steps this episode 58712 - Epsilon 1 - Learning Rate 0.0001943416804083695 - Cummulative Reward 13475.4 - Max Length 0 - Mean Loss 3.062 - Mean Q Value 4867.988 - Time Delta 10.074 - Time 2025-05-07T15:14:35
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 111 - Steps this episode 59372 - Epsilon 1 - Learning Rate 0.00019427916107011122 - Cummulative Reward 13923.15 - Max Length 0 - Mean Loss 3.062 - Mean Q Value 4872.234 - Time Delta 10.588 - Time 2025-05-07T15:14:46
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 112 - Steps this episode 59599 - Epsilon 1 - Learning Rate 0.00019423603507491815 - Cummulative Reward 13699.05 - Max Length 5 - Mean Loss 3.063 - Mean Q Value 4876.043 - Time Delta 4.496 - Time 2025-05-07T15:14:50
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 113 - Steps this episode 60156 - Epsilon 1 - Learning Rate 0.0001941978719398051 - Cummulative Reward 14082.765 - Max Length 0 - Mean Loss 3.063 - Mean Q Value 4880.47 - Time Delta 8.521 - Time 2025-05-07T15:14:59
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 114 - Steps this episode 60691 - Epsilon 1 - Learning Rate 0.00019414486306404129 - Cummulative Reward 14352.415 - Max Length 0 - Mean Loss 3.064 - Mean Q Value 4885.544 - Time Delta 8.735 - Time 2025-05-07T15:15:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 115 - Steps this episode 61218 - Epsilon 1 - Learning Rate 0.00019409332439342087 - Cummulative Reward 14373.32 - Max Length 0 - Mean Loss 3.064 - Mean Q Value 4890.652 - Time Delta 8.868 - Time 2025-05-07T15:15:16
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 116 - Steps this episode 61558 - Epsilon 1 - Learning Rate 0.00019405125886156293 - Cummulative Reward 14542.91 - Max Length 1 - Mean Loss 3.065 - Mean Q Value 4893.495 - Time Delta 5.932 - Time 2025-05-07T15:15:22
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 117 - Steps this episode 61974 - Epsilon 1 - Learning Rate 0.0001940145867309446 - Cummulative Reward 14477.38 - Max Length 3 - Mean Loss 3.065 - Mean Q Value 4897.396 - Time Delta 6.751 - Time 2025-05-07T15:15:29
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 118 - Steps this episode 62281 - Epsilon 1 - Learning Rate 0.0001939795215750278 - Cummulative Reward 14301.32 - Max Length 4 - Mean Loss 3.066 - Mean Q Value 4903.98 - Time Delta 5.308 - Time 2025-05-07T15:15:34
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 119 - Steps this episode 62753 - Epsilon 1 - Learning Rate 0.00019394184494319478 - Cummulative Reward 14072.0 - Max Length 2 - Mean Loss 3.066 - Mean Q Value 4910.379 - Time Delta 7.514 - Time 2025-05-07T15:15:42
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 120 - Steps this episode 63288 - Epsilon 1 - Learning Rate 0.0001938929778535161 - Cummulative Reward 14025.465 - Max Length 4 - Mean Loss 3.066 - Mean Q Value 4916.932 - Time Delta 8.671 - Time 2025-05-07T15:15:50
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 121 - Steps this episode 63953 - Epsilon 1 - Learning Rate 0.00019383481894614933 - Cummulative Reward 14246.825 - Max Length 0 - Mean Loss 3.066 - Mean Q Value 4923.522 - Time Delta 10.617 - Time 2025-05-07T15:16:01
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 122 - Steps this episode 64406 - Epsilon 1 - Learning Rate 0.00019378074606149376 - Cummulative Reward 14027.415 - Max Length 1 - Mean Loss 3.067 - Mean Q Value 4929.507 - Time Delta 7.773 - Time 2025-05-07T15:16:09
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 123 - Steps this episode 64849 - Epsilon 1 - Learning Rate 0.0001937372955523785 - Cummulative Reward 13633.3 - Max Length 4 - Mean Loss 3.067 - Mean Q Value 4934.424 - Time Delta 7.331 - Time 2025-05-07T15:16:16
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 124 - Steps this episode 65471 - Epsilon 1 - Learning Rate 0.00019368572020540036 - Cummulative Reward 14115.72 - Max Length 0 - Mean Loss 3.067 - Mean Q Value 4937.532 - Time Delta 9.884 - Time 2025-05-07T15:16:26
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 125 - Steps this episode 65951 - Epsilon 1 - Learning Rate 0.0001936324151942091 - Cummulative Reward 14367.6 - Max Length 1 - Mean Loss 3.067 - Mean Q Value 4940.234 - Time Delta 8.17 - Time 2025-05-07T15:16:34
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 126 - Steps this episode 66549 - Epsilon 1 - Learning Rate 0.0001935801417215069 - Cummulative Reward 14679.07 - Max Length 0 - Mean Loss 3.068 - Mean Q Value 4942.88 - Time Delta 9.755 - Time 2025-05-07T15:16:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 127 - Steps this episode 67160 - Epsilon 1 - Learning Rate 0.00019352164094310983 - Cummulative Reward 15020.6 - Max Length 0 - Mean Loss 3.068 - Mean Q Value 4946.622 - Time Delta 10.044 - Time 2025-05-07T15:16:54
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 128 - Steps this episode 67548 - Epsilon 1 - Learning Rate 0.00019347331447108404 - Cummulative Reward 15128.3 - Max Length 4 - Mean Loss 3.069 - Mean Q Value 4949.047 - Time Delta 7.077 - Time 2025-05-07T15:17:01
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 129 - Steps this episode 68058 - Epsilon 1 - Learning Rate 0.00019342978805722186 - Cummulative Reward 15231.4 - Max Length 3 - Mean Loss 3.069 - Mean Q Value 4950.646 - Time Delta 8.221 - Time 2025-05-07T15:17:09
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 130 - Steps this episode 68852 - Epsilon 1 - Learning Rate 0.0001933668375994162 - Cummulative Reward 15513.575 - Max Length 0 - Mean Loss 3.069 - Mean Q Value 4952.986 - Time Delta 12.665 - Time 2025-05-07T15:17:22
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 131 - Steps this episode 69309 - Epsilon 1 - Learning Rate 0.00019330637069264604 - Cummulative Reward 15623.34 - Max Length 2 - Mean Loss 3.069 - Mean Q Value 4958.395 - Time Delta 8.201 - Time 2025-05-07T15:17:30
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 132 - Steps this episode 69752 - Epsilon 1 - Learning Rate 0.0001932628815867148 - Cummulative Reward 16099.98 - Max Length 0 - Mean Loss 3.069 - Mean Q Value 4964.424 - Time Delta 7.397 - Time 2025-05-07T15:17:37
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 133 - Steps this episode 70275 - Epsilon 1 - Learning Rate 0.0001932162143644414 - Cummulative Reward 16368.78 - Max Length 0 - Mean Loss 3.069 - Mean Q Value 4969.77 - Time Delta 9.061 - Time 2025-05-07T15:17:47
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 134 - Steps this episode 70816 - Epsilon 1 - Learning Rate 0.00019316477738878893 - Cummulative Reward 16700.095 - Max Length 0 - Mean Loss 3.069 - Mean Q Value 4976.622 - Time Delta 9.299 - Time 2025-05-07T15:17:56
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 135 - Steps this episode 71399 - Epsilon 1 - Learning Rate 0.00019311060232131552 - Cummulative Reward 16499.245 - Max Length 1 - Mean Loss 3.069 - Mean Q Value 4985.09 - Time Delta 9.696 - Time 2025-05-07T15:18:06
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 136 - Steps this episode 71897 - Epsilon 1 - Learning Rate 0.00019305846927540239 - Cummulative Reward 16495.87 - Max Length 2 - Mean Loss 3.068 - Mean Q Value 4995.027 - Time Delta 8.447 - Time 2025-05-07T15:18:14
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 137 - Steps this episode 72448 - Epsilon 1 - Learning Rate 0.00019300779815410065 - Cummulative Reward 16688.435 - Max Length 2 - Mean Loss 3.068 - Mean Q Value 5004.045 - Time Delta 9.144 - Time 2025-05-07T15:18:23
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 138 - Steps this episode 73029 - Epsilon 1 - Learning Rate 0.00019295308822617834 - Cummulative Reward 17119.92 - Max Length 0 - Mean Loss 3.067 - Mean Q Value 5012.583 - Time Delta 9.738 - Time 2025-05-07T15:18:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 139 - Steps this episode 73502 - Epsilon 1 - Learning Rate 0.00019290229973804404 - Cummulative Reward 17224.95 - Max Length 2 - Mean Loss 3.066 - Mean Q Value 5022.86 - Time Delta 8.163 - Time 2025-05-07T15:18:41
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 140 - Steps this episode 73890 - Epsilon 1 - Learning Rate 0.0001928607818152915 - Cummulative Reward 17664.135 - Max Length 0 - Mean Loss 3.065 - Mean Q Value 5032.482 - Time Delta 6.736 - Time 2025-05-07T15:18:48
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 141 - Steps this episode 74345 - Epsilon 1 - Learning Rate 0.00019282014076442777 - Cummulative Reward 17615.45 - Max Length 4 - Mean Loss 3.064 - Mean Q Value 5042.099 - Time Delta 7.549 - Time 2025-05-07T15:18:55
+Episode 142 - Steps this episode 74665 - Epsilon 1 - Learning Rate 0.00019278283344362015 - Cummulative Reward 17416.79 - Max Length 6 - Mean Loss 3.064 - Mean Q Value 5050.377 - Time Delta 5.951 - Time 2025-05-07T15:19:01
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 143 - Steps this episode 75138 - Epsilon 1 - Learning Rate 0.00019274452187831553 - Cummulative Reward 17803.46 - Max Length 0 - Mean Loss 3.063 - Mean Q Value 5057.244 - Time Delta 7.71 - Time 2025-05-07T15:19:09
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 144 - Steps this episode 75522 - Epsilon 1 - Learning Rate 0.00019270318242616094 - Cummulative Reward 18146.53 - Max Length 0 - Mean Loss 3.062 - Mean Q Value 5062.976 - Time Delta 6.668 - Time 2025-05-07T15:19:16
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 145 - Steps this episode 76020 - Epsilon 1 - Learning Rate 0.00019266069622865748 - Cummulative Reward 18539.98 - Max Length 0 - Mean Loss 3.062 - Mean Q Value 5069.287 - Time Delta 8.241 - Time 2025-05-07T15:19:24
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 146 - Steps this episode 76604 - Epsilon 1 - Learning Rate 0.0001926086850055388 - Cummulative Reward 18699.615 - Max Length 2 - Mean Loss 3.061 - Mean Q Value 5075.225 - Time Delta 9.689 - Time 2025-05-07T15:19:34
+Episode 147 - Steps this episode 76820 - Epsilon 1 - Learning Rate 0.00019257026279087742 - Cummulative Reward 18216.265 - Max Length 6 - Mean Loss 3.06 - Mean Q Value 5081.942 - Time Delta 4.391 - Time 2025-05-07T15:19:38
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 148 - Steps this episode 77265 - Epsilon 1 - Learning Rate 0.0001925383471981518 - Cummulative Reward 18543.94 - Max Length 0 - Mean Loss 3.06 - Mean Q Value 5088.615 - Time Delta 7.208 - Time 2025-05-07T15:19:45
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 149 - Steps this episode 77672 - Epsilon 1 - Learning Rate 0.00019249734079502 - Cummulative Reward 18348.825 - Max Length 4 - Mean Loss 3.059 - Mean Q Value 5094.54 - Time Delta 6.966 - Time 2025-05-07T15:19:52
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 150 - Steps this episode 78501 - Epsilon 1 - Learning Rate 0.00019243786931656516 - Cummulative Reward 18553.385 - Max Length 0 - Mean Loss 3.059 - Mean Q Value 5102.546 - Time Delta 13.324 - Time 2025-05-07T15:20:05
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 151 - Steps this episode 79297 - Epsilon 1 - Learning Rate 0.00019235965904403036 - Cummulative Reward 18579.815 - Max Length 0 - Mean Loss 3.058 - Mean Q Value 5110.529 - Time Delta 13.644 - Time 2025-05-07T15:20:19
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 152 - Steps this episode 79925 - Epsilon 1 - Learning Rate 0.00019229128680924417 - Cummulative Reward 18514.12 - Max Length 2 - Mean Loss 3.058 - Mean Q Value 5118.571 - Time Delta 10.895 - Time 2025-05-07T15:20:30
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 153 - Steps this episode 80527 - Epsilon 1 - Learning Rate 0.00019223216622534558 - Cummulative Reward 18786.715 - Max Length 0 - Mean Loss 3.057 - Mean Q Value 5125.938 - Time Delta 10.274 - Time 2025-05-07T15:20:40
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 154 - Steps this episode 81050 - Epsilon 1 - Learning Rate 0.00019217810830785795 - Cummulative Reward 19213.81 - Max Length 0 - Mean Loss 3.056 - Mean Q Value 5133.461 - Time Delta 9.069 - Time 2025-05-07T15:20:49
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 155 - Steps this episode 81590 - Epsilon 1 - Learning Rate 0.00019212709179284467 - Cummulative Reward 19527.54 - Max Length 0 - Mean Loss 3.055 - Mean Q Value 5140.27 - Time Delta 9.162 - Time 2025-05-07T15:20:59
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 156 - Steps this episode 82039 - Epsilon 1 - Learning Rate 0.00019207954600770455 - Cummulative Reward 19970.845 - Max Length 0 - Mean Loss 3.055 - Mean Q Value 5147.193 - Time Delta 7.852 - Time 2025-05-07T15:21:06
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 157 - Steps this episode 82489 - Epsilon 1 - Learning Rate 0.0001920363329390959 - Cummulative Reward 19960.125 - Max Length 2 - Mean Loss 3.054 - Mean Q Value 5153.512 - Time Delta 7.953 - Time 2025-05-07T15:21:14
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 158 - Steps this episode 83331 - Epsilon 1 - Learning Rate 0.00019197426819600664 - Cummulative Reward 20293.45 - Max Length 0 - Mean Loss 3.053 - Mean Q Value 5160.612 - Time Delta 13.639 - Time 2025-05-07T15:21:28
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 159 - Steps this episode 83952 - Epsilon 1 - Learning Rate 0.00019190401776796173 - Cummulative Reward 20505.37 - Max Length 0 - Mean Loss 3.053 - Mean Q Value 5167.291 - Time Delta 10.969 - Time 2025-05-07T15:21:39
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 160 - Steps this episode 84537 - Epsilon 1 - Learning Rate 0.00019184616729783825 - Cummulative Reward 20502.13 - Max Length 0 - Mean Loss 3.052 - Mean Q Value 5174.663 - Time Delta 10.024 - Time 2025-05-07T15:21:49
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 161 - Steps this episode 84929 - Epsilon 1 - Learning Rate 0.00019179941007836014 - Cummulative Reward 20502.58 - Max Length 5 - Mean Loss 3.051 - Mean Q Value 5181.736 - Time Delta 7.074 - Time 2025-05-07T15:21:56
+Episode 162 - Steps this episode 85322 - Epsilon 1 - Learning Rate 0.00019176186899482782 - Cummulative Reward 20029.21 - Max Length 6 - Mean Loss 3.051 - Mean Q Value 5188.203 - Time Delta 6.824 - Time 2025-05-07T15:22:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 163 - Steps this episode 85654 - Epsilon 1 - Learning Rate 0.00019172706726085307 - Cummulative Reward 20133.265 - Max Length 3 - Mean Loss 3.05 - Mean Q Value 5195.0 - Time Delta 5.853 - Time 2025-05-07T15:22:09
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 164 - Steps this episode 85967 - Epsilon 1 - Learning Rate 0.0001916961537134948 - Cummulative Reward 20604.37 - Max Length 0 - Mean Loss 3.05 - Mean Q Value 5202.247 - Time Delta 5.467 - Time 2025-05-07T15:22:14
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 165 - Steps this episode 86548 - Epsilon 1 - Learning Rate 0.00019165331486037385 - Cummulative Reward 20805.46 - Max Length 2 - Mean Loss 3.049 - Mean Q Value 5209.207 - Time Delta 9.484 - Time 2025-05-07T15:22:24
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 166 - Steps this episode 87219 - Epsilon 1 - Learning Rate 0.00019159324114343453 - Cummulative Reward 20797.54 - Max Length 2 - Mean Loss 3.048 - Mean Q Value 5216.302 - Time Delta 11.341 - Time 2025-05-07T15:22:35
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 167 - Steps this episode 87798 - Epsilon 1 - Learning Rate 0.00019153332944935625 - Cummulative Reward 21126.75 - Max Length 0 - Mean Loss 3.048 - Mean Q Value 5224.11 - Time Delta 10.012 - Time 2025-05-07T15:22:45
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 168 - Steps this episode 88379 - Epsilon 1 - Learning Rate 0.00019147788853436003 - Cummulative Reward 20979.785 - Max Length 1 - Mean Loss 3.047 - Mean Q Value 5230.827 - Time Delta 9.891 - Time 2025-05-07T15:22:55
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 169 - Steps this episode 88965 - Epsilon 1 - Learning Rate 0.0001914220329877587 - Cummulative Reward 21193.2 - Max Length 0 - Mean Loss 3.046 - Mean Q Value 5239.539 - Time Delta 10.032 - Time 2025-05-07T15:23:05
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 170 - Steps this episode 89411 - Epsilon 1 - Learning Rate 0.00019137265214033252 - Cummulative Reward 21040.965 - Max Length 5 - Mean Loss 3.045 - Mean Q Value 5248.383 - Time Delta 7.94 - Time 2025-05-07T15:23:13
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 171 - Steps this episode 89630 - Epsilon 1 - Learning Rate 0.0001913409344307793 - Cummulative Reward 20606.645 - Max Length 5 - Mean Loss 3.044 - Mean Q Value 5256.45 - Time Delta 4.277 - Time 2025-05-07T15:23:17
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 172 - Steps this episode 90404 - Epsilon 1 - Learning Rate 0.00019129344100186376 - Cummulative Reward 20617.715 - Max Length 0 - Mean Loss 3.044 - Mean Q Value 5265.027 - Time Delta 12.413 - Time 2025-05-07T15:23:30
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 173 - Steps this episode 90966 - Epsilon 1 - Learning Rate 0.00019122946343891133 - Cummulative Reward 20659.62 - Max Length 2 - Mean Loss 3.043 - Mean Q Value 5272.422 - Time Delta 10.291 - Time 2025-05-07T15:23:40
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 174 - Steps this episode 91475 - Epsilon 1 - Learning Rate 0.00019117826844412797 - Cummulative Reward 20326.385 - Max Length 3 - Mean Loss 3.042 - Mean Q Value 5279.413 - Time Delta 8.812 - Time 2025-05-07T15:23:49
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 175 - Steps this episode 92181 - Epsilon 1 - Learning Rate 0.00019112020730629043 - Cummulative Reward 20387.535 - Max Length 1 - Mean Loss 3.042 - Mean Q Value 5287.143 - Time Delta 11.784 - Time 2025-05-07T15:24:00
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 176 - Steps this episode 92567 - Epsilon 1 - Learning Rate 0.00019106803786774363 - Cummulative Reward 20730.73 - Max Length 0 - Mean Loss 3.041 - Mean Q Value 5295.023 - Time Delta 7.206 - Time 2025-05-07T15:24:08
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 177 - Steps this episode 93174 - Epsilon 1 - Learning Rate 0.00019102061152343822 - Cummulative Reward 20545.73 - Max Length 1 - Mean Loss 3.04 - Mean Q Value 5302.83 - Time Delta 10.146 - Time 2025-05-07T15:24:18
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 178 - Steps this episode 93594 - Epsilon 1 - Learning Rate 0.00019097147736749692 - Cummulative Reward 20568.635 - Max Length 0 - Mean Loss 3.04 - Mean Q Value 5310.567 - Time Delta 7.641 - Time 2025-05-07T15:24:25
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 179 - Steps this episode 94111 - Epsilon 1 - Learning Rate 0.00019092679541500264 - Cummulative Reward 20248.78 - Max Length 3 - Mean Loss 3.039 - Mean Q Value 5317.907 - Time Delta 8.815 - Time 2025-05-07T15:24:34
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 180 - Steps this episode 94575 - Epsilon 1 - Learning Rate 0.00019087997622526024 - Cummulative Reward 20586.035 - Max Length 0 - Mean Loss 3.039 - Mean Q Value 5325.806 - Time Delta 8.204 - Time 2025-05-07T15:24:42
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 181 - Steps this episode 95053 - Epsilon 1 - Learning Rate 0.00019083502927233413 - Cummulative Reward 20349.155 - Max Length 1 - Mean Loss 3.038 - Mean Q Value 5334.955 - Time Delta 8.268 - Time 2025-05-07T15:24:51
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 182 - Steps this episode 95505 - Epsilon 1 - Learning Rate 0.00019079066520791388 - Cummulative Reward 20631.68 - Max Length 0 - Mean Loss 3.037 - Mean Q Value 5347.113 - Time Delta 7.915 - Time 2025-05-07T15:24:59
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 183 - Steps this episode 96058 - Epsilon 1 - Learning Rate 0.00019074273523650017 - Cummulative Reward 20645.11 - Max Length 0 - Mean Loss 3.036 - Mean Q Value 5358.735 - Time Delta 9.455 - Time 2025-05-07T15:25:08
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 184 - Steps this episode 96569 - Epsilon 1 - Learning Rate 0.00019069209963587985 - Cummulative Reward 20654.08 - Max Length 0 - Mean Loss 3.035 - Mean Q Value 5368.578 - Time Delta 8.983 - Time 2025-05-07T15:25:17
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 185 - Steps this episode 97002 - Epsilon 1 - Learning Rate 0.00019064705377404092 - Cummulative Reward 20980.275 - Max Length 0 - Mean Loss 3.034 - Mean Q Value 5376.219 - Time Delta 7.751 - Time 2025-05-07T15:25:25
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 186 - Steps this episode 97446 - Epsilon 1 - Learning Rate 0.00019060516367110935 - Cummulative Reward 21253.26 - Max Length 0 - Mean Loss 3.033 - Mean Q Value 5381.816 - Time Delta 7.753 - Time 2025-05-07T15:25:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 187 - Steps this episode 98033 - Epsilon 1 - Learning Rate 0.0001905561370503381 - Cummulative Reward 21451.315 - Max Length 0 - Mean Loss 3.032 - Mean Q Value 5388.133 - Time Delta 9.948 - Time 2025-05-07T15:25:43
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 188 - Steps this episode 98448 - Epsilon 1 - Learning Rate 0.00019050840834638203 - Cummulative Reward 21453.16 - Max Length 0 - Mean Loss 3.031 - Mean Q Value 5394.182 - Time Delta 7.573 - Time 2025-05-07T15:25:50
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 189 - Steps this episode 98979 - Epsilon 1 - Learning Rate 0.0001904632633840744 - Cummulative Reward 21574.855 - Max Length 1 - Mean Loss 3.03 - Mean Q Value 5400.765 - Time Delta 9.353 - Time 2025-05-07T15:25:59
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 190 - Steps this episode 99419 - Epsilon 1 - Learning Rate 0.0001904171290333982 - Cummulative Reward 21561.515 - Max Length 0 - Mean Loss 3.029 - Mean Q Value 5407.274 - Time Delta 7.921 - Time 2025-05-07T15:26:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 191 - Steps this episode 100125 - Epsilon 1 - Learning Rate 0.0001903625829127765 - Cummulative Reward 21257.52 - Max Length 3 - Mean Loss 3.028 - Mean Q Value 5412.681 - Time Delta 11.95 - Time 2025-05-07T15:26:19
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 192 - Steps this episode 101035 - Epsilon 1 - Learning Rate 0.00019028564497741945 - Cummulative Reward 21655.035 - Max Length 0 - Mean Loss 3.028 - Mean Q Value 5417.361 - Time Delta 15.426 - Time 2025-05-07T15:26:35
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 193 - Steps this episode 101507 - Epsilon 1 - Learning Rate 0.00019022000650608084 - Cummulative Reward 21931.48 - Max Length 0 - Mean Loss 3.027 - Mean Q Value 5421.931 - Time Delta 9.005 - Time 2025-05-07T15:26:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 194 - Steps this episode 101905 - Epsilon 1 - Learning Rate 0.00019017863799852282 - Cummulative Reward 22376.195 - Max Length 0 - Mean Loss 3.027 - Mean Q Value 5425.402 - Time Delta 7.183 - Time 2025-05-07T15:26:51
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 195 - Steps this episode 102550 - Epsilon 1 - Learning Rate 0.00019012900832244723 - Cummulative Reward 22400.095 - Max Length 0 - Mean Loss 3.026 - Mean Q Value 5428.834 - Time Delta 10.96 - Time 2025-05-07T15:27:02
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 196 - Steps this episode 102933 - Epsilon 1 - Learning Rate 0.00019008010335721303 - Cummulative Reward 22404.855 - Max Length 0 - Mean Loss 3.026 - Mean Q Value 5432.293 - Time Delta 7.279 - Time 2025-05-07T15:27:09
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 197 - Steps this episode 103473 - Epsilon 1 - Learning Rate 0.00019003620017679545 - Cummulative Reward 22414.115 - Max Length 0 - Mean Loss 3.026 - Mean Q Value 5434.704 - Time Delta 9.328 - Time 2025-05-07T15:27:19
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 198 - Steps this episode 103936 - Epsilon 1 - Learning Rate 0.00018998860188019443 - Cummulative Reward 22466.19 - Max Length 3 - Mean Loss 3.025 - Mean Q Value 5438.334 - Time Delta 8.384 - Time 2025-05-07T15:27:27
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 199 - Steps this episode 104365 - Epsilon 1 - Learning Rate 0.0001899462865422517 - Cummulative Reward 22398.335 - Max Length 2 - Mean Loss 3.025 - Mean Q Value 5441.953 - Time Delta 7.735 - Time 2025-05-07T15:27:35
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 200 - Steps this episode 104936 - Epsilon 1 - Learning Rate 0.0001898988536237157 - Cummulative Reward 22378.31 - Max Length 0 - Mean Loss 3.025 - Mean Q Value 5444.924 - Time Delta 9.879 - Time 2025-05-07T15:27:45
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 201 - Steps this episode 105542 - Epsilon 1 - Learning Rate 0.0001898430316088555 - Cummulative Reward 22385.095 - Max Length 0 - Mean Loss 3.024 - Mean Q Value 5449.193 - Time Delta 10.682 - Time 2025-05-07T15:27:55
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 202 - Steps this episode 105931 - Epsilon 1 - Learning Rate 0.00018979576611794833 - Cummulative Reward 22658.46 - Max Length 0 - Mean Loss 3.024 - Mean Q Value 5451.535 - Time Delta 7.398 - Time 2025-05-07T15:28:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 203 - Steps this episode 106328 - Epsilon 1 - Learning Rate 0.00018975847489524338 - Cummulative Reward 22281.075 - Max Length 4 - Mean Loss 3.023 - Mean Q Value 5453.91 - Time Delta 7.167 - Time 2025-05-07T15:28:10
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 204 - Steps this episode 106912 - Epsilon 1 - Learning Rate 0.00018971194266706836 - Cummulative Reward 22628.82 - Max Length 0 - Mean Loss 3.023 - Mean Q Value 5456.807 - Time Delta 10.138 - Time 2025-05-07T15:28:20
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 205 - Steps this episode 107424 - Epsilon 1 - Learning Rate 0.00018965987369034239 - Cummulative Reward 22423.275 - Max Length 1 - Mean Loss 3.023 - Mean Q Value 5460.877 - Time Delta 9.277 - Time 2025-05-07T15:28:29
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 206 - Steps this episode 108062 - Epsilon 1 - Learning Rate 0.0001896054019538181 - Cummulative Reward 22060.715 - Max Length 4 - Mean Loss 3.023 - Mean Q Value 5465.296 - Time Delta 11.666 - Time 2025-05-07T15:28:41
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 207 - Steps this episode 108578 - Epsilon 1 - Learning Rate 0.00018955080314671973 - Cummulative Reward 21848.225 - Max Length 1 - Mean Loss 3.022 - Mean Q Value 5469.156 - Time Delta 9.744 - Time 2025-05-07T15:28:51
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 208 - Steps this episode 109001 - Epsilon 1 - Learning Rate 0.00018950631111236315 - Cummulative Reward 21845.19 - Max Length 0 - Mean Loss 3.022 - Mean Q Value 5473.525 - Time Delta 7.707 - Time 2025-05-07T15:28:58
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 209 - Steps this episode 109678 - Epsilon 1 - Learning Rate 0.00018945415719326815 - Cummulative Reward 22067.08 - Max Length 0 - Mean Loss 3.021 - Mean Q Value 5479.925 - Time Delta 11.604 - Time 2025-05-07T15:29:10
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 210 - Steps this episode 110237 - Epsilon 1 - Learning Rate 0.00018939562456589138 - Cummulative Reward 22065.585 - Max Length 0 - Mean Loss 3.021 - Mean Q Value 5486.847 - Time Delta 10.194 - Time 2025-05-07T15:29:20
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 211 - Steps this episode 110982 - Epsilon 1 - Learning Rate 0.00018933384476194065 - Cummulative Reward 22061.945 - Max Length 0 - Mean Loss 3.02 - Mean Q Value 5492.217 - Time Delta 12.981 - Time 2025-05-07T15:29:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 212 - Steps this episode 111428 - Epsilon 1 - Learning Rate 0.00018927747824775136 - Cummulative Reward 22500.135 - Max Length 0 - Mean Loss 3.019 - Mean Q Value 5496.351 - Time Delta 8.477 - Time 2025-05-07T15:29:42
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 213 - Steps this episode 112060 - Epsilon 1 - Learning Rate 0.00018922652251002051 - Cummulative Reward 22519.275 - Max Length 0 - Mean Loss 3.018 - Mean Q Value 5499.642 - Time Delta 10.975 - Time 2025-05-07T15:29:53
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 214 - Steps this episode 112722 - Epsilon 1 - Learning Rate 0.00018916522307842182 - Cummulative Reward 22253.77 - Max Length 2 - Mean Loss 3.018 - Mean Q Value 5503.608 - Time Delta 11.808 - Time 2025-05-07T15:30:04
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 215 - Steps this episode 113192 - Epsilon 1 - Learning Rate 0.00018911174369797454 - Cummulative Reward 22263.24 - Max Length 0 - Mean Loss 3.017 - Mean Q Value 5507.105 - Time Delta 8.737 - Time 2025-05-07T15:30:13
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 216 - Steps this episode 113543 - Epsilon 1 - Learning Rate 0.00018907302681444733 - Cummulative Reward 22205.015 - Max Length 2 - Mean Loss 3.016 - Mean Q Value 5512.168 - Time Delta 6.6 - Time 2025-05-07T15:30:20
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 217 - Steps this episode 114080 - Epsilon 1 - Learning Rate 0.0001890310575550424 - Cummulative Reward 22547.58 - Max Length 0 - Mean Loss 3.015 - Mean Q Value 5516.451 - Time Delta 9.426 - Time 2025-05-07T15:30:29
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 218 - Steps this episode 114744 - Epsilon 1 - Learning Rate 0.00018897421527546654 - Cummulative Reward 22935.64 - Max Length 0 - Mean Loss 3.015 - Mean Q Value 5519.005 - Time Delta 11.785 - Time 2025-05-07T15:30:41
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 219 - Steps this episode 115330 - Epsilon 1 - Learning Rate 0.00018891512258698378 - Cummulative Reward 22827.575 - Max Length 4 - Mean Loss 3.014 - Mean Q Value 5522.058 - Time Delta 10.678 - Time 2025-05-07T15:30:52
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 220 - Steps this episode 115842 - Epsilon 1 - Learning Rate 0.0001888632723081723 - Cummulative Reward 23224.415 - Max Length 0 - Mean Loss 3.014 - Mean Q Value 5522.859 - Time Delta 9.424 - Time 2025-05-07T15:31:01
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 221 - Steps this episode 116309 - Epsilon 1 - Learning Rate 0.00018881710075582402 - Cummulative Reward 22937.665 - Max Length 2 - Mean Loss 3.013 - Mean Q Value 5524.19 - Time Delta 8.547 - Time 2025-05-07T15:31:10
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 222 - Steps this episode 116700 - Epsilon 1 - Learning Rate 0.00018877660367931515 - Cummulative Reward 23172.67 - Max Length 0 - Mean Loss 3.013 - Mean Q Value 5526.182 - Time Delta 7.4 - Time 2025-05-07T15:31:17
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 223 - Steps this episode 117447 - Epsilon 1 - Learning Rate 0.00018872281076623358 - Cummulative Reward 23350.85 - Max Length 1 - Mean Loss 3.013 - Mean Q Value 5527.982 - Time Delta 12.938 - Time 2025-05-07T15:31:30
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 224 - Steps this episode 117953 - Epsilon 1 - Learning Rate 0.00018866379629425983 - Cummulative Reward 23354.245 - Max Length 0 - Mean Loss 3.013 - Mean Q Value 5530.097 - Time Delta 10.069 - Time 2025-05-07T15:31:40
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 225 - Steps this episode 118381 - Epsilon 1 - Learning Rate 0.00018861979542507252 - Cummulative Reward 23580.795 - Max Length 0 - Mean Loss 3.012 - Mean Q Value 5533.965 - Time Delta 8.299 - Time 2025-05-07T15:31:48
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 226 - Steps this episode 118894 - Epsilon 1 - Learning Rate 0.0001885753808154166 - Cummulative Reward 23383.995 - Max Length 1 - Mean Loss 3.012 - Mean Q Value 5537.944 - Time Delta 9.055 - Time 2025-05-07T15:31:57
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 227 - Steps this episode 119495 - Epsilon 1 - Learning Rate 0.00018852291716588262 - Cummulative Reward 23377.71 - Max Length 0 - Mean Loss 3.012 - Mean Q Value 5541.26 - Time Delta 10.726 - Time 2025-05-07T15:32:08
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 228 - Steps this episode 120138 - Epsilon 1 - Learning Rate 0.000188464248604686 - Cummulative Reward 23758.895 - Max Length 0 - Mean Loss 3.011 - Mean Q Value 5545.487 - Time Delta 11.574 - Time 2025-05-07T15:32:20
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 229 - Steps this episode 120573 - Epsilon 1 - Learning Rate 0.0001884133696431858 - Cummulative Reward 24085.49 - Max Length 0 - Mean Loss 3.01 - Mean Q Value 5549.825 - Time Delta 8.301 - Time 2025-05-07T15:32:28
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 230 - Steps this episode 121029 - Epsilon 1 - Learning Rate 0.0001883714052443022 - Cummulative Reward 24071.345 - Max Length 0 - Mean Loss 3.01 - Mean Q Value 5554.958 - Time Delta 8.412 - Time 2025-05-07T15:32:36
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 231 - Steps this episode 121530 - Epsilon 1 - Learning Rate 0.00018832634282709985 - Cummulative Reward 24343.32 - Max Length 0 - Mean Loss 3.009 - Mean Q Value 5559.254 - Time Delta 9.157 - Time 2025-05-07T15:32:45
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 232 - Steps this episode 122022 - Epsilon 1 - Learning Rate 0.00018827959656252398 - Cummulative Reward 24012.895 - Max Length 3 - Mean Loss 3.008 - Mean Q Value 5562.69 - Time Delta 9.013 - Time 2025-05-07T15:32:54
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 233 - Steps this episode 122492 - Epsilon 1 - Learning Rate 0.00018823441480230949 - Cummulative Reward 24028.595 - Max Length 0 - Mean Loss 3.008 - Mean Q Value 5564.577 - Time Delta 8.664 - Time 2025-05-07T15:33:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 234 - Steps this episode 122896 - Epsilon 1 - Learning Rate 0.00018819333698542166 - Cummulative Reward 24020.69 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5566.024 - Time Delta 7.627 - Time 2025-05-07T15:33:11
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 235 - Steps this episode 123503 - Epsilon 1 - Learning Rate 0.00018814577749272742 - Cummulative Reward 24235.185 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5567.324 - Time Delta 10.792 - Time 2025-05-07T15:33:22
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 236 - Steps this episode 124103 - Epsilon 1 - Learning Rate 0.0001880890600346826 - Cummulative Reward 24503.66 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5567.144 - Time Delta 11.733 - Time 2025-05-07T15:33:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 237 - Steps this episode 124544 - Epsilon 1 - Learning Rate 0.00018804011586498427 - Cummulative Reward 24783.15 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5567.417 - Time Delta 8.434 - Time 2025-05-07T15:33:42
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 238 - Steps this episode 124971 - Epsilon 1 - Learning Rate 0.00018799922153608578 - Cummulative Reward 24787.05 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5567.895 - Time Delta 7.981 - Time 2025-05-07T15:33:50
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 239 - Steps this episode 125305 - Epsilon 1 - Learning Rate 0.00018796341092535259 - Cummulative Reward 25073.815 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5568.071 - Time Delta 6.394 - Time 2025-05-07T15:33:56
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 240 - Steps this episode 125896 - Epsilon 1 - Learning Rate 0.00018791999682609664 - Cummulative Reward 25069.395 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5568.401 - Time Delta 10.552 - Time 2025-05-07T15:34:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 241 - Steps this episode 126468 - Epsilon 1 - Learning Rate 0.00018786531998087226 - Cummulative Reward 25450.61 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5569.464 - Time Delta 10.641 - Time 2025-05-07T15:34:17
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 242 - Steps this episode 126859 - Epsilon 1 - Learning Rate 0.00018782009647034135 - Cummulative Reward 25934.63 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5570.984 - Time Delta 7.528 - Time 2025-05-07T15:34:25
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 243 - Steps this episode 127557 - Epsilon 1 - Learning Rate 0.0001877689700288968 - Cummulative Reward 25940.445 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5572.807 - Time Delta 12.408 - Time 2025-05-07T15:34:37
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 244 - Steps this episode 128113 - Epsilon 1 - Learning Rate 0.00018771011328578896 - Cummulative Reward 25919.27 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5574.298 - Time Delta 10.553 - Time 2025-05-07T15:34:48
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 245 - Steps this episode 128979 - Epsilon 1 - Learning Rate 0.0001876433950177012 - Cummulative Reward 25914.45 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5576.793 - Time Delta 15.888 - Time 2025-05-07T15:35:04
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 246 - Steps this episode 129406 - Epsilon 1 - Learning Rate 0.0001875827479330202 - Cummulative Reward 26192.415 - Max Length 0 - Mean Loss 3.007 - Mean Q Value 5580.435 - Time Delta 8.663 - Time 2025-05-07T15:35:12
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 247 - Steps this episode 129939 - Epsilon 1 - Learning Rate 0.0001875377336442519 - Cummulative Reward 26669.78 - Max Length 0 - Mean Loss 3.006 - Mean Q Value 5584.64 - Time Delta 9.769 - Time 2025-05-07T15:35:22
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 248 - Steps this episode 130312 - Epsilon 1 - Learning Rate 0.00018749526083926442 - Cummulative Reward 26686.84 - Max Length 0 - Mean Loss 3.006 - Mean Q Value 5588.889 - Time Delta 7.249 - Time 2025-05-07T15:35:29
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 249 - Steps this episode 130617 - Epsilon 1 - Learning Rate 0.00018746348297458024 - Cummulative Reward 27093.015 - Max Length 0 - Mean Loss 3.005 - Mean Q Value 5593.894 - Time Delta 5.878 - Time 2025-05-07T15:35:35
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 250 - Steps this episode 131036 - Epsilon 1 - Learning Rate 0.00018742960214339423 - Cummulative Reward 26816.49 - Max Length 2 - Mean Loss 3.005 - Mean Q Value 5596.593 - Time Delta 7.669 - Time 2025-05-07T15:35:43
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 251 - Steps this episode 131447 - Epsilon 1 - Learning Rate 0.0001873908081922694 - Cummulative Reward 26809.42 - Max Length 0 - Mean Loss 3.005 - Mean Q Value 5598.934 - Time Delta 7.786 - Time 2025-05-07T15:35:51
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 252 - Steps this episode 131991 - Epsilon 1 - Learning Rate 0.00018734598052267 - Cummulative Reward 27085.57 - Max Length 0 - Mean Loss 3.004 - Mean Q Value 5600.328 - Time Delta 10.063 - Time 2025-05-07T15:36:01
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 253 - Steps this episode 132318 - Epsilon 1 - Learning Rate 0.0001873050963203439 - Cummulative Reward 27081.02 - Max Length 0 - Mean Loss 3.004 - Mean Q Value 5602.567 - Time Delta 6.593 - Time 2025-05-07T15:36:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 254 - Steps this episode 132960 - Epsilon 1 - Learning Rate 0.00018725972771769885 - Cummulative Reward 27087.365 - Max Length 0 - Mean Loss 3.004 - Mean Q Value 5604.548 - Time Delta 11.456 - Time 2025-05-07T15:36:19
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 255 - Steps this episode 133351 - Epsilon 1 - Learning Rate 0.00018721142039640842 - Cummulative Reward 27103.155 - Max Length 0 - Mean Loss 3.003 - Mean Q Value 5608.128 - Time Delta 7.746 - Time 2025-05-07T15:36:27
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 256 - Steps this episode 133711 - Epsilon 1 - Learning Rate 0.00018717632147551334 - Cummulative Reward 26704.585 - Max Length 4 - Mean Loss 3.003 - Mean Q Value 5612.773 - Time Delta 6.85 - Time 2025-05-07T15:36:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 257 - Steps this episode 134230 - Epsilon 1 - Learning Rate 0.00018713519423951445 - Cummulative Reward 26646.915 - Max Length 3 - Mean Loss 3.002 - Mean Q Value 5616.499 - Time Delta 9.499 - Time 2025-05-07T15:36:43
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 258 - Steps this episode 134630 - Epsilon 1 - Learning Rate 0.0001870922513933966 - Cummulative Reward 26306.64 - Max Length 3 - Mean Loss 3.002 - Mean Q Value 5620.721 - Time Delta 7.796 - Time 2025-05-07T15:36:51
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 259 - Steps this episode 135223 - Epsilon 1 - Learning Rate 0.00018704581184903024 - Cummulative Reward 26306.57 - Max Length 0 - Mean Loss 3.001 - Mean Q Value 5625.037 - Time Delta 10.841 - Time 2025-05-07T15:37:02
+Episode 260 - Steps this episode 135551 - Epsilon 1 - Learning Rate 0.00018700274899728737 - Cummulative Reward 25824.875 - Max Length 6 - Mean Loss 3.001 - Mean Q Value 5629.356 - Time Delta 6.658 - Time 2025-05-07T15:37:08
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 261 - Steps this episode 135938 - Epsilon 1 - Learning Rate 0.0001869693720439833 - Cummulative Reward 26035.61 - Max Length 1 - Mean Loss 3.0 - Mean Q Value 5633.481 - Time Delta 7.263 - Time 2025-05-07T15:37:15
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 262 - Steps this episode 136445 - Epsilon 1 - Learning Rate 0.00018692758923631247 - Cummulative Reward 26504.02 - Max Length 0 - Mean Loss 3.0 - Mean Q Value 5637.311 - Time Delta 9.349 - Time 2025-05-07T15:37:25
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 263 - Steps this episode 136796 - Epsilon 1 - Learning Rate 0.00018688749727777286 - Cummulative Reward 26848.66 - Max Length 0 - Mean Loss 2.999 - Mean Q Value 5640.035 - Time Delta 6.942 - Time 2025-05-07T15:37:32
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 264 - Steps this episode 137112 - Epsilon 1 - Learning Rate 0.00018685624289115893 - Cummulative Reward 26847.225 - Max Length 0 - Mean Loss 2.999 - Mean Q Value 5641.421 - Time Delta 6.144 - Time 2025-05-07T15:37:38
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 265 - Steps this episode 137744 - Epsilon 1 - Learning Rate 0.00018681196375130622 - Cummulative Reward 27121.245 - Max Length 0 - Mean Loss 2.999 - Mean Q Value 5641.932 - Time Delta 11.401 - Time 2025-05-07T15:37:49
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 266 - Steps this episode 138234 - Epsilon 1 - Learning Rate 0.0001867595700034834 - Cummulative Reward 27385.53 - Max Length 0 - Mean Loss 2.999 - Mean Q Value 5643.78 - Time Delta 9.59 - Time 2025-05-07T15:37:59
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 267 - Steps this episode 138831 - Epsilon 1 - Learning Rate 0.00018670873181550216 - Cummulative Reward 27389.66 - Max Length 0 - Mean Loss 2.998 - Mean Q Value 5646.519 - Time Delta 11.535 - Time 2025-05-07T15:38:10
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 268 - Steps this episode 139367 - Epsilon 1 - Learning Rate 0.0001866559472062099 - Cummulative Reward 27595.12 - Max Length 0 - Mean Loss 2.998 - Mean Q Value 5649.349 - Time Delta 10.158 - Time 2025-05-07T15:38:21
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 269 - Steps this episode 140013 - Epsilon 1 - Learning Rate 0.00018660079874299268 - Cummulative Reward 27596.32 - Max Length 0 - Mean Loss 2.998 - Mean Q Value 5652.08 - Time Delta 11.954 - Time 2025-05-07T15:38:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 270 - Steps this episode 140600 - Epsilon 1 - Learning Rate 0.00018654328771702347 - Cummulative Reward 27748.535 - Max Length 2 - Mean Loss 2.997 - Mean Q Value 5656.609 - Time Delta 11.206 - Time 2025-05-07T15:38:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 271 - Steps this episode 141086 - Epsilon 1 - Learning Rate 0.0001864933471943642 - Cummulative Reward 28202.35 - Max Length 0 - Mean Loss 2.996 - Mean Q Value 5662.594 - Time Delta 9.44 - Time 2025-05-07T15:38:53
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 272 - Steps this episode 141790 - Epsilon 1 - Learning Rate 0.00018643782753111938 - Cummulative Reward 28183.46 - Max Length 0 - Mean Loss 2.995 - Mean Q Value 5668.48 - Time Delta 13.216 - Time 2025-05-07T15:39:06
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 273 - Steps this episode 142441 - Epsilon 1 - Learning Rate 0.000186374635629644 - Cummulative Reward 28465.24 - Max Length 0 - Mean Loss 2.994 - Mean Q Value 5673.77 - Time Delta 12.347 - Time 2025-05-07T15:39:19
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 274 - Steps this episode 142988 - Epsilon 1 - Learning Rate 0.00018631887107832724 - Cummulative Reward 28780.715 - Max Length 0 - Mean Loss 2.993 - Mean Q Value 5679.064 - Time Delta 10.459 - Time 2025-05-07T15:39:29
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 275 - Steps this episode 143347 - Epsilon 1 - Learning Rate 0.0001862766742743265 - Cummulative Reward 29000.955 - Max Length 0 - Mean Loss 2.992 - Mean Q Value 5683.773 - Time Delta 7.245 - Time 2025-05-07T15:39:36
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 276 - Steps this episode 143909 - Epsilon 1 - Learning Rate 0.00018623378933439407 - Cummulative Reward 28999.505 - Max Length 0 - Mean Loss 2.992 - Mean Q Value 5688.219 - Time Delta 10.374 - Time 2025-05-07T15:39:47
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 277 - Steps this episode 144270 - Epsilon 1 - Learning Rate 0.00018619077391039506 - Cummulative Reward 29202.21 - Max Length 0 - Mean Loss 2.991 - Mean Q Value 5693.428 - Time Delta 7.336 - Time 2025-05-07T15:39:54
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 278 - Steps this episode 144560 - Epsilon 1 - Learning Rate 0.000186160473710274 - Cummulative Reward 29197.315 - Max Length 0 - Mean Loss 2.99 - Mean Q Value 5697.848 - Time Delta 5.727 - Time 2025-05-07T15:40:00
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 279 - Steps this episode 145233 - Epsilon 1 - Learning Rate 0.00018611566165969255 - Cummulative Reward 29521.795 - Max Length 0 - Mean Loss 2.989 - Mean Q Value 5702.465 - Time Delta 12.114 - Time 2025-05-07T15:40:12
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 280 - Steps this episode 145652 - Epsilon 1 - Learning Rate 0.00018606485843478452 - Cummulative Reward 29527.315 - Max Length 0 - Mean Loss 2.988 - Mean Q Value 5707.853 - Time Delta 8.513 - Time 2025-05-07T15:40:20
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 281 - Steps this episode 146008 - Epsilon 1 - Learning Rate 0.00018602885825080745 - Cummulative Reward 29755.435 - Max Length 0 - Mean Loss 2.987 - Mean Q Value 5711.42 - Time Delta 6.914 - Time 2025-05-07T15:40:27
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 282 - Steps this episode 146377 - Epsilon 1 - Learning Rate 0.00018599509706851498 - Cummulative Reward 29752.855 - Max Length 0 - Mean Loss 2.987 - Mean Q Value 5712.403 - Time Delta 7.082 - Time 2025-05-07T15:40:34
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 283 - Steps this episode 146847 - Epsilon 1 - Learning Rate 0.00018595604233571358 - Cummulative Reward 29525.69 - Max Length 1 - Mean Loss 2.987 - Mean Q Value 5712.696 - Time Delta 8.817 - Time 2025-05-07T15:40:43
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 284 - Steps this episode 147416 - Epsilon 1 - Learning Rate 0.00018590779316013986 - Cummulative Reward 29512.955 - Max Length 0 - Mean Loss 2.987 - Mean Q Value 5713.282 - Time Delta 10.622 - Time 2025-05-07T15:40:54
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 285 - Steps this episode 147959 - Epsilon 1 - Learning Rate 0.0001858562108146508 - Cummulative Reward 29506.705 - Max Length 0 - Mean Loss 2.986 - Mean Q Value 5714.991 - Time Delta 10.429 - Time 2025-05-07T15:41:04
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 286 - Steps this episode 148386 - Epsilon 1 - Learning Rate 0.00018581105299395363 - Cummulative Reward 29497.695 - Max Length 0 - Mean Loss 2.986 - Mean Q Value 5718.172 - Time Delta 8.36 - Time 2025-05-07T15:41:13
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 287 - Steps this episode 148865 - Epsilon 1 - Learning Rate 0.0001857689716089494 - Cummulative Reward 29497.45 - Max Length 0 - Mean Loss 2.986 - Mean Q Value 5721.273 - Time Delta 9.06 - Time 2025-05-07T15:41:22
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 288 - Steps this episode 149414 - Epsilon 1 - Learning Rate 0.00018572132808547358 - Cummulative Reward 29489.365 - Max Length 0 - Mean Loss 2.985 - Mean Q Value 5724.357 - Time Delta 10.898 - Time 2025-05-07T15:41:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 289 - Steps this episode 150012 - Epsilon 1 - Learning Rate 0.00018566798736875236 - Cummulative Reward 29705.715 - Max Length 0 - Mean Loss 2.985 - Mean Q Value 5726.736 - Time Delta 11.516 - Time 2025-05-07T15:41:44
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 290 - Steps this episode 150288 - Epsilon 1 - Learning Rate 0.00018562732995230772 - Cummulative Reward 29279.49 - Max Length 5 - Mean Loss 2.985 - Mean Q Value 5728.657 - Time Delta 5.928 - Time 2025-05-07T15:41:50
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 291 - Steps this episode 150687 - Epsilon 1 - Learning Rate 0.00018559600812026632 - Cummulative Reward 29605.675 - Max Length 0 - Mean Loss 2.985 - Mean Q Value 5730.738 - Time Delta 7.524 - Time 2025-05-07T15:41:58
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 292 - Steps this episode 151072 - Epsilon 1 - Learning Rate 0.00018555968120734025 - Cummulative Reward 29601.06 - Max Length 0 - Mean Loss 2.984 - Mean Q Value 5734.335 - Time Delta 7.459 - Time 2025-05-07T15:42:05
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 293 - Steps this episode 151598 - Epsilon 1 - Learning Rate 0.00018551751777687645 - Cummulative Reward 29612.745 - Max Length 0 - Mean Loss 2.983 - Mean Q Value 5739.544 - Time Delta 9.821 - Time 2025-05-07T15:42:15
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 294 - Steps this episode 151948 - Epsilon 1 - Learning Rate 0.0001854768935640058 - Cummulative Reward 29610.0 - Max Length 0 - Mean Loss 2.983 - Mean Q Value 5744.84 - Time Delta 7.557 - Time 2025-05-07T15:42:22
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 295 - Steps this episode 152574 - Epsilon 1 - Learning Rate 0.00018543155049438983 - Cummulative Reward 29604.165 - Max Length 0 - Mean Loss 2.982 - Mean Q Value 5750.356 - Time Delta 11.677 - Time 2025-05-07T15:42:34
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 296 - Steps this episode 152950 - Epsilon 1 - Learning Rate 0.00018538510518600462 - Cummulative Reward 29604.695 - Max Length 0 - Mean Loss 2.981 - Mean Q Value 5754.853 - Time Delta 7.935 - Time 2025-05-07T15:42:42
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 297 - Steps this episode 153381 - Epsilon 1 - Learning Rate 0.00018534770757441582 - Cummulative Reward 29589.415 - Max Length 0 - Mean Loss 2.98 - Mean Q Value 5759.506 - Time Delta 8.345 - Time 2025-05-07T15:42:50
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 298 - Steps this episode 153758 - Epsilon 1 - Learning Rate 0.00018531031732943635 - Cummulative Reward 29934.85 - Max Length 0 - Mean Loss 2.979 - Mean Q Value 5762.563 - Time Delta 7.496 - Time 2025-05-07T15:42:58
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 299 - Steps this episode 154251 - Epsilon 1 - Learning Rate 0.0001852700168895271 - Cummulative Reward 29873.69 - Max Length 3 - Mean Loss 2.979 - Mean Q Value 5766.16 - Time Delta 9.436 - Time 2025-05-07T15:43:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 300 - Steps this episode 154766 - Epsilon 1 - Learning Rate 0.00018522333472747085 - Cummulative Reward 29607.445 - Max Length 2 - Mean Loss 2.978 - Mean Q Value 5770.823 - Time Delta 10.445 - Time 2025-05-07T15:43:18
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 301 - Steps this episode 155315 - Epsilon 1 - Learning Rate 0.00018517416449661587 - Cummulative Reward 29604.915 - Max Length 0 - Mean Loss 2.977 - Mean Q Value 5775.159 - Time Delta 10.624 - Time 2025-05-07T15:43:28
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 302 - Steps this episode 155850 - Epsilon 1 - Learning Rate 0.00018512389647231363 - Cummulative Reward 29609.575 - Max Length 0 - Mean Loss 2.977 - Mean Q Value 5779.214 - Time Delta 10.528 - Time 2025-05-07T15:43:39
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 303 - Steps this episode 156353 - Epsilon 1 - Learning Rate 0.00018507586294572357 - Cummulative Reward 29987.98 - Max Length 0 - Mean Loss 2.976 - Mean Q Value 5782.9 - Time Delta 9.78 - Time 2025-05-07T15:43:49
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 304 - Steps this episode 156729 - Epsilon 1 - Learning Rate 0.0001850351967542901 - Cummulative Reward 29997.575 - Max Length 0 - Mean Loss 2.975 - Mean Q Value 5788.328 - Time Delta 7.582 - Time 2025-05-07T15:43:56
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 305 - Steps this episode 157331 - Epsilon 1 - Learning Rate 0.00018498996156341436 - Cummulative Reward 30219.035 - Max Length 0 - Mean Loss 2.974 - Mean Q Value 5793.607 - Time Delta 11.247 - Time 2025-05-07T15:44:08
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 306 - Steps this episode 157642 - Epsilon 1 - Learning Rate 0.00018494778812242786 - Cummulative Reward 30602.615 - Max Length 0 - Mean Loss 2.974 - Mean Q Value 5797.575 - Time Delta 6.654 - Time 2025-05-07T15:44:14
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 307 - Steps this episode 158229 - Epsilon 1 - Learning Rate 0.00018490617999848295 - Cummulative Reward 30438.83 - Max Length 4 - Mean Loss 2.973 - Mean Q Value 5802.138 - Time Delta 10.998 - Time 2025-05-07T15:44:25
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 308 - Steps this episode 158797 - Epsilon 1 - Learning Rate 0.00018485279595995121 - Cummulative Reward 30162.425 - Max Length 2 - Mean Loss 2.972 - Mean Q Value 5805.45 - Time Delta 11.14 - Time 2025-05-07T15:44:36
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 309 - Steps this episode 159192 - Epsilon 1 - Learning Rate 0.00018480829765560062 - Cummulative Reward 30164.66 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5807.669 - Time Delta 8.078 - Time 2025-05-07T15:44:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 310 - Steps this episode 159589 - Epsilon 1 - Learning Rate 0.0001847717092075996 - Cummulative Reward 30167.835 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5809.097 - Time Delta 7.801 - Time 2025-05-07T15:44:52
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 311 - Steps this episode 160126 - Epsilon 1 - Learning Rate 0.00018472861645316697 - Cummulative Reward 30157.755 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5810.082 - Time Delta 10.27 - Time 2025-05-07T15:45:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 312 - Steps this episode 160882 - Epsilon 1 - Learning Rate 0.0001846689130779975 - Cummulative Reward 30166.685 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5810.904 - Time Delta 14.205 - Time 2025-05-07T15:45:17
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 313 - Steps this episode 161461 - Epsilon 1 - Learning Rate 0.00018460728961155885 - Cummulative Reward 30166.565 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5810.958 - Time Delta 12.048 - Time 2025-05-07T15:45:29
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 314 - Steps this episode 162061 - Epsilon 1 - Learning Rate 0.0001845528846380739 - Cummulative Reward 30451.86 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5810.622 - Time Delta 11.674 - Time 2025-05-07T15:45:40
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 315 - Steps this episode 162773 - Epsilon 1 - Learning Rate 0.0001844924075757042 - Cummulative Reward 30446.835 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5811.25 - Time Delta 13.573 - Time 2025-05-07T15:45:54
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 316 - Steps this episode 163295 - Epsilon 1 - Learning Rate 0.000184435546064873 - Cummulative Reward 30716.715 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5811.745 - Time Delta 10.576 - Time 2025-05-07T15:46:05
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 317 - Steps this episode 163599 - Epsilon 1 - Learning Rate 0.000184397371485844 - Cummulative Reward 30718.045 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5812.857 - Time Delta 6.55 - Time 2025-05-07T15:46:11
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 318 - Steps this episode 164044 - Epsilon 1 - Learning Rate 0.00018436280039268855 - Cummulative Reward 30726.28 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5814.05 - Time Delta 8.543 - Time 2025-05-07T15:46:20
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 319 - Steps this episode 164763 - Epsilon 1 - Learning Rate 0.00018430915919959672 - Cummulative Reward 31107.94 - Max Length 0 - Mean Loss 2.972 - Mean Q Value 5815.45 - Time Delta 13.547 - Time 2025-05-07T15:46:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 320 - Steps this episode 165135 - Epsilon 1 - Learning Rate 0.0001842588488995826 - Cummulative Reward 31097.685 - Max Length 0 - Mean Loss 2.971 - Mean Q Value 5818.315 - Time Delta 7.87 - Time 2025-05-07T15:46:41
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 321 - Steps this episode 165530 - Epsilon 1 - Learning Rate 0.00018422361276869794 - Cummulative Reward 31381.555 - Max Length 0 - Mean Loss 2.971 - Mean Q Value 5822.168 - Time Delta 7.68 - Time 2025-05-07T15:46:49
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 322 - Steps this episode 165852 - Epsilon 1 - Learning Rate 0.00018419059352585304 - Cummulative Reward 30929.595 - Max Length 5 - Mean Loss 2.97 - Mean Q Value 5826.375 - Time Delta 6.5 - Time 2025-05-07T15:46:55
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 323 - Steps this episode 166588 - Epsilon 1 - Learning Rate 0.00018414183631915103 - Cummulative Reward 30931.075 - Max Length 1 - Mean Loss 2.969 - Mean Q Value 5829.963 - Time Delta 13.612 - Time 2025-05-07T15:47:09
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 324 - Steps this episode 167006 - Epsilon 1 - Learning Rate 0.00018408881036404158 - Cummulative Reward 30928.17 - Max Length 0 - Mean Loss 2.969 - Mean Q Value 5833.661 - Time Delta 8.74 - Time 2025-05-07T15:47:18
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 325 - Steps this episode 167460 - Epsilon 1 - Learning Rate 0.00018404863740036553 - Cummulative Reward 30584.55 - Max Length 3 - Mean Loss 2.969 - Mean Q Value 5835.705 - Time Delta 8.897 - Time 2025-05-07T15:47:27
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 326 - Steps this episode 167960 - Epsilon 1 - Learning Rate 0.00018400474707836524 - Cummulative Reward 30567.635 - Max Length 1 - Mean Loss 2.969 - Mean Q Value 5836.828 - Time Delta 9.79 - Time 2025-05-07T15:47:36
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 327 - Steps this episode 168540 - Epsilon 1 - Learning Rate 0.0001839550726396108 - Cummulative Reward 30570.655 - Max Length 0 - Mean Loss 2.968 - Mean Q Value 5838.808 - Time Delta 11.241 - Time 2025-05-07T15:47:48
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 328 - Steps this episode 169165 - Epsilon 1 - Learning Rate 0.0001838996186007811 - Cummulative Reward 30578.425 - Max Length 0 - Mean Loss 2.968 - Mean Q Value 5840.099 - Time Delta 12.137 - Time 2025-05-07T15:48:00
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 329 - Steps this episode 169589 - Epsilon 1 - Learning Rate 0.000183851488735702 - Cummulative Reward 30186.465 - Max Length 4 - Mean Loss 2.968 - Mean Q Value 5841.279 - Time Delta 8.68 - Time 2025-05-07T15:48:08
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 330 - Steps this episode 170096 - Epsilon 1 - Learning Rate 0.00018380874835087014 - Cummulative Reward 30194.69 - Max Length 0 - Mean Loss 2.968 - Mean Q Value 5841.261 - Time Delta 9.847 - Time 2025-05-07T15:48:18
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 331 - Steps this episode 170591 - Epsilon 1 - Learning Rate 0.00018376270996840884 - Cummulative Reward 30199.15 - Max Length 0 - Mean Loss 2.968 - Mean Q Value 5840.774 - Time Delta 9.791 - Time 2025-05-07T15:48:28
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 332 - Steps this episode 171059 - Epsilon 1 - Learning Rate 0.00018371847433812025 - Cummulative Reward 30545.38 - Max Length 0 - Mean Loss 2.968 - Mean Q Value 5840.488 - Time Delta 9.313 - Time 2025-05-07T15:48:37
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 333 - Steps this episode 171395 - Epsilon 1 - Learning Rate 0.00018368155040498476 - Cummulative Reward 30533.695 - Max Length 0 - Mean Loss 2.968 - Mean Q Value 5840.788 - Time Delta 6.888 - Time 2025-05-07T15:48:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 334 - Steps this episode 171735 - Epsilon 1 - Learning Rate 0.0001836504190050864 - Cummulative Reward 30557.695 - Max Length 0 - Mean Loss 2.969 - Mean Q Value 5840.893 - Time Delta 6.77 - Time 2025-05-07T15:48:51
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 335 - Steps this episode 172235 - Epsilon 1 - Learning Rate 0.0001836118566880157 - Cummulative Reward 30556.005 - Max Length 0 - Mean Loss 2.969 - Mean Q Value 5840.501 - Time Delta 9.655 - Time 2025-05-07T15:49:01
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 336 - Steps this episode 172794 - Epsilon 1 - Learning Rate 0.00018356325197442492 - Cummulative Reward 30569.685 - Max Length 0 - Mean Loss 2.969 - Mean Q Value 5841.612 - Time Delta 10.906 - Time 2025-05-07T15:49:12
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 337 - Steps this episode 173201 - Epsilon 1 - Learning Rate 0.00018351892648023433 - Cummulative Reward 30568.025 - Max Length 0 - Mean Loss 2.969 - Mean Q Value 5843.818 - Time Delta 8.836 - Time 2025-05-07T15:49:20
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 338 - Steps this episode 173728 - Epsilon 1 - Learning Rate 0.00018347612586970226 - Cummulative Reward 30296.995 - Max Length 2 - Mean Loss 2.968 - Mean Q Value 5846.221 - Time Delta 10.709 - Time 2025-05-07T15:49:31
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 339 - Steps this episode 174106 - Epsilon 1 - Learning Rate 0.00018343457294237107 - Cummulative Reward 30295.88 - Max Length 0 - Mean Loss 2.968 - Mean Q Value 5848.653 - Time Delta 7.792 - Time 2025-05-07T15:49:39
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 340 - Steps this episode 174503 - Epsilon 1 - Learning Rate 0.00018339908178638693 - Cummulative Reward 30295.855 - Max Length 0 - Mean Loss 2.968 - Mean Q Value 5850.724 - Time Delta 7.903 - Time 2025-05-07T15:49:47
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 341 - Steps this episode 175077 - Epsilon 1 - Learning Rate 0.00018335452152458845 - Cummulative Reward 30086.17 - Max Length 1 - Mean Loss 2.967 - Mean Q Value 5852.297 - Time Delta 11.094 - Time 2025-05-07T15:49:58
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 342 - Steps this episode 175555 - Epsilon 1 - Learning Rate 0.0001833062595642805 - Cummulative Reward 29806.575 - Max Length 2 - Mean Loss 2.967 - Mean Q Value 5853.517 - Time Delta 9.66 - Time 2025-05-07T15:50:08
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 343 - Steps this episode 175979 - Epsilon 1 - Learning Rate 0.00018326502017176657 - Cummulative Reward 29799.81 - Max Length 0 - Mean Loss 2.967 - Mean Q Value 5854.813 - Time Delta 8.568 - Time 2025-05-07T15:50:16
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 344 - Steps this episode 176535 - Epsilon 1 - Learning Rate 0.0001832200801556486 - Cummulative Reward 29818.365 - Max Length 0 - Mean Loss 2.966 - Mean Q Value 5858.281 - Time Delta 10.861 - Time 2025-05-07T15:50:27
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 345 - Steps this episode 176837 - Epsilon 1 - Learning Rate 0.00018318078321129328 - Cummulative Reward 29372.25 - Max Length 5 - Mean Loss 2.966 - Mean Q Value 5861.739 - Time Delta 6.551 - Time 2025-05-07T15:50:34
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 346 - Steps this episode 177195 - Epsilon 1 - Learning Rate 0.00018315056092835976 - Cummulative Reward 29373.215 - Max Length 0 - Mean Loss 2.965 - Mean Q Value 5865.37 - Time Delta 7.171 - Time 2025-05-07T15:50:41
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 347 - Steps this episode 177529 - Epsilon 1 - Learning Rate 0.00018311883278271905 - Cummulative Reward 29385.545 - Max Length 0 - Mean Loss 2.965 - Mean Q Value 5868.861 - Time Delta 6.781 - Time 2025-05-07T15:50:47
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 348 - Steps this episode 178123 - Epsilon 1 - Learning Rate 0.00018307640033990463 - Cummulative Reward 29156.075 - Max Length 1 - Mean Loss 2.964 - Mean Q Value 5872.584 - Time Delta 11.39 - Time 2025-05-07T15:50:59
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 349 - Steps this episode 178742 - Epsilon 1 - Learning Rate 0.00018302093660764771 - Cummulative Reward 29155.675 - Max Length 0 - Mean Loss 2.963 - Mean Q Value 5876.892 - Time Delta 12.262 - Time 2025-05-07T15:51:11
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 350 - Steps this episode 179211 - Epsilon 1 - Learning Rate 0.00018297111559733184 - Cummulative Reward 29439.88 - Max Length 0 - Mean Loss 2.962 - Mean Q Value 5882.518 - Time Delta 9.593 - Time 2025-05-07T15:51:21
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 351 - Steps this episode 179643 - Epsilon 1 - Learning Rate 0.00018292981443194026 - Cummulative Reward 29098.37 - Max Length 3 - Mean Loss 2.961 - Mean Q Value 5887.906 - Time Delta 8.745 - Time 2025-05-07T15:51:29
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 352 - Steps this episode 180242 - Epsilon 1 - Learning Rate 0.00018288276207774432 - Cummulative Reward 29109.535 - Max Length 0 - Mean Loss 2.96 - Mean Q Value 5892.795 - Time Delta 11.718 - Time 2025-05-07T15:51:41
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 353 - Steps this episode 180652 - Epsilon 1 - Learning Rate 0.00018283668103647 - Cummulative Reward 29104.055 - Max Length 0 - Mean Loss 2.959 - Mean Q Value 5896.188 - Time Delta 8.568 - Time 2025-05-07T15:51:50
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 354 - Steps this episode 181019 - Epsilon 1 - Learning Rate 0.000182801168367238 - Cummulative Reward 29103.51 - Max Length 0 - Mean Loss 2.959 - Mean Q Value 5899.703 - Time Delta 7.476 - Time 2025-05-07T15:51:57
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 355 - Steps this episode 181636 - Epsilon 1 - Learning Rate 0.00018275620524890572 - Cummulative Reward 29107.715 - Max Length 0 - Mean Loss 2.958 - Mean Q Value 5901.767 - Time Delta 11.912 - Time 2025-05-07T15:52:09
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 356 - Steps this episode 182183 - Epsilon 1 - Learning Rate 0.0001827030307310424 - Cummulative Reward 29496.54 - Max Length 0 - Mean Loss 2.958 - Mean Q Value 5903.721 - Time Delta 11.133 - Time 2025-05-07T15:52:20
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 357 - Steps this episode 182570 - Epsilon 1 - Learning Rate 0.00018266041990455263 - Cummulative Reward 29398.06 - Max Length 5 - Mean Loss 2.957 - Mean Q Value 5905.976 - Time Delta 8.016 - Time 2025-05-07T15:52:28
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 358 - Steps this episode 183385 - Epsilon 1 - Learning Rate 0.00018260549398378995 - Cummulative Reward 29735.365 - Max Length 0 - Mean Loss 2.956 - Mean Q Value 5907.716 - Time Delta 15.546 - Time 2025-05-07T15:52:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 359 - Steps this episode 183787 - Epsilon 1 - Learning Rate 0.00018254989807506923 - Cummulative Reward 29392.225 - Max Length 3 - Mean Loss 2.956 - Mean Q Value 5909.055 - Time Delta 8.778 - Time 2025-05-07T15:52:53
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 360 - Steps this episode 184512 - Epsilon 1 - Learning Rate 0.00018249842691785346 - Cummulative Reward 29671.155 - Max Length 1 - Mean Loss 2.956 - Mean Q Value 5910.633 - Time Delta 13.951 - Time 2025-05-07T15:53:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 361 - Steps this episode 185068 - Epsilon 1 - Learning Rate 0.00018243999069405097 - Cummulative Reward 29895.45 - Max Length 0 - Mean Loss 2.955 - Mean Q Value 5911.951 - Time Delta 11.669 - Time 2025-05-07T15:53:18
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 362 - Steps this episode 185616 - Epsilon 1 - Learning Rate 0.00018238964415441541 - Cummulative Reward 29691.885 - Max Length 1 - Mean Loss 2.955 - Mean Q Value 5912.713 - Time Delta 10.954 - Time 2025-05-07T15:53:29
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 363 - Steps this episode 186016 - Epsilon 1 - Learning Rate 0.00018234642262815538 - Cummulative Reward 29688.92 - Max Length 0 - Mean Loss 2.955 - Mean Q Value 5913.574 - Time Delta 8.311 - Time 2025-05-07T15:53:37
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 364 - Steps this episode 186506 - Epsilon 1 - Learning Rate 0.0001823059463367963 - Cummulative Reward 29349.745 - Max Length 3 - Mean Loss 2.955 - Mean Q Value 5915.557 - Time Delta 10.176 - Time 2025-05-07T15:53:48
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 365 - Steps this episode 186952 - Epsilon 1 - Learning Rate 0.0001822632916295124 - Cummulative Reward 29359.87 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5918.652 - Time Delta 9.089 - Time 2025-05-07T15:53:57
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 366 - Steps this episode 187485 - Epsilon 1 - Learning Rate 0.00018221859716662019 - Cummulative Reward 29364.085 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5920.852 - Time Delta 10.611 - Time 2025-05-07T15:54:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 367 - Steps this episode 187952 - Epsilon 1 - Learning Rate 0.0001821730935895239 - Cummulative Reward 28980.68 - Max Length 4 - Mean Loss 2.954 - Mean Q Value 5921.702 - Time Delta 9.536 - Time 2025-05-07T15:54:17
+Episode 368 - Steps this episode 188341 - Epsilon 1 - Learning Rate 0.0001821341581012734 - Cummulative Reward 28501.185 - Max Length 6 - Mean Loss 2.954 - Mean Q Value 5921.675 - Time Delta 8.003 - Time 2025-05-07T15:54:25
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 369 - Steps this episode 188840 - Epsilon 1 - Learning Rate 0.00018209372895758644 - Cummulative Reward 28496.39 - Max Length 0 - Mean Loss 2.953 - Mean Q Value 5921.868 - Time Delta 9.855 - Time 2025-05-07T15:54:35
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 370 - Steps this episode 189152 - Epsilon 1 - Learning Rate 0.00018205685839734544 - Cummulative Reward 28388.65 - Max Length 4 - Mean Loss 2.954 - Mean Q Value 5919.681 - Time Delta 6.665 - Time 2025-05-07T15:54:41
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 371 - Steps this episode 189700 - Epsilon 1 - Learning Rate 0.0001820176752333652 - Cummulative Reward 28369.59 - Max Length 0 - Mean Loss 2.955 - Mean Q Value 5916.705 - Time Delta 10.765 - Time 2025-05-07T15:54:52
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 372 - Steps this episode 190181 - Epsilon 1 - Learning Rate 0.00018197085703894472 - Cummulative Reward 28365.47 - Max Length 0 - Mean Loss 2.955 - Mean Q Value 5915.441 - Time Delta 9.898 - Time 2025-05-07T15:55:02
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 373 - Steps this episode 190642 - Epsilon 1 - Learning Rate 0.0001819280078835248 - Cummulative Reward 28143.055 - Max Length 1 - Mean Loss 2.955 - Mean Q Value 5913.907 - Time Delta 9.387 - Time 2025-05-07T15:55:11
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 374 - Steps this episode 191127 - Epsilon 1 - Learning Rate 0.00018188489606538714 - Cummulative Reward 28151.485 - Max Length 0 - Mean Loss 2.956 - Mean Q Value 5912.352 - Time Delta 9.797 - Time 2025-05-07T15:55:21
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 375 - Steps this episode 191615 - Epsilon 1 - Learning Rate 0.00018184070337212883 - Cummulative Reward 28149.865 - Max Length 0 - Mean Loss 2.956 - Mean Q Value 5911.198 - Time Delta 9.967 - Time 2025-05-07T15:55:31
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 376 - Steps this episode 192041 - Epsilon 1 - Learning Rate 0.00018179924828309134 - Cummulative Reward 28143.03 - Max Length 0 - Mean Loss 2.956 - Mean Q Value 5911.23 - Time Delta 8.787 - Time 2025-05-07T15:55:40
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 377 - Steps this episode 192716 - Epsilon 1 - Learning Rate 0.00018174921540766405 - Cummulative Reward 28141.615 - Max Length 0 - Mean Loss 2.956 - Mean Q Value 5911.438 - Time Delta 13.198 - Time 2025-05-07T15:55:53
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 378 - Steps this episode 193320 - Epsilon 1 - Learning Rate 0.0001816910193296141 - Cummulative Reward 28138.51 - Max Length 0 - Mean Loss 2.957 - Mean Q Value 5911.686 - Time Delta 12.438 - Time 2025-05-07T15:56:06
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 379 - Steps this episode 193779 - Epsilon 1 - Learning Rate 0.00018164265020260785 - Cummulative Reward 27808.22 - Max Length 3 - Mean Loss 2.957 - Mean Q Value 5911.516 - Time Delta 9.588 - Time 2025-05-07T15:56:15
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 380 - Steps this episode 194156 - Epsilon 1 - Learning Rate 0.00018160478149704913 - Cummulative Reward 27468.185 - Max Length 3 - Mean Loss 2.957 - Mean Q Value 5910.717 - Time Delta 7.819 - Time 2025-05-07T15:56:23
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 381 - Steps this episode 194508 - Epsilon 1 - Learning Rate 0.0001815716869876717 - Cummulative Reward 27474.225 - Max Length 0 - Mean Loss 2.957 - Mean Q Value 5911.356 - Time Delta 7.341 - Time 2025-05-07T15:56:30
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 382 - Steps this episode 194937 - Epsilon 1 - Learning Rate 0.00018153614789285233 - Cummulative Reward 27475.285 - Max Length 0 - Mean Loss 2.957 - Mean Q Value 5912.522 - Time Delta 8.657 - Time 2025-05-07T15:56:39
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 383 - Steps this episode 195499 - Epsilon 1 - Learning Rate 0.00018149122346926833 - Cummulative Reward 27701.08 - Max Length 0 - Mean Loss 2.957 - Mean Q Value 5914.103 - Time Delta 11.239 - Time 2025-05-07T15:56:50
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 384 - Steps this episode 196149 - Epsilon 1 - Learning Rate 0.00018143624012390596 - Cummulative Reward 27701.36 - Max Length 0 - Mean Loss 2.956 - Mean Q Value 5916.358 - Time Delta 13.126 - Time 2025-05-07T15:57:03
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 385 - Steps this episode 196457 - Epsilon 1 - Learning Rate 0.00018139283603939958 - Cummulative Reward 27276.3 - Max Length 5 - Mean Loss 2.956 - Mean Q Value 5919.264 - Time Delta 6.939 - Time 2025-05-07T15:57:10
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 386 - Steps this episode 196804 - Epsilon 1 - Learning Rate 0.00018136318076474747 - Cummulative Reward 27299.69 - Max Length 0 - Mean Loss 2.955 - Mean Q Value 5921.592 - Time Delta 7.142 - Time 2025-05-07T15:57:18
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 387 - Steps this episode 197160 - Epsilon 1 - Learning Rate 0.000181331218308926 - Cummulative Reward 27306.745 - Max Length 0 - Mean Loss 2.955 - Mean Q Value 5923.548 - Time Delta 7.351 - Time 2025-05-07T15:57:25
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 388 - Steps this episode 197400 - Epsilon 1 - Learning Rate 0.00018130415649190973 - Cummulative Reward 26866.84 - Max Length 5 - Mean Loss 2.954 - Mean Q Value 5926.673 - Time Delta 5.219 - Time 2025-05-07T15:57:30
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 389 - Steps this episode 198028 - Epsilon 1 - Learning Rate 0.00018126486367864007 - Cummulative Reward 26887.265 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5928.976 - Time Delta 12.116 - Time 2025-05-07T15:57:42
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 390 - Steps this episode 198677 - Epsilon 1 - Learning Rate 0.00018120709471798138 - Cummulative Reward 27053.51 - Max Length 2 - Mean Loss 2.954 - Mean Q Value 5930.603 - Time Delta 13.133 - Time 2025-05-07T15:57:55
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 391 - Steps this episode 199187 - Epsilon 1 - Learning Rate 0.00018115464251594596 - Cummulative Reward 27053.375 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5932.302 - Time Delta 11.267 - Time 2025-05-07T15:58:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 392 - Steps this episode 199497 - Epsilon 1 - Learning Rate 0.00018111741872677293 - Cummulative Reward 27053.025 - Max Length 0 - Mean Loss 2.953 - Mean Q Value 5933.478 - Time Delta 6.836 - Time 2025-05-07T15:58:13
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+MarioNet saved to checkpoints/Kirby_Dream_Land/2025-05-07T14-59-32-tree/mario_net_01.chkpt at step 200000
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 393 - Steps this episode 200121 - Epsilon 1 - Learning Rate 0.0001810750427280895 - Cummulative Reward 27034.955 - Max Length 0 - Mean Loss 2.953 - Mean Q Value 5933.331 - Time Delta 12.374 - Time 2025-05-07T15:58:26
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 394 - Steps this episode 200595 - Epsilon 1 - Learning Rate 0.000181025344102421 - Cummulative Reward 27031.0 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5932.629 - Time Delta 10.009 - Time 2025-05-07T15:58:36
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 395 - Steps this episode 200982 - Epsilon 1 - Learning Rate 0.00018098638242004794 - Cummulative Reward 27036.765 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5931.148 - Time Delta 8.118 - Time 2025-05-07T15:58:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 396 - Steps this episode 201372 - Epsilon 1 - Learning Rate 0.0001809512292076587 - Cummulative Reward 27026.955 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5931.638 - Time Delta 8.057 - Time 2025-05-07T15:58:52
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 397 - Steps this episode 201895 - Epsilon 1 - Learning Rate 0.00018090997722625243 - Cummulative Reward 27043.765 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5931.612 - Time Delta 10.565 - Time 2025-05-07T15:59:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 398 - Steps this episode 202477 - Epsilon 1 - Learning Rate 0.00018086005304975927 - Cummulative Reward 27047.19 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5932.008 - Time Delta 11.897 - Time 2025-05-07T15:59:14
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 399 - Steps this episode 203090 - Epsilon 1 - Learning Rate 0.00018080607440762697 - Cummulative Reward 27385.645 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5931.898 - Time Delta 12.571 - Time 2025-05-07T15:59:27
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 400 - Steps this episode 203577 - Epsilon 1 - Learning Rate 0.00018075631409188376 - Cummulative Reward 27658.48 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5931.985 - Time Delta 10.387 - Time 2025-05-07T15:59:37
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 401 - Steps this episode 204323 - Epsilon 1 - Learning Rate 0.00018070060509478821 - Cummulative Reward 27655.99 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5932.259 - Time Delta 14.834 - Time 2025-05-07T15:59:52
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 402 - Steps this episode 204925 - Epsilon 1 - Learning Rate 0.00018063976400764577 - Cummulative Reward 27643.79 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5933.109 - Time Delta 12.687 - Time 2025-05-07T16:00:05
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 403 - Steps this episode 205302 - Epsilon 1 - Learning Rate 0.00018059546708915257 - Cummulative Reward 27651.185 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5933.893 - Time Delta 8.264 - Time 2025-05-07T16:00:13
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 404 - Steps this episode 205672 - Epsilon 1 - Learning Rate 0.00018056174399672733 - Cummulative Reward 27643.8 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5932.429 - Time Delta 7.731 - Time 2025-05-07T16:00:21
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 405 - Steps this episode 205984 - Epsilon 1 - Learning Rate 0.00018053100588041215 - Cummulative Reward 27636.32 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5931.297 - Time Delta 6.626 - Time 2025-05-07T16:00:28
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 406 - Steps this episode 206556 - Epsilon 1 - Learning Rate 0.00018049106821800166 - Cummulative Reward 27300.08 - Max Length 3 - Mean Loss 2.954 - Mean Q Value 5930.464 - Time Delta 11.387 - Time 2025-05-07T16:00:39
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 407 - Steps this episode 207051 - Epsilon 1 - Learning Rate 0.00018044288334301595 - Cummulative Reward 27697.18 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5929.804 - Time Delta 10.567 - Time 2025-05-07T16:00:50
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 408 - Steps this episode 207591 - Epsilon 1 - Learning Rate 0.00018039619983940917 - Cummulative Reward 27977.64 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5930.274 - Time Delta 11.233 - Time 2025-05-07T16:01:01
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 409 - Steps this episode 208092 - Epsilon 1 - Learning Rate 0.00018034925772552143 - Cummulative Reward 27979.405 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5930.27 - Time Delta 10.722 - Time 2025-05-07T16:01:11
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 410 - Steps this episode 208504 - Epsilon 1 - Learning Rate 0.00018030814259704556 - Cummulative Reward 27967.375 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5930.017 - Time Delta 9.416 - Time 2025-05-07T16:01:21
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 411 - Steps this episode 209053 - Epsilon 1 - Learning Rate 0.00018026487405159992 - Cummulative Reward 27700.87 - Max Length 2 - Mean Loss 2.954 - Mean Q Value 5929.518 - Time Delta 11.229 - Time 2025-05-07T16:01:32
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 412 - Steps this episode 209554 - Epsilon 1 - Learning Rate 0.00018021756060221177 - Cummulative Reward 27701.67 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5929.437 - Time Delta 10.492 - Time 2025-05-07T16:01:43
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 413 - Steps this episode 209955 - Epsilon 1 - Learning Rate 0.00018017688088148935 - Cummulative Reward 27698.03 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5930.304 - Time Delta 8.574 - Time 2025-05-07T16:01:51
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 414 - Steps this episode 210630 - Epsilon 1 - Learning Rate 0.00018012837530204725 - Cummulative Reward 27414.645 - Max Length 2 - Mean Loss 2.954 - Mean Q Value 5931.012 - Time Delta 13.713 - Time 2025-05-07T16:02:05
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 415 - Steps this episode 211243 - Epsilon 1 - Learning Rate 0.00018007042812447492 - Cummulative Reward 27189.92 - Max Length 1 - Mean Loss 2.954 - Mean Q Value 5931.528 - Time Delta 12.951 - Time 2025-05-07T16:02:18
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 416 - Steps this episode 211763 - Epsilon 1 - Learning Rate 0.0001800195201729254 - Cummulative Reward 27207.3 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5932.428 - Time Delta 11.002 - Time 2025-05-07T16:02:29
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 417 - Steps this episode 212307 - Epsilon 1 - Learning Rate 0.00017997159637379024 - Cummulative Reward 27202.225 - Max Length 0 - Mean Loss 2.954 - Mean Q Value 5933.5 - Time Delta 11.384 - Time 2025-05-07T16:02:40
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 418 - Steps this episode 212751 - Epsilon 1 - Learning Rate 0.00017992705869276587 - Cummulative Reward 26982.825 - Max Length 1 - Mean Loss 2.953 - Mean Q Value 5935.217 - Time Delta 9.503 - Time 2025-05-07T16:02:50
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 419 - Steps this episode 213070 - Epsilon 1 - Learning Rate 0.00017989278564705898 - Cummulative Reward 26990.25 - Max Length 0 - Mean Loss 2.953 - Mean Q Value 5936.177 - Time Delta 6.989 - Time 2025-05-07T16:02:57
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 420 - Steps this episode 213381 - Epsilon 1 - Learning Rate 0.00017986445473610658 - Cummulative Reward 26990.085 - Max Length 0 - Mean Loss 2.953 - Mean Q Value 5937.399 - Time Delta 6.698 - Time 2025-05-07T16:03:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 421 - Steps this episode 213760 - Epsilon 1 - Learning Rate 0.0001798334308555994 - Cummulative Reward 26998.35 - Max Length 0 - Mean Loss 2.953 - Mean Q Value 5938.694 - Time Delta 8.446 - Time 2025-05-07T16:03:12
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 422 - Steps this episode 214098 - Epsilon 1 - Learning Rate 0.00017980119852547597 - Cummulative Reward 27442.185 - Max Length 0 - Mean Loss 2.953 - Mean Q Value 5939.462 - Time Delta 7.273 - Time 2025-05-07T16:03:19
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 423 - Steps this episode 214494 - Epsilon 1 - Learning Rate 0.0001797681631441486 - Cummulative Reward 27656.84 - Max Length 0 - Mean Loss 2.953 - Mean Q Value 5939.768 - Time Delta 8.247 - Time 2025-05-07T16:03:27
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 424 - Steps this episode 214922 - Epsilon 1 - Learning Rate 0.00017973122460065739 - Cummulative Reward 27656.685 - Max Length 0 - Mean Loss 2.953 - Mean Q Value 5940.039 - Time Delta 8.988 - Time 2025-05-07T16:03:36
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 425 - Steps this episode 215310 - Epsilon 1 - Learning Rate 0.00017969456308795223 - Cummulative Reward 27996.785 - Max Length 0 - Mean Loss 2.952 - Mean Q Value 5940.679 - Time Delta 8.304 - Time 2025-05-07T16:03:45
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 426 - Steps this episode 215939 - Epsilon 1 - Learning Rate 0.00017964888196959043 - Cummulative Reward 28224.385 - Max Length 0 - Mean Loss 2.952 - Mean Q Value 5942.117 - Time Delta 12.822 - Time 2025-05-07T16:03:57
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 427 - Steps this episode 216477 - Epsilon 1 - Learning Rate 0.00017959647682397683 - Cummulative Reward 28228.89 - Max Length 0 - Mean Loss 2.952 - Mean Q Value 5943.873 - Time Delta 11.557 - Time 2025-05-07T16:04:09
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 428 - Steps this episode 216982 - Epsilon 1 - Learning Rate 0.00017954960815469925 - Cummulative Reward 28231.77 - Max Length 0 - Mean Loss 2.951 - Mean Q Value 5945.619 - Time Delta 10.676 - Time 2025-05-07T16:04:20
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 429 - Steps this episode 217321 - Epsilon 1 - Learning Rate 0.00017951177177342908 - Cummulative Reward 28630.255 - Max Length 0 - Mean Loss 2.951 - Mean Q Value 5948.062 - Time Delta 7.472 - Time 2025-05-07T16:04:27
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 430 - Steps this episode 217751 - Epsilon 1 - Learning Rate 0.00017947730892517726 - Cummulative Reward 28631.695 - Max Length 0 - Mean Loss 2.95 - Mean Q Value 5951.415 - Time Delta 8.937 - Time 2025-05-07T16:04:36
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 431 - Steps this episode 218178 - Epsilon 1 - Learning Rate 0.0001794388151421486 - Cummulative Reward 28624.06 - Max Length 0 - Mean Loss 2.95 - Mean Q Value 5954.081 - Time Delta 9.08 - Time 2025-05-07T16:04:45
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 432 - Steps this episode 218705 - Epsilon 1 - Learning Rate 0.00017939602422682832 - Cummulative Reward 28620.155 - Max Length 0 - Mean Loss 2.949 - Mean Q Value 5957.221 - Time Delta 11.018 - Time 2025-05-07T16:04:56
+Episode 433 - Steps this episode 218929 - Epsilon 1 - Learning Rate 0.00017936239017993068 - Cummulative Reward 28153.225 - Max Length 6 - Mean Loss 2.949 - Mean Q Value 5959.991 - Time Delta 5.387 - Time 2025-05-07T16:05:02
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 434 - Steps this episode 219491 - Epsilon 1 - Learning Rate 0.00017932714939972787 - Cummulative Reward 27929.145 - Max Length 1 - Mean Loss 2.948 - Mean Q Value 5962.973 - Time Delta 11.308 - Time 2025-05-07T16:05:13
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 435 - Steps this episode 220004 - Epsilon 1 - Learning Rate 0.00017927900639120952 - Cummulative Reward 27711.65 - Max Length 1 - Mean Loss 2.947 - Mean Q Value 5965.87 - Time Delta 10.919 - Time 2025-05-07T16:05:24
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 436 - Steps this episode 220364 - Epsilon 1 - Learning Rate 0.0001792398827388345 - Cummulative Reward 27716.54 - Max Length 0 - Mean Loss 2.946 - Mean Q Value 5968.116 - Time Delta 7.94 - Time 2025-05-07T16:05:32
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 437 - Steps this episode 220838 - Epsilon 1 - Learning Rate 0.00017920251526844875 - Cummulative Reward 27727.75 - Max Length 0 - Mean Loss 2.946 - Mean Q Value 5969.689 - Time Delta 9.891 - Time 2025-05-07T16:05:42
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 438 - Steps this episode 221288 - Epsilon 1 - Learning Rate 0.00017916112419584052 - Cummulative Reward 28006.17 - Max Length 0 - Mean Loss 2.946 - Mean Q Value 5970.959 - Time Delta 9.888 - Time 2025-05-07T16:05:52
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 439 - Steps this episode 221639 - Epsilon 1 - Learning Rate 0.0001791252505978011 - Cummulative Reward 28005.295 - Max Length 0 - Mean Loss 2.945 - Mean Q Value 5971.784 - Time Delta 7.685 - Time 2025-05-07T16:05:59
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 440 - Steps this episode 222134 - Epsilon 1 - Learning Rate 0.00017908736981220983 - Cummulative Reward 28007.37 - Max Length 0 - Mean Loss 2.945 - Mean Q Value 5974.243 - Time Delta 10.297 - Time 2025-05-07T16:06:10
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 441 - Steps this episode 222691 - Epsilon 1 - Learning Rate 0.0001790402313553637 - Cummulative Reward 28224.74 - Max Length 0 - Mean Loss 2.944 - Mean Q Value 5976.391 - Time Delta 11.684 - Time 2025-05-07T16:06:21
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 442 - Steps this episode 223228 - Epsilon 1 - Learning Rate 0.00017899122572034891 - Cummulative Reward 28508.63 - Max Length 0 - Mean Loss 2.944 - Mean Q Value 5979.018 - Time Delta 11.387 - Time 2025-05-07T16:06:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 443 - Steps this episode 223628 - Epsilon 1 - Learning Rate 0.00017894934640138782 - Cummulative Reward 28513.685 - Max Length 0 - Mean Loss 2.943 - Mean Q Value 5981.473 - Time Delta 8.741 - Time 2025-05-07T16:06:41
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 444 - Steps this episode 223942 - Epsilon 1 - Learning Rate 0.00017891740665801874 - Cummulative Reward 28064.54 - Max Length 5 - Mean Loss 2.943 - Mean Q Value 5982.428 - Time Delta 6.899 - Time 2025-05-07T16:06:48
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 445 - Steps this episode 224482 - Epsilon 1 - Learning Rate 0.00017887916747911993 - Cummulative Reward 28501.29 - Max Length 0 - Mean Loss 2.943 - Mean Q Value 5982.787 - Time Delta 11.116 - Time 2025-05-07T16:06:59
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 446 - Steps this episode 225087 - Epsilon 1 - Learning Rate 0.00017882792604080738 - Cummulative Reward 28503.13 - Max Length 0 - Mean Loss 2.943 - Mean Q Value 5982.435 - Time Delta 12.732 - Time 2025-05-07T16:07:12
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 447 - Steps this episode 225747 - Epsilon 1 - Learning Rate 0.0001787713360429408 - Cummulative Reward 28499.945 - Max Length 0 - Mean Loss 2.943 - Mean Q Value 5981.764 - Time Delta 13.928 - Time 2025-05-07T16:07:26
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 448 - Steps this episode 226206 - Epsilon 1 - Learning Rate 0.00017872133130013296 - Cummulative Reward 28496.745 - Max Length 1 - Mean Loss 2.943 - Mean Q Value 5981.255 - Time Delta 10.093 - Time 2025-05-07T16:07:36
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 449 - Steps this episode 226533 - Epsilon 1 - Learning Rate 0.0001786862157892738 - Cummulative Reward 28504.96 - Max Length 0 - Mean Loss 2.943 - Mean Q Value 5980.097 - Time Delta 7.241 - Time 2025-05-07T16:07:43
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 450 - Steps this episode 227040 - Epsilon 1 - Learning Rate 0.00017864896384838462 - Cummulative Reward 28513.485 - Max Length 0 - Mean Loss 2.944 - Mean Q Value 5978.592 - Time Delta 10.498 - Time 2025-05-07T16:07:54
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 451 - Steps this episode 227451 - Epsilon 1 - Learning Rate 0.0001786079684208596 - Cummulative Reward 28849.705 - Max Length 0 - Mean Loss 2.944 - Mean Q Value 5977.252 - Time Delta 9.044 - Time 2025-05-07T16:08:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 452 - Steps this episode 228001 - Epsilon 1 - Learning Rate 0.0001785651078662154 - Cummulative Reward 28836.19 - Max Length 0 - Mean Loss 2.944 - Mean Q Value 5977.035 - Time Delta 11.443 - Time 2025-05-07T16:08:14
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 453 - Steps this episode 228609 - Epsilon 1 - Learning Rate 0.00017851342083999926 - Cummulative Reward 28827.315 - Max Length 0 - Mean Loss 2.944 - Mean Q Value 5977.186 - Time Delta 12.799 - Time 2025-05-07T16:08:27
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 454 - Steps this episode 228972 - Epsilon 1 - Learning Rate 0.00017847004687177699 - Cummulative Reward 28551.15 - Max Length 2 - Mean Loss 2.944 - Mean Q Value 5976.958 - Time Delta 8.179 - Time 2025-05-07T16:08:35
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 455 - Steps this episode 229538 - Epsilon 1 - Learning Rate 0.00017842869154598552 - Cummulative Reward 28264.73 - Max Length 2 - Mean Loss 2.945 - Mean Q Value 5976.167 - Time Delta 12.34 - Time 2025-05-07T16:08:48
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 456 - Steps this episode 229972 - Epsilon 1 - Learning Rate 0.00017838413427168155 - Cummulative Reward 28267.055 - Max Length 0 - Mean Loss 2.945 - Mean Q Value 5975.458 - Time Delta 9.508 - Time 2025-05-07T16:08:57
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 457 - Steps this episode 230492 - Epsilon 1 - Learning Rate 0.00017834159484567016 - Cummulative Reward 28709.05 - Max Length 0 - Mean Loss 2.945 - Mean Q Value 5975.417 - Time Delta 10.975 - Time 2025-05-07T16:09:08
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Episode 458 - Steps this episode 230861 - Epsilon 1 - Learning Rate 0.0001783020071289014 - Cummulative Reward 28425.22 - Max Length 2 - Mean Loss 2.945 - Mean Q Value 5975.259 - Time Delta 8.146 - Time 2025-05-07T16:09:16
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 459 - Steps this episode 231167 - Epsilon 1 - Learning Rate 0.00017827192110223832 - Cummulative Reward 28770.97 - Max Length 0 - Mean Loss 2.945 - Mean Q Value 5975.966 - Time Delta 6.701 - Time 2025-05-07T16:09:23
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 460 - Steps this episode 231552 - Epsilon 1 - Learning Rate 0.00017824103824827994 - Cummulative Reward 28989.175 - Max Length 0 - Mean Loss 2.945 - Mean Q Value 5976.912 - Time Delta 8.161 - Time 2025-05-07T16:09:31
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 461 - Steps this episode 232172 - Epsilon 1 - Learning Rate 0.00017819626121017175 - Cummulative Reward 28989.945 - Max Length 0 - Mean Loss 2.945 - Mean Q Value 5978.18 - Time Delta 12.759 - Time 2025-05-07T16:09:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 462 - Steps this episode 232534 - Epsilon 1 - Learning Rate 0.00017815256343871135 - Cummulative Reward 29210.49 - Max Length 0 - Mean Loss 2.944 - Mean Q Value 5980.621 - Time Delta 8.234 - Time 2025-05-07T16:09:52
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 463 - Steps this episode 232937 - Epsilon 1 - Learning Rate 0.00017811849504865762 - Cummulative Reward 29206.12 - Max Length 0 - Mean Loss 2.944 - Mean Q Value 5983.699 - Time Delta 8.606 - Time 2025-05-07T16:10:01
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 464 - Steps this episode 233210 - Epsilon 1 - Learning Rate 0.00017808843990450566 - Cummulative Reward 29544.8 - Max Length 0 - Mean Loss 2.943 - Mean Q Value 5986.908 - Time Delta 6.223 - Time 2025-05-07T16:10:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 465 - Steps this episode 233522 - Epsilon 1 - Learning Rate 0.00017806239639743586 - Cummulative Reward 29545.29 - Max Length 0 - Mean Loss 2.942 - Mean Q Value 5989.443 - Time Delta 6.744 - Time 2025-05-07T16:10:14
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 466 - Steps this episode 233898 - Epsilon 1 - Learning Rate 0.0001780316833445609 - Cummulative Reward 29557.945 - Max Length 0 - Mean Loss 2.942 - Mean Q Value 5990.758 - Time Delta 8.046 - Time 2025-05-07T16:10:22
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 467 - Steps this episode 234278 - Epsilon 1 - Learning Rate 0.00017799803851071248 - Cummulative Reward 29944.95 - Max Length 0 - Mean Loss 2.941 - Mean Q Value 5992.792 - Time Delta 8.171 - Time 2025-05-07T16:10:30
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 468 - Steps this episode 234847 - Epsilon 1 - Learning Rate 0.00017795585827994992 - Cummulative Reward 30430.3 - Max Length 0 - Mean Loss 2.941 - Mean Q Value 5995.5 - Time Delta 11.883 - Time 2025-05-07T16:10:42
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Episode 469 - Steps this episode 235173 - Epsilon 1 - Learning Rate 0.00017791595571903647 - Cummulative Reward 30041.555 - Max Length 4 - Mean Loss 2.94 - Mean Q Value 5997.012 - Time Delta 7.462 - Time 2025-05-07T16:10:49
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Episode 470 - Steps this episode 235628 - Epsilon 1 - Learning Rate 0.00017788126564616984 - Cummulative Reward 30097.455 - Max Length 3 - Mean Loss 2.94 - Mean Q Value 6000.127 - Time Delta 9.576 - Time 2025-05-07T16:10:59
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 471 - Steps this episode 236032 - Epsilon 1 - Learning Rate 0.00017784311410167178 - Cummulative Reward 30102.96 - Max Length 0 - Mean Loss 2.939 - Mean Q Value 6004.699 - Time Delta 8.874 - Time 2025-05-07T16:11:08
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 472 - Steps this episode 236302 - Epsilon 1 - Learning Rate 0.00017781310541691687 - Cummulative Reward 30110.19 - Max Length 0 - Mean Loss 2.938 - Mean Q Value 6007.551 - Time Delta 6.154 - Time 2025-05-07T16:11:14
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 473 - Steps this episode 236641 - Epsilon 1 - Learning Rate 0.00017778603548989155 - Cummulative Reward 30326.775 - Max Length 0 - Mean Loss 2.938 - Mean Q Value 6010.606 - Time Delta 7.267 - Time 2025-05-07T16:11:21
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 474 - Steps this episode 237061 - Epsilon 1 - Learning Rate 0.0001777523038785913 - Cummulative Reward 30339.25 - Max Length 0 - Mean Loss 2.937 - Mean Q Value 6013.861 - Time Delta 8.999 - Time 2025-05-07T16:11:30
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 475 - Steps this episode 237540 - Epsilon 1 - Learning Rate 0.00017771231417921095 - Cummulative Reward 30319.46 - Max Length 0 - Mean Loss 2.936 - Mean Q Value 6016.999 - Time Delta 10.236 - Time 2025-05-07T16:11:40
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 476 - Steps this episode 237932 - Epsilon 1 - Learning Rate 0.0001776736657801257 - Cummulative Reward 30332.59 - Max Length 0 - Mean Loss 2.936 - Mean Q Value 6019.358 - Time Delta 8.608 - Time 2025-05-07T16:11:49
+Boss HP: 6 → 5, Reward: 4000.5
+Episode 477 - Steps this episode 238268 - Epsilon 1 - Learning Rate 0.00017764142083936908 - Cummulative Reward 29898.885 - Max Length 5 - Mean Loss 2.935 - Mean Q Value 6020.112 - Time Delta 7.41 - Time 2025-05-07T16:11:56
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 478 - Steps this episode 238573 - Epsilon 1 - Learning Rate 0.00017761291162223192 - Cummulative Reward 29904.9 - Max Length 0 - Mean Loss 2.935 - Mean Q Value 6021.009 - Time Delta 6.785 - Time 2025-05-07T16:12:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 479 - Steps this episode 239255 - Epsilon 1 - Learning Rate 0.00017756909169462757 - Cummulative Reward 30250.6 - Max Length 0 - Mean Loss 2.935 - Mean Q Value 6021.938 - Time Delta 14.067 - Time 2025-05-07T16:12:17
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 480 - Steps this episode 239646 - Epsilon 1 - Learning Rate 0.00017752142018588967 - Cummulative Reward 30598.285 - Max Length 0 - Mean Loss 2.935 - Mean Q Value 6023.141 - Time Delta 8.992 - Time 2025-05-07T16:12:26
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 481 - Steps this episode 240117 - Epsilon 1 - Learning Rate 0.00017748307979589248 - Cummulative Reward 30592.53 - Max Length 0 - Mean Loss 2.935 - Mean Q Value 6024.262 - Time Delta 10.095 - Time 2025-05-07T16:12:36
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 482 - Steps this episode 240562 - Epsilon 1 - Learning Rate 0.0001774424851084689 - Cummulative Reward 30598.545 - Max Length 0 - Mean Loss 2.934 - Mean Q Value 6025.331 - Time Delta 9.706 - Time 2025-05-07T16:12:46
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 483 - Steps this episode 241006 - Epsilon 1 - Learning Rate 0.00017740309721945148 - Cummulative Reward 30589.635 - Max Length 0 - Mean Loss 2.934 - Mean Q Value 6027.254 - Time Delta 9.705 - Time 2025-05-07T16:12:56
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 484 - Steps this episode 241309 - Epsilon 1 - Learning Rate 0.000177369970064924 - Cummulative Reward 30593.505 - Max Length 0 - Mean Loss 2.934 - Mean Q Value 6029.438 - Time Delta 6.919 - Time 2025-05-07T16:13:03
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Episode 485 - Steps this episode 241758 - Epsilon 1 - Learning Rate 0.00017733658349012373 - Cummulative Reward 30807.625 - Max Length 1 - Mean Loss 2.934 - Mean Q Value 6030.202 - Time Delta 9.449 - Time 2025-05-07T16:13:12
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 486 - Steps this episode 242216 - Epsilon 1 - Learning Rate 0.00017729642128242408 - Cummulative Reward 30802.29 - Max Length 0 - Mean Loss 2.934 - Mean Q Value 6030.887 - Time Delta 10.016 - Time 2025-05-07T16:13:22
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 487 - Steps this episode 242566 - Epsilon 1 - Learning Rate 0.00017726065515415938 - Cummulative Reward 30809.68 - Max Length 0 - Mean Loss 2.933 - Mean Q Value 6031.015 - Time Delta 7.901 - Time 2025-05-07T16:13:30
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 488 - Steps this episode 243154 - Epsilon 1 - Learning Rate 0.00017721904847880186 - Cummulative Reward 31254.91 - Max Length 0 - Mean Loss 2.934 - Mean Q Value 6030.991 - Time Delta 12.342 - Time 2025-05-07T16:13:42
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 489 - Steps this episode 243697 - Epsilon 1 - Learning Rate 0.00017716894674479444 - Cummulative Reward 31237.02 - Max Length 0 - Mean Loss 2.933 - Mean Q Value 6032.812 - Time Delta 11.844 - Time 2025-05-07T16:13:54
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 490 - Steps this episode 244193 - Epsilon 1 - Learning Rate 0.0001771229772414996 - Cummulative Reward 31497.18 - Max Length 0 - Mean Loss 2.933 - Mean Q Value 6035.793 - Time Delta 10.788 - Time 2025-05-07T16:14:05
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 491 - Steps this episode 244727 - Epsilon 1 - Learning Rate 0.0001770774182557446 - Cummulative Reward 31503.52 - Max Length 0 - Mean Loss 2.932 - Mean Q Value 6039.002 - Time Delta 12.162 - Time 2025-05-07T16:14:17
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 492 - Steps this episode 245404 - Epsilon 1 - Learning Rate 0.0001770237722074439 - Cummulative Reward 31506.97 - Max Length 0 - Mean Loss 2.931 - Mean Q Value 6042.091 - Time Delta 14.457 - Time 2025-05-07T16:14:32
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 493 - Steps this episode 245974 - Epsilon 1 - Learning Rate 0.0001769685491158457 - Cummulative Reward 31511.47 - Max Length 0 - Mean Loss 2.93 - Mean Q Value 6044.691 - Time Delta 12.556 - Time 2025-05-07T16:14:44
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 494 - Steps this episode 246404 - Epsilon 1 - Learning Rate 0.00017692435644671873 - Cummulative Reward 31512.06 - Max Length 0 - Mean Loss 2.93 - Mean Q Value 6047.886 - Time Delta 9.61 - Time 2025-05-07T16:14:54
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 495 - Steps this episode 247008 - Epsilon 1 - Learning Rate 0.00017687858349486795 - Cummulative Reward 31504.16 - Max Length 0 - Mean Loss 2.929 - Mean Q Value 6051.087 - Time Delta 12.848 - Time 2025-05-07T16:15:07
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 496 - Steps this episode 247391 - Epsilon 1 - Learning Rate 0.00017683494364682893 - Cummulative Reward 31516.56 - Max Length 0 - Mean Loss 2.928 - Mean Q Value 6052.273 - Time Delta 8.757 - Time 2025-05-07T16:15:15
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 497 - Steps this episode 247781 - Epsilon 1 - Learning Rate 0.00017680086198338646 - Cummulative Reward 31509.315 - Max Length 0 - Mean Loss 2.928 - Mean Q Value 6053.786 - Time Delta 8.639 - Time 2025-05-07T16:15:24
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 498 - Steps this episode 248177 - Epsilon 1 - Learning Rate 0.00017676612400975577 - Cummulative Reward 31501.605 - Max Length 0 - Mean Loss 2.927 - Mean Q Value 6055.198 - Time Delta 8.947 - Time 2025-05-07T16:15:33
+Boss HP: 6 → 5, Reward: 4000.5
+Boss HP: 5 → 4, Reward: 4500.5
+Boss HP: 4 → 3, Reward: 5000.5
+Boss HP: 3 → 2, Reward: 5500.5
+Boss HP: 2 → 1, Reward: 6000.5
+Boss defeated, Reward: 9999.5
+Episode 499 - Steps this episode 248605 - Epsilon 1 - Learning Rate 0.00017672966977893485 - Cummulative Reward 31512.785 - Max Length 0 - Mean Loss 2.927 - Mean Q Value 6056.48 - Time Delta 9.391 - Time 2025-05-07T16:15:42
+MarioNet saved to checkpoints/Kirby_Dream_Land/2025-05-07T14-59-32-tree/mario_net_01.chkpt at step 248605
+4574525  pyboy.pyboy                    INFO     ###########################
+4574525  pyboy.pyboy                    INFO     # Emulator is turning off #
+4574525  pyboy.pyboy                    INFO     ###########################

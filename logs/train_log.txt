@@ -1,0 +1,38 @@
+nohup: ignoring input
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.0
+
+Training Kirby mode: BOSS
+3067     pyboy.plugins.window_headless  WARNING  This window type does not support frame-limiting. `pyboy.set_emulation_speed(...)` will have no effect, as it's always running at full speed.
+/root/PyBoy-RL/agent.py:229: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  dt = torch.load(path, map_location=torch.device(self.device))
+Loading model at checkpoints/Kirby_Dream_Land/2025-05-06T18-11-18-boss/mario_net_03.chkpt with exploration rate 1
+Starting Kirby training (headless)
+Total Episodes: 2500
+Episode 0 - Steps this episode 1806 - Epsilon 1 - Learning Rate 0.000199959505426457 - Cummulative Reward -54545.0 - Max Length 3 - Mean Loss 1.38 - Mean Q Value -293.411 - Time Delta 17.004 - Time 2025-05-07T05:02:47
+Episode 1 - Steps this episode 5510 - Epsilon 1 - Learning Rate 0.00019973425505971857 - Cummulative Reward -28240.0 - Max Length 3 - Mean Loss 1.042 - Mean Q Value -223.098 - Time Delta 53.394 - Time 2025-05-07T05:03:40
+Episode 2 - Steps this episode 9207 - Epsilon 1 - Learning Rate 0.00019936503810839696 - Cummulative Reward -19438.333 - Max Length 3 - Mean Loss 0.825 - Mean Q Value -181.546 - Time Delta 56.287 - Time 2025-05-07T05:04:36
+Episode 3 - Steps this episode 11429 - Epsilon 1 - Learning Rate 0.00019907022748237582 - Cummulative Reward -16622.5 - Max Length 3 - Mean Loss 0.694 - Mean Q Value -154.505 - Time Delta 36.97 - Time 2025-05-07T05:05:13
+Episode 4 - Steps this episode 12031 - Epsilon 1 - Learning Rate 0.0001989297736700223 - Cummulative Reward -14776.0 - Max Length 3 - Mean Loss 0.606 - Mean Q Value -136.327 - Time Delta 12.171 - Time 2025-05-07T05:05:25
+Episode 5 - Steps this episode 12778 - Epsilon 1 - Learning Rate 0.00019886264655216723 - Cummulative Reward -13555.0 - Max Length 3 - Mean Loss 0.544 - Mean Q Value -123.563 - Time Delta 11.515 - Time 2025-05-07T05:05:37
+Episode 6 - Steps this episode 14460 - Epsilon 1 - Learning Rate 0.00019874187880085655 - Cummulative Reward -12690.0 - Max Length 3 - Mean Loss 0.5 - Mean Q Value -114.635 - Time Delta 24.674 - Time 2025-05-07T05:06:02
+Episode 7 - Steps this episode 16064 - Epsilon 1 - Learning Rate 0.00019857872836271734 - Cummulative Reward -12021.25 - Max Length 3 - Mean Loss 0.465 - Mean Q Value -107.602 - Time Delta 25.049 - Time 2025-05-07T05:06:27
+Episode 8 - Steps this episode 18364 - Epsilon 1 - Learning Rate 0.00019838506516267488 - Cummulative Reward -11506.667 - Max Length 3 - Mean Loss 0.437 - Mean Q Value -102.056 - Time Delta 34.886 - Time 2025-05-07T05:07:02
+Episode 9 - Steps this episode 19683 - Epsilon 1 - Learning Rate 0.0001982055508753693 - Cummulative Reward -11100.5 - Max Length 3 - Mean Loss 0.412 - Mean Q Value -97.0 - Time Delta 22.553 - Time 2025-05-07T05:07:24
+Episode 10 - Steps this episode 20744 - Epsilon 1 - Learning Rate 0.0001980877018028475 - Cummulative Reward -10780.455 - Max Length 3 - Mean Loss 0.392 - Mean Q Value -92.698 - Time Delta 17.187 - Time 2025-05-07T05:07:41
+Episode 11 - Steps this episode 22853 - Epsilon 1 - Learning Rate 0.00019793088519400877 - Cummulative Reward -10497.917 - Max Length 3 - Mean Loss 0.373 - Mean Q Value -88.883 - Time Delta 31.901 - Time 2025-05-07T05:08:13
+Episode 12 - Steps this episode 25268 - Epsilon 1 - Learning Rate 0.00019770715459116402 - Cummulative Reward -10251.538 - Max Length 3 - Mean Loss 0.356 - Mean Q Value -85.354 - Time Delta 38.587 - Time 2025-05-07T05:08:52
+Episode 13 - Steps this episode 28350 - Epsilon 1 - Learning Rate 0.00019743555078429774 - Cummulative Reward -10054.286 - Max Length 3 - Mean Loss 0.34 - Mean Q Value -81.95 - Time Delta 48.157 - Time 2025-05-07T05:09:40
+Episode 14 - Steps this episode 29796 - Epsilon 1 - Learning Rate 0.00019721206617568683 - Cummulative Reward -9864.0 - Max Length 3 - Mean Loss 0.325 - Mean Q Value -78.649 - Time Delta 26.032 - Time 2025-05-07T05:10:06
+Episode 15 - Steps this episode 32219 - Epsilon 1 - Learning Rate 0.00019702151113379352 - Cummulative Reward -9703.438 - Max Length 3 - Mean Loss 0.312 - Mean Q Value -75.806 - Time Delta 37.337 - Time 2025-05-07T05:10:43
+Episode 16 - Steps this episode 34287 - Epsilon 1 - Learning Rate 0.0001968004259679426 - Cummulative Reward -9564.118 - Max Length 3 - Mean Loss 0.301 - Mean Q Value -73.333 - Time Delta 34.374 - Time 2025-05-07T05:11:18
+Episode 17 - Steps this episode 36387 - Epsilon 1 - Learning Rate 0.00019659536853116238 - Cummulative Reward -9438.056 - Max Length 3 - Mean Loss 0.29 - Mean Q Value -70.991 - Time Delta 34.001 - Time 2025-05-07T05:11:52
+Episode 18 - Steps this episode 38647 - Epsilon 1 - Learning Rate 0.00019638124667711794 - Cummulative Reward -9332.895 - Max Length 3 - Mean Loss 0.279 - Mean Q Value -68.574 - Time Delta 36.594 - Time 2025-05-07T05:12:28
+Episode 19 - Steps this episode 41929 - Epsilon 1 - Learning Rate 0.00019610940926370206 - Cummulative Reward -9292.5 - Max Length 3 - Mean Loss 0.27 - Mean Q Value -66.4 - Time Delta 51.978 - Time 2025-05-07T05:13:20
+Episode 20 - Steps this episode 44382 - Epsilon 1 - Learning Rate 0.00019582838001100755 - Cummulative Reward -9202.143 - Max Length 3 - Mean Loss 0.261 - Mean Q Value -64.348 - Time Delta 41.721 - Time 2025-05-07T05:14:02
+Episode 21 - Steps this episode 47025 - Epsilon 1 - Learning Rate 0.0001955790063904934 - Cummulative Reward -9128.409 - Max Length 3 - Mean Loss 0.253 - Mean Q Value -62.471 - Time Delta 44.346 - Time 2025-05-07T05:14:46
+Episode 22 - Steps this episode 48937 - Epsilon 1 - Learning Rate 0.00019535645944622205 - Cummulative Reward -9048.696 - Max Length 3 - Mean Loss 0.246 - Mean Q Value -60.75 - Time Delta 34.735 - Time 2025-05-07T05:15:21
+Episode 23 - Steps this episode 51042 - Epsilon 1 - Learning Rate 0.00019516037264454252 - Cummulative Reward -8971.667 - Max Length 3 - Mean Loss 0.238 - Mean Q Value -59.058 - Time Delta 36.592 - Time 2025-05-07T05:15:58
+Episode 24 - Steps this episode 54186 - Epsilon 1 - Learning Rate 0.00019490440355107505 - Cummulative Reward -8656.6 - Max Length 3 - Mean Loss 0.232 - Mean Q Value -57.464 - Time Delta 53.693 - Time 2025-05-07T05:16:51
+Episode 25 - Steps this episode 57264 - Epsilon 1 - Learning Rate 0.00019460146436310505 - Cummulative Reward -8365.385 - Max Length 3 - Mean Loss 0.225 - Mean Q Value -55.853 - Time Delta 55.412 - Time 2025-05-07T05:17:47
+Episode 26 - Steps this episode 60408 - Epsilon 1 - Learning Rate 0.00019429899769466484 - Cummulative Reward -8075.0 - Max Length 3 - Mean Loss 0.22 - Mean Q Value -54.447 - Time Delta 55.322 - Time 2025-05-07T05:18:42
+Episode 27 - Steps this episode 63531 - Epsilon 1 - Learning Rate 0.00019399481759504536 - Cummulative Reward -7818.571 - Max Length 3 - Mean Loss 0.214 - Mean Q Value -53.088 - Time Delta 55.639 - Time 2025-05-07T05:19:38

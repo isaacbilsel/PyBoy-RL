@@ -13,21 +13,25 @@ from wrappers import SkipFrame, ResizeObservation
 from PIL import Image
 from CustomPyBoyGym import KirbyGymEnv  # your new custom environment
 import sys
+import torch
 
 
 
 """
 Hardcoded Settings
 """
-episodes = 1500
+episodes = 500
 observation_type = "tiles"
 game_dimensions = (20, 16)
 frame_stack = 4
 skip_frames = 4
 game_path = "games/Kirby_Dream_Land.gb"
 
-mode = "boss" if "boss" in sys.argv else "platformer"
+valid_modes = ["platformer", "boss", "tree"]
+mode = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in valid_modes else "platformer"
 print(f"Training Kirby mode: {mode.upper()}")
+
+checkpoint_path = 'checkpoints/Kirby_Dream_Land/2025-05-07T06-59-56-tree/mario_net_01.chkpt'
 
 """
 Logger Setup
@@ -67,6 +71,11 @@ ai_player = AIPlayer(
     n_step=3
 )
 
+ai_player.loadModel(checkpoint_path)
+# ai_player.memory.clear()
+ai_player.optimizer = torch.optim.Adam(ai_player.net.parameters(), lr=config.learning_rate)
+ai_player.scheduler = torch.optim.lr_scheduler.ExponentialLR(ai_player.optimizer, gamma=config.learning_rate_decay)
+
 """
 Training Loop
 """
@@ -84,6 +93,8 @@ print("Starting Kirby training (headless)")
 print(f"Total Episodes: {episodes}")
 
 ai_player.net.train()
+
+time_limit = 50
 
 for e in range(episodes):
     observation = env.reset()
@@ -106,7 +117,7 @@ for e in range(episodes):
 
         observation = next_observation
 
-        if done or time.time() - start > 60:
+        if done or time.time() - start > time_limit:
             break
 
     logger.log_episode()

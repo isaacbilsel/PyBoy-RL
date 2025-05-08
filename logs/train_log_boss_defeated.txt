@@ -1,0 +1,476 @@
+nohup: ignoring input
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.0
+
+Training Kirby mode: BOSS
+3036     pyboy.plugins.window_headless  WARNING  This window type does not support frame-limiting. `pyboy.set_emulation_speed(...)` will have no effect, as it's always running at full speed.
+Starting Kirby training (headless)
+Total Episodes: 2500
+/opt/conda/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3440: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/opt/conda/lib/python3.10/site-packages/numpy/core/_methods.py:189: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+Episode 0 - Steps this episode 823 - Epsilon 1 - Learning Rate nan - Cummulative Reward -7971.1 - Max Length 3 - Mean Loss 0.0 - Mean Q Value 0.0 - Time Delta 4.729 - Time 2025-05-06T07:34:58
+Episode 1 - Steps this episode 1374 - Epsilon 1 - Learning Rate 0.00019998110117174615 - Cummulative Reward -7925.4 - Max Length 3 - Mean Loss 1.417 - Mean Q Value -0.124 - Time Delta 8.05 - Time 2025-05-06T07:35:06
+Episode 2 - Steps this episode 2404 - Epsilon 1 - Learning Rate 0.00019991092198220423 - Cummulative Reward -7879.7 - Max Length 3 - Mean Loss 1.167 - Mean Q Value -0.472 - Time Delta 15.436 - Time 2025-05-06T07:35:21
+Episode 3 - Steps this episode 3148 - Epsilon 1 - Learning Rate 0.00019982232998322705 - Cummulative Reward -7885.4 - Max Length 3 - Mean Loss 0.936 - Mean Q Value -0.747 - Time Delta 12.264 - Time 2025-05-06T07:35:34
+Boss HP: 3 → 2, Kirby HP: 1 → 1, Reward: 3000.1
+Episode 4 - Steps this episode 3614 - Epsilon 1 - Learning Rate 0.00019976194206328192 - Cummulative Reward -7271.06 - Max Length 2 - Mean Loss 0.793 - Mean Q Value -0.954 - Time Delta 8.16 - Time 2025-05-06T07:35:42
+Episode 5 - Steps this episode 4010 - Epsilon 1 - Learning Rate 0.00019971894777682527 - Cummulative Reward -7399.5 - Max Length 3 - Mean Loss 0.715 - Mean Q Value -1.086 - Time Delta 6.769 - Time 2025-05-06T07:35:48
+Episode 6 - Steps this episode 4304 - Epsilon 1 - Learning Rate 0.00019968449905737842 - Cummulative Reward -7468.5 - Max Length 3 - Mean Loss 0.669 - Mean Q Value -1.282 - Time Delta 5.231 - Time 2025-05-06T07:35:54
+Episode 7 - Steps this episode 4863 - Epsilon 1 - Learning Rate 0.00019964182149981665 - Cummulative Reward -7519.5 - Max Length 3 - Mean Loss 0.614 - Mean Q Value -1.44 - Time Delta 8.629 - Time 2025-05-06T07:36:02
+Episode 8 - Steps this episode 5235 - Epsilon 1 - Learning Rate 0.0001995952600738002 - Cummulative Reward -7578.578 - Max Length 3 - Mean Loss 0.571 - Mean Q Value -1.571 - Time Delta 6.343 - Time 2025-05-06T07:36:09
+Episode 9 - Steps this episode 6567 - Epsilon 1 - Learning Rate 0.00019951025393722888 - Cummulative Reward -7567.44 - Max Length 3 - Mean Loss 0.53 - Mean Q Value -1.714 - Time Delta 19.686 - Time 2025-05-06T07:36:28
+Episode 10 - Steps this episode 8123 - Epsilon 1 - Learning Rate 0.00019936636042794728 - Cummulative Reward -7577.473 - Max Length 3 - Mean Loss 0.495 - Mean Q Value -1.857 - Time Delta 24.327 - Time 2025-05-06T07:36:53
+Episode 11 - Steps this episode 9294 - Epsilon 1 - Learning Rate 0.00019923048647415317 - Cummulative Reward -7607.008 - Max Length 3 - Mean Loss 0.464 - Mean Q Value -2.005 - Time Delta 20.201 - Time 2025-05-06T07:37:13
+Episode 12 - Steps this episode 11541 - Epsilon 1 - Learning Rate 0.00019906022469735947 - Cummulative Reward -7591.185 - Max Length 3 - Mean Loss 0.438 - Mean Q Value -2.15 - Time Delta 35.476 - Time 2025-05-06T07:37:48
+Episode 13 - Steps this episode 12934 - Epsilon 1 - Learning Rate 0.00019887920542722238 - Cummulative Reward -7602.036 - Max Length 3 - Mean Loss 0.415 - Mean Q Value -2.298 - Time Delta 23.921 - Time 2025-05-06T07:38:12
+Episode 14 - Steps this episode 14343 - Epsilon 1 - Learning Rate 0.0001987399393274682 - Cummulative Reward -7611.013 - Max Length 3 - Mean Loss 0.395 - Mean Q Value -2.442 - Time Delta 22.989 - Time 2025-05-06T07:38:35
+Episode 15 - Steps this episode 15915 - Epsilon 1 - Learning Rate 0.0001985918348041549 - Cummulative Reward -7621.037 - Max Length 3 - Mean Loss 0.377 - Mean Q Value -2.6 - Time Delta 26.084 - Time 2025-05-06T07:39:01
+Episode 16 - Steps this episode 16681 - Epsilon 1 - Learning Rate 0.00019847583742642642 - Cummulative Reward -7642.971 - Max Length 3 - Mean Loss 0.36 - Mean Q Value -2.748 - Time Delta 15.141 - Time 2025-05-06T07:39:16
+Episode 17 - Steps this episode 19234 - Epsilon 1 - Learning Rate 0.00019831128211489997 - Cummulative Reward -7628.3 - Max Length 3 - Mean Loss 0.345 - Mean Q Value -2.902 - Time Delta 42.134 - Time 2025-05-06T07:39:59
+Episode 18 - Steps this episode 22428 - Epsilon 1 - Learning Rate 0.00019802652085646407 - Cummulative Reward -7596.411 - Max Length 3 - Mean Loss 0.332 - Mean Q Value -3.067 - Time Delta 51.919 - Time 2025-05-06T07:40:51
+Episode 19 - Steps this episode 24533 - Epsilon 1 - Learning Rate 0.0001977643962372221 - Cummulative Reward -7584.505 - Max Length 3 - Mean Loss 0.319 - Mean Q Value -3.239 - Time Delta 36.143 - Time 2025-05-06T07:41:27
+Episode 20 - Steps this episode 26598 - Epsilon 1 - Learning Rate 0.0001975583338192043 - Cummulative Reward -7574.486 - Max Length 3 - Mean Loss 0.308 - Mean Q Value -3.407 - Time Delta 33.989 - Time 2025-05-06T07:42:01
+Episode 21 - Steps this episode 27727 - Epsilon 1 - Learning Rate 0.00019740059081730518 - Cummulative Reward -7582.391 - Max Length 3 - Mean Loss 0.297 - Mean Q Value -3.573 - Time Delta 20.259 - Time 2025-05-06T07:42:21
+Episode 22 - Steps this episode 29933 - Epsilon 1 - Learning Rate 0.00019723618253596664 - Cummulative Reward -7570.891 - Max Length 3 - Mean Loss 0.287 - Mean Q Value -3.736 - Time Delta 35.305 - Time 2025-05-06T07:42:56
+Episode 23 - Steps this episode 33743 - Epsilon 1 - Learning Rate 0.00019693983109912085 - Cummulative Reward -7533.608 - Max Length 3 - Mean Loss 0.278 - Mean Q Value -3.902 - Time Delta 61.235 - Time 2025-05-06T07:43:57
+Episode 24 - Steps this episode 36766 - Epsilon 1 - Learning Rate 0.00019660363541244358 - Cummulative Reward -7511.896 - Max Length 3 - Mean Loss 0.27 - Mean Q Value -4.078 - Time Delta 51.676 - Time 2025-05-06T07:44:49
+Episode 25 - Steps this episode 37730 - Epsilon 1 - Learning Rate 0.00019640775141174926 - Cummulative Reward -7515.846 - Max Length 3 - Mean Loss 0.262 - Mean Q Value -4.249 - Time Delta 19.645 - Time 2025-05-06T07:45:09
+Episode 26 - Steps this episode 41053 - Epsilon 1 - Learning Rate 0.00019619738469366134 - Cummulative Reward -7484.559 - Max Length 3 - Mean Loss 0.255 - Mean Q Value -4.417 - Time Delta 53.423 - Time 2025-05-06T07:46:02
+Episode 27 - Steps this episode 43512 - Epsilon 1 - Learning Rate 0.0001959138778817149 - Cummulative Reward -7474.986 - Max Length 3 - Mean Loss 0.249 - Mean Q Value -4.598 - Time Delta 42.985 - Time 2025-05-06T07:46:45
+Episode 28 - Steps this episode 51381 - Epsilon 1 - Learning Rate 0.00019540874523164345 - Cummulative Reward -7174.207 - Max Length 3 - Mean Loss 0.242 - Mean Q Value -4.794 - Time Delta 124.558 - Time 2025-05-06T07:48:50
+Episode 29 - Steps this episode 53629 - Epsilon 1 - Learning Rate 0.00019491506504899068 - Cummulative Reward -7168.437 - Max Length 3 - Mean Loss 0.236 - Mean Q Value -4.999 - Time Delta 48.097 - Time 2025-05-06T07:49:38
+Episode 30 - Steps this episode 55817 - Epsilon 1 - Learning Rate 0.00019469912070683198 - Cummulative Reward -7173.49 - Max Length 3 - Mean Loss 0.231 - Mean Q Value -5.204 - Time Delta 37.857 - Time 2025-05-06T07:50:16
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 31 - Steps this episode 60359 - Epsilon 1 - Learning Rate 0.00019437189529238898 - Cummulative Reward -7045.678 - Max Length 2 - Mean Loss 0.226 - Mean Q Value -5.413 - Time Delta 74.632 - Time 2025-05-06T07:51:30
+Episode 32 - Steps this episode 61533 - Epsilon 1 - Learning Rate 0.00019409420004847568 - Cummulative Reward -7060.367 - Max Length 3 - Mean Loss 0.221 - Mean Q Value -5.62 - Time Delta 26.238 - Time 2025-05-06T07:51:57
+Episode 33 - Steps this episode 63264 - Epsilon 1 - Learning Rate 0.00019395319648699686 - Cummulative Reward -7064.703 - Max Length 3 - Mean Loss 0.216 - Mean Q Value -5.823 - Time Delta 29.333 - Time 2025-05-06T07:52:26
+Episode 34 - Steps this episode 65945 - Epsilon 1 - Learning Rate 0.00019373948919715212 - Cummulative Reward -7066.506 - Max Length 3 - Mean Loss 0.212 - Mean Q Value -6.021 - Time Delta 45.675 - Time 2025-05-06T07:53:12
+Episode 35 - Steps this episode 69130 - Epsilon 1 - Learning Rate 0.00019345563260803926 - Cummulative Reward -7057.056 - Max Length 3 - Mean Loss 0.208 - Mean Q Value -6.223 - Time Delta 55.403 - Time 2025-05-06T07:54:07
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 36 - Steps this episode 70814 - Epsilon 1 - Learning Rate 0.00019322027709682714 - Cummulative Reward -6983.262 - Max Length 2 - Mean Loss 0.204 - Mean Q Value -6.419 - Time Delta 32.406 - Time 2025-05-06T07:54:39
+Episode 37 - Steps this episode 72342 - Epsilon 1 - Learning Rate 0.0001930651341215024 - Cummulative Reward -7001.837 - Max Length 3 - Mean Loss 0.2 - Mean Q Value -6.609 - Time Delta 27.369 - Time 2025-05-06T07:55:07
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 38 - Steps this episode 73720 - Epsilon 1 - Learning Rate 0.00019292487400912503 - Cummulative Reward -6941.51 - Max Length 2 - Mean Loss 0.197 - Mean Q Value -6.788 - Time Delta 24.808 - Time 2025-05-06T07:55:32
+Episode 39 - Steps this episode 76699 - Epsilon 1 - Learning Rate 0.0001927149070278571 - Cummulative Reward -6938.19 - Max Length 3 - Mean Loss 0.193 - Mean Q Value -6.972 - Time Delta 50.464 - Time 2025-05-06T07:56:22
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 40 - Steps this episode 78464 - Epsilon 1 - Learning Rate 0.00019248651902630014 - Cummulative Reward -6871.259 - Max Length 2 - Mean Loss 0.19 - Mean Q Value -7.165 - Time Delta 33.763 - Time 2025-05-06T07:56:56
+Episode 41 - Steps this episode 79487 - Epsilon 1 - Learning Rate 0.00019235244651718858 - Cummulative Reward -6888.39 - Max Length 3 - Mean Loss 0.187 - Mean Q Value -7.358 - Time Delta 19.848 - Time 2025-05-06T07:57:16
+Episode 42 - Steps this episode 80911 - Epsilon 1 - Learning Rate 0.0001922347647171668 - Cummulative Reward -6905.647 - Max Length 3 - Mean Loss 0.185 - Mean Q Value -7.547 - Time Delta 25.282 - Time 2025-05-06T07:57:41
+Episode 43 - Steps this episode 83293 - Epsilon 1 - Learning Rate 0.00019205189946954515 - Cummulative Reward -6911.139 - Max Length 3 - Mean Loss 0.182 - Mean Q Value -7.733 - Time Delta 41.45 - Time 2025-05-06T07:58:22
+Episode 44 - Steps this episode 84569 - Epsilon 1 - Learning Rate 0.00019187638803662112 - Cummulative Reward -6926.22 - Max Length 3 - Mean Loss 0.179 - Mean Q Value -7.91 - Time Delta 25.005 - Time 2025-05-06T07:58:47
+Episode 45 - Steps this episode 85694 - Epsilon 1 - Learning Rate 0.0001917612959292447 - Cummulative Reward -6944.135 - Max Length 3 - Mean Loss 0.177 - Mean Q Value -8.075 - Time Delta 20.818 - Time 2025-05-06T07:59:08
+Episode 46 - Steps this episode 86297 - Epsilon 1 - Learning Rate 0.0001916784710773402 - Cummulative Reward -6963.598 - Max Length 3 - Mean Loss 0.175 - Mean Q Value -8.243 - Time Delta 12.137 - Time 2025-05-06T07:59:20
+Episode 47 - Steps this episode 93348 - Epsilon 1 - Learning Rate 0.00019131204749088965 - Cummulative Reward -6928.521 - Max Length 3 - Mean Loss 0.173 - Mean Q Value -8.404 - Time Delta 117.905 - Time 2025-05-06T08:01:18
+Episode 48 - Steps this episode 96394 - Epsilon 1 - Learning Rate 0.00019082960852617425 - Cummulative Reward -6927.569 - Max Length 3 - Mean Loss 0.17 - Mean Q Value -8.587 - Time Delta 63.454 - Time 2025-05-06T08:02:22
+Episode 49 - Steps this episode 98116 - Epsilon 1 - Learning Rate 0.00019060231010895493 - Cummulative Reward -6933.244 - Max Length 3 - Mean Loss 0.169 - Mean Q Value -8.781 - Time Delta 33.957 - Time 2025-05-06T08:02:56
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 50 - Steps this episode 101178 - Epsilon 1 - Learning Rate 0.00019037445097235193 - Cummulative Reward -6869.365 - Max Length 2 - Mean Loss 0.167 - Mean Q Value -8.978 - Time Delta 54.581 - Time 2025-05-06T08:03:50
+Episode 51 - Steps this episode 104148 - Epsilon 1 - Learning Rate 0.0001900875338054862 - Cummulative Reward -6864.417 - Max Length 3 - Mean Loss 0.165 - Mean Q Value -9.17 - Time Delta 55.445 - Time 2025-05-06T08:04:46
+Episode 52 - Steps this episode 106568 - Epsilon 1 - Learning Rate 0.0001898316521953541 - Cummulative Reward -6869.47 - Max Length 3 - Mean Loss 0.163 - Mean Q Value -9.369 - Time Delta 46.013 - Time 2025-05-06T08:05:32
+Episode 53 - Steps this episode 108028 - Epsilon 1 - Learning Rate 0.0001896476447106774 - Cummulative Reward -6879.594 - Max Length 3 - Mean Loss 0.161 - Mean Q Value -9.559 - Time Delta 29.408 - Time 2025-05-06T08:06:01
+Episode 54 - Steps this episode 111959 - Epsilon 1 - Learning Rate 0.00018939224532879876 - Cummulative Reward -6867.742 - Max Length 3 - Mean Loss 0.16 - Mean Q Value -9.75 - Time Delta 69.997 - Time 2025-05-06T08:07:11
+Episode 55 - Steps this episode 115819 - Epsilon 1 - Learning Rate 0.00018902371426673812 - Cummulative Reward -6863.966 - Max Length 3 - Mean Loss 0.158 - Mean Q Value -9.95 - Time Delta 74.264 - Time 2025-05-06T08:08:25
+Episode 56 - Steps this episode 117690 - Epsilon 1 - Learning Rate 0.0001887529674592081 - Cummulative Reward -6870.768 - Max Length 3 - Mean Loss 0.156 - Mean Q Value -10.151 - Time Delta 40.53 - Time 2025-05-06T08:09:06
+Episode 57 - Steps this episode 119585 - Epsilon 1 - Learning Rate 0.00018857538733754172 - Cummulative Reward -6878.893 - Max Length 3 - Mean Loss 0.155 - Mean Q Value -10.334 - Time Delta 35.932 - Time 2025-05-06T08:09:42
+Episode 58 - Steps this episode 120381 - Epsilon 1 - Learning Rate 0.00018844856003067813 - Cummulative Reward -6895.892 - Max Length 3 - Mean Loss 0.153 - Mean Q Value -10.516 - Time Delta 17.121 - Time 2025-05-06T08:09:59
+Episode 59 - Steps this episode 122530 - Epsilon 1 - Learning Rate 0.00018830982646127643 - Cummulative Reward -6899.967 - Max Length 3 - Mean Loss 0.152 - Mean Q Value -10.698 - Time Delta 40.346 - Time 2025-05-06T08:10:39
+Episode 60 - Steps this episode 124771 - Epsilon 1 - Learning Rate 0.00018810331746625336 - Cummulative Reward -6908.226 - Max Length 3 - Mean Loss 0.15 - Mean Q Value -10.875 - Time Delta 44.417 - Time 2025-05-06T08:11:24
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 61 - Steps this episode 127311 - Epsilon 1 - Learning Rate 0.0001878785769563668 - Cummulative Reward -6864.292 - Max Length 2 - Mean Loss 0.149 - Mean Q Value -11.048 - Time Delta 48.547 - Time 2025-05-06T08:12:12
+Episode 62 - Steps this episode 129675 - Epsilon 1 - Learning Rate 0.0001876483301795401 - Cummulative Reward -6870.489 - Max Length 3 - Mean Loss 0.148 - Mean Q Value -11.212 - Time Delta 46.045 - Time 2025-05-06T08:12:58
+Episode 63 - Steps this episode 131253 - Epsilon 1 - Learning Rate 0.00018746348765423824 - Cummulative Reward -6881.4 - Max Length 3 - Mean Loss 0.147 - Mean Q Value -11.37 - Time Delta 32.259 - Time 2025-05-06T08:13:31
+Episode 64 - Steps this episode 133824 - Epsilon 1 - Learning Rate 0.00018726914985284167 - Cummulative Reward -6882.789 - Max Length 3 - Mean Loss 0.145 - Mean Q Value -11.531 - Time Delta 50.258 - Time 2025-05-06T08:14:21
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 65 - Steps this episode 134924 - Epsilon 1 - Learning Rate 0.00018709744531867479 - Cummulative Reward -6850.629 - Max Length 2 - Mean Loss 0.144 - Mean Q Value -11.68 - Time Delta 24.172 - Time 2025-05-06T08:14:45
+Episode 66 - Steps this episode 137115 - Epsilon 1 - Learning Rate 0.0001869435811050869 - Cummulative Reward -6853.212 - Max Length 3 - Mean Loss 0.143 - Mean Q Value -11.834 - Time Delta 41.575 - Time 2025-05-06T08:15:27
+Episode 67 - Steps this episode 137964 - Epsilon 1 - Learning Rate 0.00018680145649626465 - Cummulative Reward -6868.028 - Max Length 3 - Mean Loss 0.142 - Mean Q Value -11.983 - Time Delta 19.118 - Time 2025-05-06T08:15:46
+Episode 68 - Steps this episode 139459 - Epsilon 1 - Learning Rate 0.00018669207243984323 - Cummulative Reward -6874.32 - Max Length 3 - Mean Loss 0.141 - Mean Q Value -12.118 - Time Delta 28.44 - Time 2025-05-06T08:16:14
+Episode 69 - Steps this episode 141270 - Epsilon 1 - Learning Rate 0.00018653783711646858 - Cummulative Reward -6882.913 - Max Length 3 - Mean Loss 0.14 - Mean Q Value -12.251 - Time Delta 35.502 - Time 2025-05-06T08:16:50
+Episode 70 - Steps this episode 142588 - Epsilon 1 - Learning Rate 0.00018639197183457375 - Cummulative Reward -6892.632 - Max Length 3 - Mean Loss 0.139 - Mean Q Value -12.39 - Time Delta 27.073 - Time 2025-05-06T08:17:17
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 71 - Steps this episode 144463 - Epsilon 1 - Learning Rate 0.00018624329371684772 - Cummulative Reward -6855.933 - Max Length 2 - Mean Loss 0.138 - Mean Q Value -12.516 - Time Delta 36.691 - Time 2025-05-06T08:17:53
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 72 - Steps this episode 145332 - Epsilon 1 - Learning Rate 0.00018611552265697772 - Cummulative Reward -6825.751 - Max Length 2 - Mean Loss 0.137 - Mean Q Value -12.638 - Time Delta 19.127 - Time 2025-05-06T08:18:12
+Episode 73 - Steps this episode 148967 - Epsilon 1 - Learning Rate 0.00018590614493329633 - Cummulative Reward -6820.622 - Max Length 3 - Mean Loss 0.136 - Mean Q Value -12.761 - Time Delta 68.569 - Time 2025-05-06T08:19:21
+Episode 74 - Steps this episode 150912 - Epsilon 1 - Learning Rate 0.00018564696827860362 - Cummulative Reward -6828.641 - Max Length 3 - Mean Loss 0.135 - Mean Q Value -12.892 - Time Delta 42.54 - Time 2025-05-06T08:20:04
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 75 - Steps this episode 152075 - Epsilon 1 - Learning Rate 0.0001855027717814184 - Cummulative Reward -6795.828 - Max Length 2 - Mean Loss 0.134 - Mean Q Value -13.01 - Time Delta 24.848 - Time 2025-05-06T08:20:28
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 76 - Steps this episode 153948 - Epsilon 1 - Learning Rate 0.00018536203267644256 - Cummulative Reward -6762.778 - Max Length 2 - Mean Loss 0.133 - Mean Q Value -13.111 - Time Delta 36.778 - Time 2025-05-06T08:21:05
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 77 - Steps this episode 154621 - Epsilon 1 - Learning Rate 0.0001852440349708065 - Cummulative Reward -6736.729 - Max Length 2 - Mean Loss 0.133 - Mean Q Value -13.213 - Time Delta 15.729 - Time 2025-05-06T08:21:21
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 1 → 1, Reward: 4000.1
+Episode 78 - Steps this episode 156119 - Epsilon 1 - Learning Rate 0.0001851436169978008 - Cummulative Reward -6655.263 - Max Length 1 - Mean Loss 0.132 - Mean Q Value -13.322 - Time Delta 28.945 - Time 2025-05-06T08:21:50
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 79 - Steps this episode 157366 - Epsilon 1 - Learning Rate 0.00018501660436382974 - Cummulative Reward -6628.337 - Max Length 2 - Mean Loss 0.131 - Mean Q Value -13.433 - Time Delta 25.762 - Time 2025-05-06T08:22:16
+Episode 80 - Steps this episode 158357 - Epsilon 1 - Learning Rate 0.00018491311533733187 - Cummulative Reward -6640.381 - Max Length 3 - Mean Loss 0.13 - Mean Q Value -13.541 - Time Delta 20.695 - Time 2025-05-06T08:22:36
+Episode 81 - Steps this episode 159670 - Epsilon 1 - Learning Rate 0.0001848066374090985 - Cummulative Reward -6650.561 - Max Length 3 - Mean Loss 0.13 - Mean Q Value -13.639 - Time Delta 26.379 - Time 2025-05-06T08:23:03
+Episode 82 - Steps this episode 160626 - Epsilon 1 - Learning Rate 0.00018470174158185685 - Cummulative Reward -6663.419 - Max Length 3 - Mean Loss 0.129 - Mean Q Value -13.748 - Time Delta 20.21 - Time 2025-05-06T08:23:23
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 83 - Steps this episode 162551 - Epsilon 1 - Learning Rate 0.0001845688094402673 - Cummulative Reward -6632.07 - Max Length 2 - Mean Loss 0.128 - Mean Q Value -13.854 - Time Delta 37.978 - Time 2025-05-06T08:24:01
+Episode 84 - Steps this episode 164142 - Epsilon 1 - Learning Rate 0.00018440664238823998 - Cummulative Reward -6645.385 - Max Length 3 - Mean Loss 0.128 - Mean Q Value -13.956 - Time Delta 33.19 - Time 2025-05-06T08:24:34
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 85 - Steps this episode 166711 - Epsilon 1 - Learning Rate 0.00018421492076021334 - Cummulative Reward -6611.979 - Max Length 2 - Mean Loss 0.127 - Mean Q Value -14.055 - Time Delta 52.07 - Time 2025-05-06T08:25:26
+Episode 86 - Steps this episode 167406 - Epsilon 1 - Learning Rate 0.00018406465087048875 - Cummulative Reward -6624.738 - Max Length 3 - Mean Loss 0.127 - Mean Q Value -14.147 - Time Delta 17.494 - Time 2025-05-06T08:25:44
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 87 - Steps this episode 168096 - Epsilon 1 - Learning Rate 0.00018400088345353814 - Cummulative Reward -6600.867 - Max Length 2 - Mean Loss 0.126 - Mean Q Value -14.247 - Time Delta 14.531 - Time 2025-05-06T08:25:58
+Episode 88 - Steps this episode 168649 - Epsilon 1 - Learning Rate 0.0001839437596768489 - Cummulative Reward -6614.102 - Max Length 3 - Mean Loss 0.125 - Mean Q Value -14.349 - Time Delta 12.004 - Time 2025-05-06T08:26:10
+Episode 89 - Steps this episode 169663 - Epsilon 1 - Learning Rate 0.0001838717611215728 - Cummulative Reward -6624.997 - Max Length 3 - Mean Loss 0.125 - Mean Q Value -14.44 - Time Delta 20.292 - Time 2025-05-06T08:26:31
+Episode 90 - Steps this episode 170920 - Epsilon 1 - Learning Rate 0.00018376739853633907 - Cummulative Reward -6634.581 - Max Length 3 - Mean Loss 0.124 - Mean Q Value -14.526 - Time Delta 25.7 - Time 2025-05-06T08:26:56
+Episode 91 - Steps this episode 172448 - Epsilon 1 - Learning Rate 0.00018363954226860836 - Cummulative Reward -6643.866 - Max Length 3 - Mean Loss 0.124 - Mean Q Value -14.615 - Time Delta 31.506 - Time 2025-05-06T08:27:28
+Episode 92 - Steps this episode 174340 - Epsilon 1 - Learning Rate 0.00018348259983812137 - Cummulative Reward -6650.314 - Max Length 3 - Mean Loss 0.123 - Mean Q Value -14.704 - Time Delta 38.759 - Time 2025-05-06T08:28:06
+Episode 93 - Steps this episode 175864 - Epsilon 1 - Learning Rate 0.0001833259242304505 - Cummulative Reward -6656.061 - Max Length 3 - Mean Loss 0.123 - Mean Q Value -14.786 - Time Delta 32.527 - Time 2025-05-06T08:28:39
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 94 - Steps this episode 178039 - Epsilon 1 - Learning Rate 0.00018315647641184104 - Cummulative Reward -6629.472 - Max Length 2 - Mean Loss 0.122 - Mean Q Value -14.876 - Time Delta 44.309 - Time 2025-05-06T08:29:23
+Episode 95 - Steps this episode 179059 - Epsilon 1 - Learning Rate 0.0001830102314432842 - Cummulative Reward -6640.541 - Max Length 3 - Mean Loss 0.122 - Mean Q Value -14.957 - Time Delta 23.466 - Time 2025-05-06T08:29:47
+Episode 96 - Steps this episode 179920 - Epsilon 1 - Learning Rate 0.00018292419047936744 - Cummulative Reward -6649.976 - Max Length 3 - Mean Loss 0.121 - Mean Q Value -15.036 - Time Delta 18.409 - Time 2025-05-06T08:30:05
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 97 - Steps this episode 180843 - Epsilon 1 - Learning Rate 0.0001828425789233215 - Cummulative Reward -6630.393 - Max Length 2 - Mean Loss 0.121 - Mean Q Value -15.116 - Time Delta 19.717 - Time 2025-05-06T08:30:25
+Episode 98 - Steps this episode 182930 - Epsilon 1 - Learning Rate 0.0001827050938594281 - Cummulative Reward -6635.798 - Max Length 3 - Mean Loss 0.12 - Mean Q Value -15.198 - Time Delta 41.952 - Time 2025-05-06T08:31:07
+Episode 99 - Steps this episode 184543 - Epsilon 1 - Learning Rate 0.0001825362119817734 - Cummulative Reward -6641.99 - Max Length 3 - Mean Loss 0.12 - Mean Q Value -15.279 - Time Delta 36.398 - Time 2025-05-06T08:31:43
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 100 - Steps this episode 186346 - Epsilon 1 - Learning Rate 0.00018238034811606096 - Cummulative Reward -6605.069 - Max Length 2 - Mean Loss 0.121 - Mean Q Value -15.504 - Time Delta 38.525 - Time 2025-05-06T08:32:22
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 4 → 4, Reward: 4000.1
+Episode 101 - Steps this episode 188212 - Epsilon 1 - Learning Rate 0.00018221313675430948 - Cummulative Reward -6526.808 - Max Length 1 - Mean Loss 0.093 - Mean Q Value -15.734 - Time Delta 39.212 - Time 2025-05-06T08:33:01
+Episode 102 - Steps this episode 189283 - Epsilon 1 - Learning Rate 0.00018207939133546542 - Cummulative Reward -6524.641 - Max Length 3 - Mean Loss 0.087 - Mean Q Value -15.953 - Time Delta 23.948 - Time 2025-05-06T08:33:25
+Episode 103 - Steps this episode 190733 - Epsilon 1 - Learning Rate 0.00018196471916456252 - Cummulative Reward -6519.818 - Max Length 3 - Mean Loss 0.086 - Mean Q Value -16.173 - Time Delta 30.147 - Time 2025-05-06T08:33:55
+Episode 104 - Steps this episode 191146 - Epsilon 1 - Learning Rate 0.00018187998511303758 - Cummulative Reward -6550.029 - Max Length 3 - Mean Loss 0.084 - Mean Q Value -16.389 - Time Delta 10.692 - Time 2025-05-06T08:34:06
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 105 - Steps this episode 193256 - Epsilon 1 - Learning Rate 0.00018176530849596897 - Cummulative Reward -6510.173 - Max Length 2 - Mean Loss 0.082 - Mean Q Value -16.602 - Time Delta 42.214 - Time 2025-05-06T08:34:48
+Episode 106 - Steps this episode 194052 - Epsilon 1 - Learning Rate 0.00018163325123786276 - Cummulative Reward -6508.166 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -16.811 - Time Delta 19.256 - Time 2025-05-06T08:35:07
+Episode 107 - Steps this episode 194513 - Epsilon 1 - Learning Rate 0.0001815761811073688 - Cummulative Reward -6507.557 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -17.016 - Time Delta 10.549 - Time 2025-05-06T08:35:18
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 108 - Steps this episode 195379 - Epsilon 1 - Learning Rate 0.00018151599955694295 - Cummulative Reward -6471.583 - Max Length 2 - Mean Loss 0.076 - Mean Q Value -17.215 - Time Delta 17.969 - Time 2025-05-06T08:35:36
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 109 - Steps this episode 196910 - Epsilon 1 - Learning Rate 0.000181407261600489 - Cummulative Reward -6441.788 - Max Length 2 - Mean Loss 0.075 - Mean Q Value -17.412 - Time Delta 31.594 - Time 2025-05-06T08:36:07
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 110 - Steps this episode 198277 - Epsilon 1 - Learning Rate 0.0001812758786533137 - Cummulative Reward -6411.544 - Max Length 2 - Mean Loss 0.074 - Mean Q Value -17.605 - Time Delta 29.502 - Time 2025-05-06T08:36:37
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 111 - Steps this episode 199348 - Epsilon 1 - Learning Rate 0.0001811653779283329 - Cummulative Reward -6378.942 - Max Length 2 - Mean Loss 0.074 - Mean Q Value -17.794 - Time Delta 23.65 - Time 2025-05-06T08:37:01
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+MarioNet saved to checkpoints/Kirby_Dream_Land/2025-05-06T07-34-53-boss/mario_net_01.chkpt at step 200000
+Episode 112 - Steps this episode 200554 - Epsilon 1 - Learning Rate 0.00018106227938676297 - Cummulative Reward -6353.107 - Max Length 2 - Mean Loss 0.074 - Mean Q Value -17.978 - Time Delta 25.764 - Time 2025-05-06T08:37:26
+Episode 113 - Steps this episode 201653 - Epsilon 1 - Learning Rate 0.00018095801699691253 - Cummulative Reward -6353.282 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -18.166 - Time Delta 24.489 - Time 2025-05-06T08:37:51
+Episode 114 - Steps this episode 202334 - Epsilon 1 - Learning Rate 0.00018087755235510759 - Cummulative Reward -6352.191 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -18.362 - Time Delta 15.607 - Time 2025-05-06T08:38:06
+Episode 115 - Steps this episode 203717 - Epsilon 1 - Learning Rate 0.00018078424627243584 - Cummulative Reward -6349.948 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -18.551 - Time Delta 28.772 - Time 2025-05-06T08:38:35
+Episode 116 - Steps this episode 204708 - Epsilon 1 - Learning Rate 0.000180676890492954 - Cummulative Reward -6347.045 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -18.737 - Time Delta 22.174 - Time 2025-05-06T08:38:57
+Episode 117 - Steps this episode 206305 - Epsilon 1 - Learning Rate 0.00018055998806178433 - Cummulative Reward -6348.87 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -18.916 - Time Delta 33.462 - Time 2025-05-06T08:39:31
+Episode 118 - Steps this episode 208426 - Epsilon 1 - Learning Rate 0.00018039228416719374 - Cummulative Reward -6349.165 - Max Length 3 - Mean Loss 0.072 - Mean Q Value -19.096 - Time Delta 45.213 - Time 2025-05-06T08:40:16
+Episode 119 - Steps this episode 210354 - Epsilon 1 - Learning Rate 0.00018020972781686767 - Cummulative Reward -6350.873 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -19.265 - Time Delta 42.26 - Time 2025-05-06T08:40:58
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 1 → 1, Reward: 4000.1
+Episode 120 - Steps this episode 211258 - Epsilon 1 - Learning Rate 0.00018008217893906214 - Cummulative Reward -6282.518 - Max Length 1 - Mean Loss 0.073 - Mean Q Value -19.423 - Time Delta 21.575 - Time 2025-05-06T08:41:20
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 1 → 1, Reward: 4000.1
+Episode 121 - Steps this episode 212082 - Epsilon 1 - Learning Rate 0.00018000439992812184 - Cummulative Reward -6210.74 - Max Length 1 - Mean Loss 0.073 - Mean Q Value -19.582 - Time Delta 18.194 - Time 2025-05-06T08:41:38
+Episode 122 - Steps this episode 214270 - Epsilon 1 - Learning Rate 0.00017986891521895137 - Cummulative Reward -6210.811 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -19.749 - Time Delta 45.688 - Time 2025-05-06T08:42:24
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 1 → 1, Reward: 4000.1
+Episode 123 - Steps this episode 215276 - Epsilon 1 - Learning Rate 0.00017972542990894375 - Cummulative Reward -6149.028 - Max Length 1 - Mean Loss 0.073 - Mean Q Value -19.907 - Time Delta 24.078 - Time 2025-05-06T08:42:48
+Episode 124 - Steps this episode 216380 - Epsilon 1 - Learning Rate 0.00017963069497244929 - Cummulative Reward -6155.704 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -20.059 - Time Delta 24.297 - Time 2025-05-06T08:43:12
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 5 → 5, Reward: 4000.1
+Boss HP: 1 → 0, Kirby HP: 2 → 2, Reward: 5000.1
+Episode 125 - Steps this episode 222321 - Epsilon 1 - Learning Rate 0.0001793145726554975 - Cummulative Reward -6069.494 - Max Length 0 - Mean Loss 0.073 - Mean Q Value -20.209 - Time Delta 122.118 - Time 2025-05-06T08:45:14
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 126 - Steps this episode 224845 - Epsilon 1 - Learning Rate 0.00017893540045430686 - Cummulative Reward -6039.688 - Max Length 2 - Mean Loss 0.074 - Mean Q Value -20.347 - Time Delta 62.053 - Time 2025-05-06T08:46:16
+Episode 127 - Steps this episode 227053 - Epsilon 1 - Learning Rate 0.00017872388678326026 - Cummulative Reward -6041.692 - Max Length 3 - Mean Loss 0.074 - Mean Q Value -20.483 - Time Delta 49.646 - Time 2025-05-06T08:47:06
+Episode 128 - Steps this episode 228933 - Epsilon 1 - Learning Rate 0.00017854127701733545 - Cummulative Reward -6125.65 - Max Length 3 - Mean Loss 0.074 - Mean Q Value -20.611 - Time Delta 42.589 - Time 2025-05-06T08:47:48
+Episode 129 - Steps this episode 230107 - Epsilon 1 - Learning Rate 0.00017840500865740083 - Cummulative Reward -6131.943 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -20.74 - Time Delta 27.43 - Time 2025-05-06T08:48:16
+Episode 130 - Steps this episode 235054 - Epsilon 1 - Learning Rate 0.0001781323003547904 - Cummulative Reward -6119.907 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -20.866 - Time Delta 106.178 - Time 2025-05-06T08:50:02
+Episode 131 - Steps this episode 237340 - Epsilon 1 - Learning Rate 0.0001778104477825067 - Cummulative Reward -6159.928 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -20.987 - Time Delta 56.249 - Time 2025-05-06T08:50:58
+Episode 132 - Steps this episode 239248 - Epsilon 1 - Learning Rate 0.0001776241081590693 - Cummulative Reward -6157.992 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -21.108 - Time Delta 44.22 - Time 2025-05-06T08:51:43
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 133 - Steps this episode 242799 - Epsilon 1 - Learning Rate 0.00017738183305708095 - Cummulative Reward -6123.711 - Max Length 2 - Mean Loss 0.076 - Mean Q Value -21.226 - Time Delta 78.415 - Time 2025-05-06T08:53:01
+Episode 134 - Steps this episode 244206 - Epsilon 1 - Learning Rate 0.0001771620403946231 - Cummulative Reward -6127.806 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -21.346 - Time Delta 35.911 - Time 2025-05-06T08:53:37
+Episode 135 - Steps this episode 246859 - Epsilon 1 - Learning Rate 0.0001769823655784193 - Cummulative Reward -6131.931 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -21.463 - Time Delta 60.002 - Time 2025-05-06T08:54:37
+Episode 136 - Steps this episode 249010 - Epsilon 1 - Learning Rate 0.00017676997694848407 - Cummulative Reward -6160.06 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -21.578 - Time Delta 50.324 - Time 2025-05-06T08:55:27
+Episode 137 - Steps this episode 252678 - Epsilon 1 - Learning Rate 0.0001765129797062115 - Cummulative Reward -6150.499 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -21.684 - Time Delta 83.4 - Time 2025-05-06T08:56:51
+Episode 138 - Steps this episode 257007 - Epsilon 1 - Learning Rate 0.00017616040403994272 - Cummulative Reward -6167.695 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -21.796 - Time Delta 99.036 - Time 2025-05-06T08:58:30
+Episode 139 - Steps this episode 260361 - Epsilon 1 - Learning Rate 0.00017582235471570772 - Cummulative Reward -6165.193 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -21.9 - Time Delta 79.456 - Time 2025-05-06T08:59:49
+Episode 140 - Steps this episode 263875 - Epsilon 1 - Learning Rate 0.00017552077240484635 - Cummulative Reward -6191.197 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -22.0 - Time Delta 81.774 - Time 2025-05-06T09:01:11
+Episode 141 - Steps this episode 267243 - Epsilon 1 - Learning Rate 0.00017521904651341481 - Cummulative Reward -6182.817 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -22.091 - Time Delta 80.342 - Time 2025-05-06T09:02:31
+Episode 142 - Steps this episode 269110 - Epsilon 1 - Learning Rate 0.00017498986406673232 - Cummulative Reward -6178.045 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -22.183 - Time Delta 46.391 - Time 2025-05-06T09:03:18
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 143 - Steps this episode 271216 - Epsilon 1 - Learning Rate 0.00017481618698318878 - Cummulative Reward -6150.15 - Max Length 2 - Mean Loss 0.078 - Mean Q Value -22.28 - Time Delta 49.261 - Time 2025-05-06T09:04:07
+Episode 144 - Steps this episode 276688 - Epsilon 1 - Learning Rate 0.00017448535735149436 - Cummulative Reward -6067.364 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -22.386 - Time Delta 123.751 - Time 2025-05-06T09:06:11
+Episode 145 - Steps this episode 278501 - Epsilon 1 - Learning Rate 0.000174167860035738 - Cummulative Reward -6063.609 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -22.491 - Time Delta 49.789 - Time 2025-05-06T09:07:00
+Episode 146 - Steps this episode 282846 - Epsilon 1 - Learning Rate 0.00017389991951014441 - Cummulative Reward -6048.641 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -22.587 - Time Delta 99.261 - Time 2025-05-06T09:08:40
+Episode 147 - Steps this episode 286887 - Epsilon 1 - Learning Rate 0.00017353562855363018 - Cummulative Reward -6059.681 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -22.687 - Time Delta 97.421 - Time 2025-05-06T09:10:17
+Episode 148 - Steps this episode 289515 - Epsilon 1 - Learning Rate 0.0001732465251109668 - Cummulative Reward -6062.351 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -22.772 - Time Delta 65.648 - Time 2025-05-06T09:11:23
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 149 - Steps this episode 294618 - Epsilon 1 - Learning Rate 0.0001729120404776805 - Cummulative Reward -6020.827 - Max Length 2 - Mean Loss 0.078 - Mean Q Value -22.85 - Time Delta 119.169 - Time 2025-05-06T09:13:22
+Episode 150 - Steps this episode 297074 - Epsilon 1 - Learning Rate 0.0001725856385622806 - Cummulative Reward -6056.249 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -22.929 - Time Delta 64.089 - Time 2025-05-06T09:14:26
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 151 - Steps this episode 300332 - Epsilon 1 - Learning Rate 0.00017233937021342855 - Cummulative Reward -6028.096 - Max Length 2 - Mean Loss 0.079 - Mean Q Value -22.993 - Time Delta 77.861 - Time 2025-05-06T09:15:44
+Episode 152 - Steps this episode 303093 - Epsilon 1 - Learning Rate 0.00017208014598319222 - Cummulative Reward -6025.732 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -23.047 - Time Delta 68.372 - Time 2025-05-06T09:16:52
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 6 → 6, Reward: 4000.1
+Episode 153 - Steps this episode 306714 - Epsilon 1 - Learning Rate 0.00017180573471339006 - Cummulative Reward -5946.087 - Max Length 1 - Mean Loss 0.079 - Mean Q Value -23.107 - Time Delta 87.48 - Time 2025-05-06T09:18:20
+Episode 154 - Steps this episode 310581 - Epsilon 1 - Learning Rate 0.00017148441827656707 - Cummulative Reward -5948.345 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -23.159 - Time Delta 96.482 - Time 2025-05-06T09:19:56
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 155 - Steps this episode 315331 - Epsilon 1 - Learning Rate 0.0001711154516426164 - Cummulative Reward -5910.783 - Max Length 2 - Mean Loss 0.079 - Mean Q Value -23.209 - Time Delta 115.937 - Time 2025-05-06T09:21:52
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 3 → 3, Reward: 4000.1
+Episode 156 - Steps this episode 319546 - Epsilon 1 - Learning Rate 0.00017073240247245547 - Cummulative Reward -5829.409 - Max Length 1 - Mean Loss 0.079 - Mean Q Value -23.255 - Time Delta 106.495 - Time 2025-05-06T09:23:39
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 157 - Steps this episode 324596 - Epsilon 1 - Learning Rate 0.0001703374571801266 - Cummulative Reward -5783.791 - Max Length 2 - Mean Loss 0.079 - Mean Q Value -23.31 - Time Delta 126.812 - Time 2025-05-06T09:25:45
+Episode 158 - Steps this episode 329165 - Epsilon 1 - Learning Rate 0.0001699283643048422 - Cummulative Reward -5766.698 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -23.357 - Time Delta 115.872 - Time 2025-05-06T09:27:41
+Episode 159 - Steps this episode 330942 - Epsilon 1 - Learning Rate 0.00016965887036355504 - Cummulative Reward -5770.186 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -23.402 - Time Delta 50.882 - Time 2025-05-06T09:28:32
+Episode 160 - Steps this episode 336020 - Epsilon 1 - Learning Rate 0.00016936840612725036 - Cummulative Reward -5681.836 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -23.447 - Time Delta 123.252 - Time 2025-05-06T09:30:35
+Episode 161 - Steps this episode 336905 - Epsilon 1 - Learning Rate 0.00016911614863811256 - Cummulative Reward -5716.455 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -23.493 - Time Delta 29.822 - Time 2025-05-06T09:31:05
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 162 - Steps this episode 339160 - Epsilon 1 - Learning Rate 0.000168983409789392 - Cummulative Reward -5683.889 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -23.542 - Time Delta 55.465 - Time 2025-05-06T09:32:01
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 163 - Steps this episode 343148 - Epsilon 1 - Learning Rate 0.00016871989343747695 - Cummulative Reward -5642.251 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -23.589 - Time Delta 100.472 - Time 2025-05-06T09:33:41
+Episode 164 - Steps this episode 346117 - Epsilon 1 - Learning Rate 0.000168426689770091 - Cummulative Reward -5642.659 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -23.627 - Time Delta 79.22 - Time 2025-05-06T09:35:00
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 3 → 3, Reward: 4000.1
+Boss HP: 1 → 0, Kirby HP: 1 → 1, Reward: 5000.1
+Episode 165 - Steps this episode 349550 - Epsilon 1 - Learning Rate 0.00016815734343802042 - Cummulative Reward -5540.496 - Max Length 0 - Mean Loss 0.08 - Mean Q Value -23.673 - Time Delta 89.337 - Time 2025-05-06T09:36:30
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 166 - Steps this episode 351131 - Epsilon 1 - Learning Rate 0.00016794671585806646 - Cummulative Reward -5512.937 - Max Length 2 - Mean Loss 0.081 - Mean Q Value -23.714 - Time Delta 45.457 - Time 2025-05-06T09:37:15
+Episode 167 - Steps this episode 352278 - Epsilon 1 - Learning Rate 0.0001678321291831819 - Cummulative Reward -5509.742 - Max Length 3 - Mean Loss 0.081 - Mean Q Value -23.752 - Time Delta 30.748 - Time 2025-05-06T09:37:46
+Episode 168 - Steps this episode 353755 - Epsilon 1 - Learning Rate 0.00016772202689725748 - Cummulative Reward -5513.815 - Max Length 3 - Mean Loss 0.081 - Mean Q Value -23.799 - Time Delta 38.137 - Time 2025-05-06T09:38:24
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 6 → 6, Reward: 4000.1
+Episode 169 - Steps this episode 354900 - Epsilon 1 - Learning Rate 0.00016761211954106285 - Cummulative Reward -5443.478 - Max Length 1 - Mean Loss 0.081 - Mean Q Value -23.84 - Time Delta 30.583 - Time 2025-05-06T09:38:55
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 170 - Steps this episode 359528 - Epsilon 1 - Learning Rate 0.0001673704645124142 - Cummulative Reward -5399.237 - Max Length 2 - Mean Loss 0.081 - Mean Q Value -23.87 - Time Delta 114.777 - Time 2025-05-06T09:40:49
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 171 - Steps this episode 364099 - Epsilon 1 - Learning Rate 0.0001669860371407567 - Cummulative Reward -5389.453 - Max Length 2 - Mean Loss 0.081 - Mean Q Value -23.913 - Time Delta 119.924 - Time 2025-05-06T09:42:49
+Episode 172 - Steps this episode 366043 - Epsilon 1 - Learning Rate 0.0001667142083850361 - Cummulative Reward -5414.151 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -23.948 - Time Delta 55.755 - Time 2025-05-06T09:43:45
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 173 - Steps this episode 368912 - Epsilon 1 - Learning Rate 0.00016651377934108445 - Cummulative Reward -5386.214 - Max Length 2 - Mean Loss 0.082 - Mean Q Value -23.988 - Time Delta 74.225 - Time 2025-05-06T09:44:59
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 174 - Steps this episode 371173 - Epsilon 1 - Learning Rate 0.00016630035675671624 - Cummulative Reward -5352.949 - Max Length 2 - Mean Loss 0.082 - Mean Q Value -24.019 - Time Delta 60.899 - Time 2025-05-06T09:46:00
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 175 - Steps this episode 375255 - Epsilon 1 - Learning Rate 0.00016603679171293978 - Cummulative Reward -5341.275 - Max Length 2 - Mean Loss 0.082 - Mean Q Value -24.063 - Time Delta 105.35 - Time 2025-05-06T09:47:46
+Episode 176 - Steps this episode 380052 - Epsilon 1 - Learning Rate 0.00016566860954636095 - Cummulative Reward -5294.577 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -24.119 - Time Delta 127.127 - Time 2025-05-06T09:49:53
+Boss HP: 3 → 2, Kirby HP: 1 → 1, Reward: 3000.1
+Episode 177 - Steps this episode 381672 - Epsilon 1 - Learning Rate 0.0001654030134249286 - Cummulative Reward -5290.79 - Max Length 2 - Mean Loss 0.082 - Mean Q Value -24.172 - Time Delta 48.935 - Time 2025-05-06T09:50:42
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 178 - Steps this episode 384587 - Epsilon 1 - Learning Rate 0.00016521568657637114 - Cummulative Reward -5327.124 - Max Length 2 - Mean Loss 0.082 - Mean Q Value -24.215 - Time Delta 76.947 - Time 2025-05-06T09:51:59
+Episode 179 - Steps this episode 389340 - Epsilon 1 - Learning Rate 0.0001648992955105113 - Cummulative Reward -5281.1 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -24.258 - Time Delta 125.14 - Time 2025-05-06T09:54:04
+Episode 180 - Steps this episode 392262 - Epsilon 1 - Learning Rate 0.0001645830916863952 - Cummulative Reward -5276.375 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -24.306 - Time Delta 82.046 - Time 2025-05-06T09:55:26
+Episode 181 - Steps this episode 396346 - Epsilon 1 - Learning Rate 0.00016429513148060644 - Cummulative Reward -5268.289 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -24.349 - Time Delta 108.799 - Time 2025-05-06T09:57:15
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+MarioNet saved to checkpoints/Kirby_Dream_Land/2025-05-06T07-34-53-boss/mario_net_02.chkpt at step 400000
+Episode 182 - Steps this episode 401006 - Epsilon 1 - Learning Rate 0.00016393646488564273 - Cummulative Reward -5154.471 - Max Length 2 - Mean Loss 0.082 - Mean Q Value -24.381 - Time Delta 127.031 - Time 2025-05-06T09:59:22
+Episode 183 - Steps this episode 405686 - Epsilon 1 - Learning Rate 0.00016355416073801039 - Cummulative Reward -5103.45 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -24.41 - Time Delta 127.959 - Time 2025-05-06T10:01:30
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 184 - Steps this episode 406326 - Epsilon 1 - Learning Rate 0.00016333665990019008 - Cummulative Reward -5073.253 - Max Length 2 - Mean Loss 0.083 - Mean Q Value -24.436 - Time Delta 24.577 - Time 2025-05-06T10:01:54
+Episode 185 - Steps this episode 409183 - Epsilon 1 - Learning Rate 0.0001631938974870467 - Cummulative Reward -5105.102 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.469 - Time Delta 74.987 - Time 2025-05-06T10:03:09
+Episode 186 - Steps this episode 413299 - Epsilon 1 - Learning Rate 0.00016290971296981094 - Cummulative Reward -5093.419 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.514 - Time Delta 111.757 - Time 2025-05-06T10:05:01
+Episode 187 - Steps this episode 416932 - Epsilon 1 - Learning Rate 0.00016259441505070348 - Cummulative Reward -5115.648 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.547 - Time Delta 101.602 - Time 2025-05-06T10:06:43
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 188 - Steps this episode 419899 - Epsilon 1 - Learning Rate 0.00016232634784242974 - Cummulative Reward -5074.995 - Max Length 2 - Mean Loss 0.083 - Mean Q Value -24.583 - Time Delta 83.887 - Time 2025-05-06T10:08:06
+Episode 189 - Steps this episode 420954 - Epsilon 1 - Learning Rate 0.00016216315708097735 - Cummulative Reward -5074.831 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.625 - Time Delta 32.845 - Time 2025-05-06T10:08:39
+Episode 190 - Steps this episode 421752 - Epsilon 1 - Learning Rate 0.00016208801100994693 - Cummulative Reward -5079.67 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.659 - Time Delta 22.945 - Time 2025-05-06T10:09:02
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 191 - Steps this episode 426321 - Epsilon 1 - Learning Rate 0.00016187070922203957 - Cummulative Reward -4961.506 - Max Length 2 - Mean Loss 0.083 - Mean Q Value -24.698 - Time Delta 121.637 - Time 2025-05-06T10:11:04
+Episode 192 - Steps this episode 427864 - Epsilon 1 - Learning Rate 0.0001616235687265308 - Cummulative Reward -4963.901 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.732 - Time Delta 49.391 - Time 2025-05-06T10:11:53
+Episode 193 - Steps this episode 429938 - Epsilon 1 - Learning Rate 0.00016147757052995017 - Cummulative Reward -4964.703 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.773 - Time Delta 57.671 - Time 2025-05-06T10:12:51
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 194 - Steps this episode 433959 - Epsilon 1 - Learning Rate 0.0001612316859194578 - Cummulative Reward -4956.319 - Max Length 2 - Mean Loss 0.083 - Mean Q Value -24.804 - Time Delta 111.372 - Time 2025-05-06T10:14:42
+Episode 195 - Steps this episode 435984 - Epsilon 1 - Learning Rate 0.00016098806737012 - Cummulative Reward -4953.299 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.837 - Time Delta 60.718 - Time 2025-05-06T10:15:43
+Episode 196 - Steps this episode 440487 - Epsilon 1 - Learning Rate 0.00016072557600354566 - Cummulative Reward -4865.729 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.871 - Time Delta 123.722 - Time 2025-05-06T10:17:47
+Episode 197 - Steps this episode 443631 - Epsilon 1 - Learning Rate 0.0001604185848097005 - Cummulative Reward -4883.845 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.908 - Time Delta 91.921 - Time 2025-05-06T10:19:19
+Episode 198 - Steps this episode 444472 - Epsilon 1 - Learning Rate 0.00016025887199867299 - Cummulative Reward -4890.827 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.935 - Time Delta 28.089 - Time 2025-05-06T10:19:47
+Episode 199 - Steps this episode 446140 - Epsilon 1 - Learning Rate 0.00016015842456971037 - Cummulative Reward -4892.608 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.962 - Time Delta 46.446 - Time 2025-05-06T10:20:33
+Episode 200 - Steps this episode 450126 - Epsilon 1 - Learning Rate 0.00015993218225278722 - Cummulative Reward -4915.876 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -24.997 - Time Delta 110.376 - Time 2025-05-06T10:22:24
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 201 - Steps this episode 454475 - Epsilon 1 - Learning Rate 0.00015959931517918268 - Cummulative Reward -4880.944 - Max Length 2 - Mean Loss 0.083 - Mean Q Value -25.033 - Time Delta 126.85 - Time 2025-05-06T10:24:30
+Episode 202 - Steps this episode 458880 - Epsilon 1 - Learning Rate 0.00015925041461219472 - Cummulative Reward -4802.608 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.068 - Time Delta 127.555 - Time 2025-05-06T10:26:38
+Episode 203 - Steps this episode 460253 - Epsilon 1 - Learning Rate 0.00015902051422268112 - Cummulative Reward -4803.917 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.102 - Time Delta 45.176 - Time 2025-05-06T10:27:23
+Episode 204 - Steps this episode 461864 - Epsilon 1 - Learning Rate 0.00015890200970355574 - Cummulative Reward -4800.128 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.132 - Time Delta 46.898 - Time 2025-05-06T10:28:10
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 205 - Steps this episode 464046 - Epsilon 1 - Learning Rate 0.00015875132639818363 - Cummulative Reward -4801.839 - Max Length 2 - Mean Loss 0.083 - Mean Q Value -25.166 - Time Delta 62.579 - Time 2025-05-06T10:29:13
+Episode 206 - Steps this episode 466270 - Epsilon 1 - Learning Rate 0.00015857651859221554 - Cummulative Reward -4798.128 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.194 - Time Delta 64.849 - Time 2025-05-06T10:30:17
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 207 - Steps this episode 468576 - Epsilon 1 - Learning Rate 0.00015839703283149456 - Cummulative Reward -4762.748 - Max Length 2 - Mean Loss 0.083 - Mean Q Value -25.218 - Time Delta 67.553 - Time 2025-05-06T10:31:25
+Episode 208 - Steps this episode 472840 - Epsilon 1 - Learning Rate 0.00015813710022444033 - Cummulative Reward -4714.154 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.247 - Time Delta 124.115 - Time 2025-05-06T10:33:29
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 4 → 4, Reward: 4000.1
+Episode 209 - Steps this episode 475558 - Epsilon 1 - Learning Rate 0.00015786133420248266 - Cummulative Reward -4666.405 - Max Length 1 - Mean Loss 0.083 - Mean Q Value -25.285 - Time Delta 82.843 - Time 2025-05-06T10:34:52
+Episode 210 - Steps this episode 478557 - Epsilon 1 - Learning Rate 0.00015763583511963213 - Cummulative Reward -4687.875 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.325 - Time Delta 88.27 - Time 2025-05-06T10:36:20
+Episode 211 - Steps this episode 482843 - Epsilon 1 - Learning Rate 0.00015734905658337033 - Cummulative Reward -4633.014 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.366 - Time Delta 125.227 - Time 2025-05-06T10:38:25
+Episode 212 - Steps this episode 487101 - Epsilon 1 - Learning Rate 0.00015701331710837768 - Cummulative Reward -4586.804 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.409 - Time Delta 127.371 - Time 2025-05-06T10:40:33
+Episode 213 - Steps this episode 489621 - Epsilon 1 - Learning Rate 0.00015674738549850207 - Cummulative Reward -4580.121 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.452 - Time Delta 79.447 - Time 2025-05-06T10:41:52
+Episode 214 - Steps this episode 493852 - Epsilon 1 - Learning Rate 0.00015648311595795153 - Cummulative Reward -4496.921 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.485 - Time Delta 124.433 - Time 2025-05-06T10:43:57
+Episode 215 - Steps this episode 496564 - Epsilon 1 - Learning Rate 0.00015621175768362232 - Cummulative Reward -4491.602 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.52 - Time Delta 84.559 - Time 2025-05-06T10:45:21
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 216 - Steps this episode 499346 - Epsilon 1 - Learning Rate 0.00015599738756849236 - Cummulative Reward -4451.441 - Max Length 2 - Mean Loss 0.083 - Mean Q Value -25.559 - Time Delta 84.417 - Time 2025-05-06T10:46:46
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 3 → 3, Reward: 4000.1
+Episode 217 - Steps this episode 501825 - Epsilon 1 - Learning Rate 0.00015579230521033558 - Cummulative Reward -4376.912 - Max Length 1 - Mean Loss 0.083 - Mean Q Value -25.591 - Time Delta 77.069 - Time 2025-05-06T10:48:03
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 218 - Steps this episode 504655 - Epsilon 1 - Learning Rate 0.0001555856309773574 - Cummulative Reward -4344.076 - Max Length 2 - Mean Loss 0.083 - Mean Q Value -25.622 - Time Delta 87.659 - Time 2025-05-06T10:49:30
+Episode 219 - Steps this episode 506327 - Epsilon 1 - Learning Rate 0.0001554106869951036 - Cummulative Reward -4344.097 - Max Length 3 - Mean Loss 0.083 - Mean Q Value -25.654 - Time Delta 54.054 - Time 2025-05-06T10:50:24
+Episode 220 - Steps this episode 510426 - Epsilon 1 - Learning Rate 0.00015518661360327325 - Cummulative Reward -4336.315 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -25.695 - Time Delta 123.128 - Time 2025-05-06T10:52:28
+Episode 221 - Steps this episode 514051 - Epsilon 1 - Learning Rate 0.000154887192501879 - Cummulative Reward -4399.11 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -25.737 - Time Delta 113.627 - Time 2025-05-06T10:54:21
+Episode 222 - Steps this episode 517419 - Epsilon 1 - Learning Rate 0.00015461664445185947 - Cummulative Reward -4393.388 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -25.77 - Time Delta 105.0 - Time 2025-05-06T10:56:06
+Episode 223 - Steps this episode 521184 - Epsilon 1 - Learning Rate 0.00015434113576371958 - Cummulative Reward -4455.351 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -25.804 - Time Delta 116.004 - Time 2025-05-06T10:58:02
+Episode 224 - Steps this episode 523229 - Epsilon 1 - Learning Rate 0.00015411717883095168 - Cummulative Reward -4451.587 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -25.842 - Time Delta 67.198 - Time 2025-05-06T10:59:09
+Episode 225 - Steps this episode 524440 - Epsilon 1 - Learning Rate 0.00015399181255731836 - Cummulative Reward -4536.81 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -25.884 - Time Delta 39.321 - Time 2025-05-06T10:59:49
+Episode 226 - Steps this episode 525079 - Epsilon 1 - Learning Rate 0.00015392056757726954 - Cummulative Reward -4577.35 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -25.933 - Time Delta 20.914 - Time 2025-05-06T11:00:10
+Episode 227 - Steps this episode 527077 - Epsilon 1 - Learning Rate 0.00015381913454952565 - Cummulative Reward -4576.19 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -25.97 - Time Delta 59.555 - Time 2025-05-06T11:01:09
+Episode 228 - Steps this episode 529227 - Epsilon 1 - Learning Rate 0.0001536596692661939 - Cummulative Reward -4577.109 - Max Length 3 - Mean Loss 0.082 - Mean Q Value -26.001 - Time Delta 66.384 - Time 2025-05-06T11:02:16
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 229 - Steps this episode 530917 - Epsilon 1 - Learning Rate 0.00015351222381998372 - Cummulative Reward -4545.045 - Max Length 2 - Mean Loss 0.082 - Mean Q Value -26.029 - Time Delta 53.325 - Time 2025-05-06T11:03:09
+Episode 230 - Steps this episode 534214 - Epsilon 1 - Learning Rate 0.0001533210027055679 - Cummulative Reward -4551.644 - Max Length 3 - Mean Loss 0.081 - Mean Q Value -26.059 - Time Delta 99.101 - Time 2025-05-06T11:04:48
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 231 - Steps this episode 536548 - Epsilon 1 - Learning Rate 0.00015310530810550062 - Cummulative Reward -4518.454 - Max Length 2 - Mean Loss 0.081 - Mean Q Value -26.098 - Time Delta 73.959 - Time 2025-05-06T11:06:02
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 232 - Steps this episode 539605 - Epsilon 1 - Learning Rate 0.00015289910546990507 - Cummulative Reward -4481.858 - Max Length 2 - Mean Loss 0.081 - Mean Q Value -26.125 - Time Delta 93.492 - Time 2025-05-06T11:07:35
+Episode 233 - Steps this episode 542671 - Epsilon 1 - Learning Rate 0.00015266523412145767 - Cummulative Reward -4512.798 - Max Length 3 - Mean Loss 0.081 - Mean Q Value -26.148 - Time Delta 96.749 - Time 2025-05-06T11:09:12
+Episode 234 - Steps this episode 544595 - Epsilon 1 - Learning Rate 0.0001524749319046546 - Cummulative Reward -4510.729 - Max Length 3 - Mean Loss 0.081 - Mean Q Value -26.159 - Time Delta 61.907 - Time 2025-05-06T11:10:14
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 235 - Steps this episode 547695 - Epsilon 1 - Learning Rate 0.00015228351479076315 - Cummulative Reward -4476.944 - Max Length 2 - Mean Loss 0.081 - Mean Q Value -26.176 - Time Delta 94.556 - Time 2025-05-06T11:11:49
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 236 - Steps this episode 548973 - Epsilon 1 - Learning Rate 0.00015211684282051622 - Cummulative Reward -4451.436 - Max Length 2 - Mean Loss 0.081 - Mean Q Value -26.193 - Time Delta 42.975 - Time 2025-05-06T11:12:32
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 237 - Steps this episode 551825 - Epsilon 1 - Learning Rate 0.00015195994936919511 - Cummulative Reward -4423.701 - Max Length 2 - Mean Loss 0.081 - Mean Q Value -26.214 - Time Delta 85.536 - Time 2025-05-06T11:13:57
+Episode 238 - Steps this episode 553703 - Epsilon 1 - Learning Rate 0.00015178043142023074 - Cummulative Reward -4433.502 - Max Length 3 - Mean Loss 0.081 - Mean Q Value -26.239 - Time Delta 60.225 - Time 2025-05-06T11:14:57
+Episode 239 - Steps this episode 556576 - Epsilon 1 - Learning Rate 0.00015160023067163373 - Cummulative Reward -4438.428 - Max Length 3 - Mean Loss 0.081 - Mean Q Value -26.27 - Time Delta 87.778 - Time 2025-05-06T11:16:25
+Episode 240 - Steps this episode 558132 - Epsilon 1 - Learning Rate 0.00015143237916579222 - Cummulative Reward -4446.263 - Max Length 3 - Mean Loss 0.081 - Mean Q Value -26.293 - Time Delta 50.476 - Time 2025-05-06T11:17:16
+Episode 241 - Steps this episode 560808 - Epsilon 1 - Learning Rate 0.0001512722179585296 - Cummulative Reward -4451.032 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.329 - Time Delta 81.311 - Time 2025-05-06T11:18:37
+Episode 242 - Steps this episode 562885 - Epsilon 1 - Learning Rate 0.00015109260864782447 - Cummulative Reward -4454.193 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.351 - Time Delta 65.769 - Time 2025-05-06T11:19:43
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 243 - Steps this episode 565037 - Epsilon 1 - Learning Rate 0.00015093302624684867 - Cummulative Reward -4452.008 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -26.37 - Time Delta 67.817 - Time 2025-05-06T11:20:51
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 244 - Steps this episode 569142 - Epsilon 1 - Learning Rate 0.00015069709518547879 - Cummulative Reward -4426.476 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -26.38 - Time Delta 124.001 - Time 2025-05-06T11:22:55
+Episode 245 - Steps this episode 571548 - Epsilon 1 - Learning Rate 0.00015045190474955068 - Cummulative Reward -4423.106 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.391 - Time Delta 78.029 - Time 2025-05-06T11:24:13
+Episode 246 - Steps this episode 573670 - Epsilon 1 - Learning Rate 0.00015028172497650043 - Cummulative Reward -4432.997 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.403 - Time Delta 66.665 - Time 2025-05-06T11:25:19
+Episode 247 - Steps this episode 576945 - Epsilon 1 - Learning Rate 0.00015007910368285805 - Cummulative Reward -4437.058 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.413 - Time Delta 100.901 - Time 2025-05-06T11:27:00
+Episode 248 - Steps this episode 579452 - Epsilon 1 - Learning Rate 0.00014986235140110237 - Cummulative Reward -4436.542 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.433 - Time Delta 79.037 - Time 2025-05-06T11:28:19
+Episode 249 - Steps this episode 583309 - Epsilon 1 - Learning Rate 0.00014962416061695214 - Cummulative Reward -4472.525 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.449 - Time Delta 117.082 - Time 2025-05-06T11:30:16
+Episode 250 - Steps this episode 586820 - Epsilon 1 - Learning Rate 0.00014934880239672176 - Cummulative Reward -4469.307 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.453 - Time Delta 109.332 - Time 2025-05-06T11:32:06
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 251 - Steps this episode 588976 - Epsilon 1 - Learning Rate 0.00014913735022519756 - Cummulative Reward -4471.716 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -26.472 - Time Delta 69.406 - Time 2025-05-06T11:33:15
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 252 - Steps this episode 590263 - Epsilon 1 - Learning Rate 0.00014900899348313116 - Cummulative Reward -4448.612 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -26.491 - Time Delta 41.51 - Time 2025-05-06T11:33:57
+Episode 253 - Steps this episode 590941 - Epsilon 1 - Learning Rate 0.0001489358088806224 - Cummulative Reward -4530.385 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.506 - Time Delta 22.107 - Time 2025-05-06T11:34:19
+Episode 254 - Steps this episode 592268 - Epsilon 1 - Learning Rate 0.0001488612126864852 - Cummulative Reward -4542.543 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.517 - Time Delta 40.093 - Time 2025-05-06T11:34:59
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 4 → 4, Reward: 4000.1
+Boss HP: 1 → 0, Kirby HP: 3 → 3, Reward: 5000.1
+Episode 255 - Steps this episode 593727 - Epsilon 1 - Learning Rate 0.00014875753026655943 - Cummulative Reward -4430.137 - Max Length 0 - Mean Loss 0.08 - Mean Q Value -26.533 - Time Delta 45.086 - Time 2025-05-06T11:35:44
+Episode 256 - Steps this episode 594874 - Epsilon 1 - Learning Rate 0.0001486606077894694 - Cummulative Reward -4516.406 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.554 - Time Delta 36.402 - Time 2025-05-06T11:36:20
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 257 - Steps this episode 598562 - Epsilon 1 - Learning Rate 0.00014848111593854964 - Cummulative Reward -4524.852 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -26.563 - Time Delta 110.028 - Time 2025-05-06T11:38:10
+MarioNet saved to checkpoints/Kirby_Dream_Land/2025-05-06T07-34-53-boss/mario_net_03.chkpt at step 600000
+Episode 258 - Steps this episode 602311 - Epsilon 1 - Learning Rate 0.00014820530941697042 - Cummulative Reward -4528.131 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.578 - Time Delta 116.158 - Time 2025-05-06T11:40:06
+Episode 259 - Steps this episode 605528 - Epsilon 1 - Learning Rate 0.00014794742855442917 - Cummulative Reward -4521.371 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.589 - Time Delta 101.106 - Time 2025-05-06T11:41:48
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 260 - Steps this episode 608567 - Epsilon 1 - Learning Rate 0.00014771625468093446 - Cummulative Reward -4574.529 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -26.597 - Time Delta 95.014 - Time 2025-05-06T11:43:23
+Episode 261 - Steps this episode 611889 - Epsilon 1 - Learning Rate 0.00014748146445666197 - Cummulative Reward -4566.782 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.605 - Time Delta 102.538 - Time 2025-05-06T11:45:05
+Episode 262 - Steps this episode 613672 - Epsilon 1 - Learning Rate 0.00014729331225186334 - Cummulative Reward -4599.672 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.618 - Time Delta 58.179 - Time 2025-05-06T11:46:03
+Episode 263 - Steps this episode 617772 - Epsilon 1 - Learning Rate 0.00014707686057935745 - Cummulative Reward -4559.222 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.631 - Time Delta 123.345 - Time 2025-05-06T11:48:07
+Episode 264 - Steps this episode 621867 - Epsilon 1 - Learning Rate 0.00014677580832434393 - Cummulative Reward -4482.717 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.65 - Time Delta 127.103 - Time 2025-05-06T11:50:14
+Episode 265 - Steps this episode 625974 - Epsilon 1 - Learning Rate 0.00014647515280662664 - Cummulative Reward -4532.85 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.664 - Time Delta 127.105 - Time 2025-05-06T11:52:21
+Episode 266 - Steps this episode 628548 - Epsilon 1 - Learning Rate 0.0001462306910982337 - Cummulative Reward -4559.879 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.679 - Time Delta 83.592 - Time 2025-05-06T11:53:44
+Episode 267 - Steps this episode 630980 - Epsilon 1 - Learning Rate 0.00014604786964829314 - Cummulative Reward -4553.739 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.7 - Time Delta 75.695 - Time 2025-05-06T11:55:00
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 268 - Steps this episode 633356 - Epsilon 1 - Learning Rate 0.00014587249798242368 - Cummulative Reward -4520.143 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -26.718 - Time Delta 74.064 - Time 2025-05-06T11:56:14
+Episode 269 - Steps this episode 635202 - Epsilon 1 - Learning Rate 0.00014571853442902345 - Cummulative Reward -4588.339 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.743 - Time Delta 58.346 - Time 2025-05-06T11:57:13
+Episode 270 - Steps this episode 638257 - Epsilon 1 - Learning Rate 0.00014554007457290603 - Cummulative Reward -4623.631 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.77 - Time Delta 92.866 - Time 2025-05-06T11:58:45
+Episode 271 - Steps this episode 642357 - Epsilon 1 - Learning Rate 0.00014527998360461678 - Cummulative Reward -4589.512 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.788 - Time Delta 125.388 - Time 2025-05-06T12:00:51
+Episode 272 - Steps this episode 644075 - Epsilon 1 - Learning Rate 0.0001450688426131631 - Cummulative Reward -4591.417 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.811 - Time Delta 57.484 - Time 2025-05-06T12:01:48
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 273 - Steps this episode 648185 - Epsilon 1 - Learning Rate 0.0001448577245307503 - Cummulative Reward -4522.452 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -26.832 - Time Delta 123.15 - Time 2025-05-06T12:03:51
+Episode 274 - Steps this episode 652273 - Epsilon 1 - Learning Rate 0.0001445611060286313 - Cummulative Reward -4544.147 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.854 - Time Delta 126.743 - Time 2025-05-06T12:05:58
+Episode 275 - Steps this episode 656379 - Epsilon 1 - Learning Rate 0.0001442652035779687 - Cummulative Reward -4505.049 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.88 - Time Delta 127.095 - Time 2025-05-06T12:08:05
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 276 - Steps this episode 658285 - Epsilon 1 - Learning Rate 0.00014404851581684757 - Cummulative Reward -4552.613 - Max Length 2 - Mean Loss 0.08 - Mean Q Value -26.903 - Time Delta 63.017 - Time 2025-05-06T12:09:08
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 3 → 3, Reward: 4000.1
+Episode 277 - Steps this episode 662394 - Epsilon 1 - Learning Rate 0.00014383208535467557 - Cummulative Reward -4438.654 - Max Length 1 - Mean Loss 0.08 - Mean Q Value -26.922 - Time Delta 123.476 - Time 2025-05-06T12:11:12
+Episode 278 - Steps this episode 666495 - Epsilon 1 - Learning Rate 0.0001435371365413079 - Cummulative Reward -4393.907 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.946 - Time Delta 127.134 - Time 2025-05-06T12:13:19
+Episode 279 - Steps this episode 670548 - Epsilon 1 - Learning Rate 0.00014324483331592237 - Cummulative Reward -4396.707 - Max Length 3 - Mean Loss 0.08 - Mean Q Value -26.962 - Time Delta 127.095 - Time 2025-05-06T12:15:26
+Episode 280 - Steps this episode 674646 - Epsilon 1 - Learning Rate 0.00014295323368935918 - Cummulative Reward -4328.001 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -26.979 - Time Delta 126.988 - Time 2025-05-06T12:17:33
+Episode 281 - Steps this episode 678732 - Epsilon 1 - Learning Rate 0.00014266105001382986 - Cummulative Reward -4260.992 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -27.002 - Time Delta 127.068 - Time 2025-05-06T12:19:40
+Episode 282 - Steps this episode 682797 - Epsilon 1 - Learning Rate 0.0001423706379812997 - Cummulative Reward -4292.372 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -27.027 - Time Delta 127.068 - Time 2025-05-06T12:21:47
+Episode 283 - Steps this episode 686454 - Epsilon 1 - Learning Rate 0.00014209605172052034 - Cummulative Reward -4371.466 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -27.055 - Time Delta 114.407 - Time 2025-05-06T12:23:41
+Episode 284 - Steps this episode 690560 - Epsilon 1 - Learning Rate 0.00014182062206716917 - Cummulative Reward -4320.601 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -27.083 - Time Delta 126.34 - Time 2025-05-06T12:25:48
+Episode 285 - Steps this episode 694647 - Epsilon 1 - Learning Rate 0.00014153043486843278 - Cummulative Reward -4251.679 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -27.106 - Time Delta 127.123 - Time 2025-05-06T12:27:55
+Episode 286 - Steps this episode 695798 - Epsilon 1 - Learning Rate 0.00014134519924596082 - Cummulative Reward -4265.541 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -27.127 - Time Delta 40.964 - Time 2025-05-06T12:28:36
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 287 - Steps this episode 698107 - Epsilon 1 - Learning Rate 0.00014122302963422612 - Cummulative Reward -4240.837 - Max Length 2 - Mean Loss 0.079 - Mean Q Value -27.142 - Time Delta 69.79 - Time 2025-05-06T12:29:46
+Episode 288 - Steps this episode 702219 - Epsilon 1 - Learning Rate 0.00014099645956294532 - Cummulative Reward -4201.254 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -27.154 - Time Delta 124.15 - Time 2025-05-06T12:31:50
+Episode 289 - Steps this episode 704730 - Epsilon 1 - Learning Rate 0.00014076314691454235 - Cummulative Reward -4197.43 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -27.17 - Time Delta 80.805 - Time 2025-05-06T12:33:11
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 290 - Steps this episode 706643 - Epsilon 1 - Learning Rate 0.00014060761523676158 - Cummulative Reward -4160.97 - Max Length 2 - Mean Loss 0.079 - Mean Q Value -27.188 - Time Delta 60.385 - Time 2025-05-06T12:34:11
+Episode 291 - Steps this episode 710748 - Epsilon 1 - Learning Rate 0.0001403962493027564 - Cummulative Reward -4197.826 - Max Length 3 - Mean Loss 0.079 - Mean Q Value -27.204 - Time Delta 123.513 - Time 2025-05-06T12:36:15
+Episode 292 - Steps this episode 714852 - Epsilon 1 - Learning Rate 0.0001401083462476822 - Cummulative Reward -4114.58 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -27.224 - Time Delta 127.129 - Time 2025-05-06T12:38:22
+Episode 293 - Steps this episode 718943 - Epsilon 1 - Learning Rate 0.0001398216626333768 - Cummulative Reward -4036.509 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -27.247 - Time Delta 127.109 - Time 2025-05-06T12:40:29
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 294 - Steps this episode 723033 - Epsilon 1 - Learning Rate 0.00013953598444057478 - Cummulative Reward -3967.232 - Max Length 2 - Mean Loss 0.078 - Mean Q Value -27.274 - Time Delta 127.097 - Time 2025-05-06T12:42:36
+Episode 295 - Steps this episode 727128 - Epsilon 1 - Learning Rate 0.0001392506810580568 - Cummulative Reward -3887.951 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -27.302 - Time Delta 127.077 - Time 2025-05-06T12:44:43
+Episode 296 - Steps this episode 730936 - Epsilon 1 - Learning Rate 0.0001389758593781839 - Cummulative Reward -3964.734 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -27.336 - Time Delta 119.783 - Time 2025-05-06T12:46:43
+Episode 297 - Steps this episode 732436 - Epsilon 1 - Learning Rate 0.00013879157758113118 - Cummulative Reward -3972.31 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -27.366 - Time Delta 50.673 - Time 2025-05-06T12:47:33
+Episode 298 - Steps this episode 736050 - Epsilon 1 - Learning Rate 0.00013861422676654728 - Cummulative Reward -3958.22 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -27.394 - Time Delta 110.406 - Time 2025-05-06T12:49:24
+Episode 299 - Steps this episode 738735 - Epsilon 1 - Learning Rate 0.00013839607258414637 - Cummulative Reward -3953.149 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -27.422 - Time Delta 84.366 - Time 2025-05-06T12:50:48
+Episode 300 - Steps this episode 741741 - Epsilon 1 - Learning Rate 0.00013819931205972348 - Cummulative Reward -3955.069 - Max Length 3 - Mean Loss 0.078 - Mean Q Value -27.456 - Time Delta 92.296 - Time 2025-05-06T12:52:20
+Boss HP: 3 → 2, Kirby HP: 1 → 1, Reward: 3000.1
+Episode 301 - Steps this episode 745869 - Epsilon 1 - Learning Rate 0.00013795306457105744 - Cummulative Reward -3959.953 - Max Length 2 - Mean Loss 0.077 - Mean Q Value -27.475 - Time Delta 125.293 - Time 2025-05-06T12:54:26
+Episode 302 - Steps this episode 749171 - Epsilon 1 - Learning Rate 0.00013769711443147343 - Cummulative Reward -4030.366 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -27.5 - Time Delta 103.279 - Time 2025-05-06T12:56:09
+Episode 303 - Steps this episode 752429 - Epsilon 1 - Learning Rate 0.0001374715444099928 - Cummulative Reward -4023.823 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -27.512 - Time Delta 100.641 - Time 2025-05-06T12:57:50
+Episode 304 - Steps this episode 756546 - Epsilon 1 - Learning Rate 0.0001372182550475738 - Cummulative Reward -3941.796 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -27.533 - Time Delta 125.74 - Time 2025-05-06T12:59:55
+Episode 305 - Steps this episode 760032 - Epsilon 1 - Learning Rate 0.00013695760962491215 - Cummulative Reward -3968.58 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -27.563 - Time Delta 108.82 - Time 2025-05-06T13:01:44
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Boss HP: 2 → 1, Kirby HP: 2 → 2, Reward: 4000.1
+Episode 306 - Steps this episode 764095 - Epsilon 1 - Learning Rate 0.00013669942029684418 - Cummulative Reward -3823.221 - Max Length 1 - Mean Loss 0.077 - Mean Q Value -27.597 - Time Delta 126.08 - Time 2025-05-06T13:03:50
+Episode 307 - Steps this episode 767678 - Epsilon 1 - Learning Rate 0.00013643843174324184 - Cummulative Reward -3847.113 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -27.626 - Time Delta 112.116 - Time 2025-05-06T13:05:42
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 308 - Steps this episode 771625 - Epsilon 1 - Learning Rate 0.00013618183171679938 - Cummulative Reward -3817.381 - Max Length 2 - Mean Loss 0.077 - Mean Q Value -27.661 - Time Delta 126.301 - Time 2025-05-06T13:07:49
+Episode 309 - Steps this episode 773754 - Epsilon 1 - Learning Rate 0.00013597504475167872 - Cummulative Reward -3892.737 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -27.689 - Time Delta 71.272 - Time 2025-05-06T13:09:00
+Episode 310 - Steps this episode 777750 - Epsilon 1 - Learning Rate 0.00013576697436388583 - Cummulative Reward -3826.749 - Max Length 3 - Mean Loss 0.077 - Mean Q Value -27.714 - Time Delta 123.908 - Time 2025-05-06T13:11:04
+Episode 311 - Steps this episode 779175 - Epsilon 1 - Learning Rate 0.0001355830809753993 - Cummulative Reward -3912.196 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -27.743 - Time Delta 48.921 - Time 2025-05-06T13:11:53
+Episode 312 - Steps this episode 783294 - Epsilon 1 - Learning Rate 0.00013539531391618847 - Cummulative Reward -3908.752 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -27.768 - Time Delta 122.639 - Time 2025-05-06T13:13:56
+Boss HP: 3 → 2, Kirby HP: 2 → 2, Reward: 3000.1
+Episode 313 - Steps this episode 787404 - Epsilon 1 - Learning Rate 0.00013511705791281807 - Cummulative Reward -3810.389 - Max Length 2 - Mean Loss 0.076 - Mean Q Value -27.789 - Time Delta 127.157 - Time 2025-05-06T13:16:03
+Episode 314 - Steps this episode 791472 - Epsilon 1 - Learning Rate 0.00013484109259967393 - Cummulative Reward -3813.041 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -27.81 - Time Delta 127.123 - Time 2025-05-06T13:18:10
+Episode 315 - Steps this episode 795597 - Epsilon 1 - Learning Rate 0.00013456518743793915 - Cummulative Reward -3738.389 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -27.828 - Time Delta 126.999 - Time 2025-05-06T13:20:17
+Episode 316 - Steps this episode 796935 - Epsilon 1 - Learning Rate 0.00013438150902620973 - Cummulative Reward -3778.165 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -27.843 - Time Delta 46.368 - Time 2025-05-06T13:21:03
+Episode 317 - Steps this episode 798891 - Epsilon 1 - Learning Rate 0.0001342708941708898 - Cummulative Reward -3851.256 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -27.865 - Time Delta 59.652 - Time 2025-05-06T13:22:03
+MarioNet saved to checkpoints/Kirby_Dream_Land/2025-05-06T07-34-53-boss/mario_net_04.chkpt at step 800000
+Episode 318 - Steps this episode 801746 - Epsilon 1 - Learning Rate 0.0001341095698925884 - Cummulative Reward -3882.156 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -27.881 - Time Delta 86.709 - Time 2025-05-06T13:23:30
+Episode 319 - Steps this episode 804278 - Epsilon 1 - Learning Rate 0.00013392914381219175 - Cummulative Reward -3875.717 - Max Length 3 - Mean Loss 0.076 - Mean Q Value -27.9 - Time Delta 78.795 - Time 2025-05-06T13:24:48
+Boss HP: 3 → 2, Kirby HP: 5 → 5, Reward: 3000.1
+Episode 320 - Steps this episode 808397 - Epsilon 1 - Learning Rate 0.00013370665269945477 - Cummulative Reward -3843.637 - Max Length 2 - Mean Loss 0.075 - Mean Q Value -27.925 - Time Delta 124.523 - Time 2025-05-06T13:26:53
+Episode 321 - Steps this episode 811137 - Epsilon 1 - Learning Rate 0.00013347749563143098 - Cummulative Reward -3847.177 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -27.945 - Time Delta 87.219 - Time 2025-05-06T13:28:20
+Episode 322 - Steps this episode 812301 - Epsilon 1 - Learning Rate 0.00013334720981590762 - Cummulative Reward -3854.996 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -27.957 - Time Delta 39.006 - Time 2025-05-06T13:28:59
+Episode 323 - Steps this episode 814039 - Epsilon 1 - Learning Rate 0.00013325053704780202 - Cummulative Reward -3860.106 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -27.98 - Time Delta 52.841 - Time 2025-05-06T13:29:52
+Episode 324 - Steps this episode 816870 - Epsilon 1 - Learning Rate 0.00013309842533952725 - Cummulative Reward -3857.963 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -28.002 - Time Delta 85.491 - Time 2025-05-06T13:31:17
+Episode 325 - Steps this episode 818997 - Epsilon 1 - Learning Rate 0.00013293351384453315 - Cummulative Reward -3855.296 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -28.019 - Time Delta 66.972 - Time 2025-05-06T13:32:24
+Episode 326 - Steps this episode 821349 - Epsilon 1 - Learning Rate 0.00013278474613240865 - Cummulative Reward -3849.443 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -28.039 - Time Delta 71.437 - Time 2025-05-06T13:33:36
+Episode 327 - Steps this episode 823906 - Epsilon 1 - Learning Rate 0.00013262192042481634 - Cummulative Reward -3846.209 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -28.067 - Time Delta 77.753 - Time 2025-05-06T13:34:54
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 328 - Steps this episode 825962 - Epsilon 1 - Learning Rate 0.0001324691252861379 - Cummulative Reward -3814.586 - Max Length 2 - Mean Loss 0.075 - Mean Q Value -28.1 - Time Delta 63.671 - Time 2025-05-06T13:35:57
+Boss HP: 3 → 2, Kirby HP: 4 → 4, Reward: 3000.1
+Episode 329 - Steps this episode 827806 - Epsilon 1 - Learning Rate 0.00013234002960695653 - Cummulative Reward -3812.97 - Max Length 2 - Mean Loss 0.075 - Mean Q Value -28.127 - Time Delta 56.845 - Time 2025-05-06T13:36:54
+Episode 330 - Steps this episode 830026 - Epsilon 1 - Learning Rate 0.0001322056093652572 - Cummulative Reward -3817.277 - Max Length 3 - Mean Loss 0.075 - Mean Q Value -28.157 - Time Delta 68.05 - Time 2025-05-06T13:38:02
+Boss HP: 3 → 2, Kirby HP: 1 → 1, Reward: 3000.1
+Episode 331 - Steps this episode 832022 - Epsilon 1 - Learning Rate 0.00013206636966939895 - Cummulative Reward -3821.627 - Max Length 2 - Mean Loss 0.074 - Mean Q Value -28.169 - Time Delta 62.195 - Time 2025-05-06T13:39:04
+Episode 332 - Steps this episode 833998 - Epsilon 1 - Learning Rate 0.0001319352926582096 - Cummulative Reward -3853.954 - Max Length 3 - Mean Loss 0.074 - Mean Q Value -28.195 - Time Delta 61.176 - Time 2025-05-06T13:40:05
+Episode 333 - Steps this episode 836354 - Epsilon 1 - Learning Rate 0.00013179248622203671 - Cummulative Reward -3854.793 - Max Length 3 - Mean Loss 0.074 - Mean Q Value -28.232 - Time Delta 72.028 - Time 2025-05-06T13:41:18
+Episode 334 - Steps this episode 837940 - Epsilon 1 - Learning Rate 0.00013166266445551893 - Cummulative Reward -3854.147 - Max Length 3 - Mean Loss 0.074 - Mean Q Value -28.278 - Time Delta 50.245 - Time 2025-05-06T13:42:08
+Episode 335 - Steps this episode 839930 - Epsilon 1 - Learning Rate 0.00013154501251421436 - Cummulative Reward -3888.584 - Max Length 3 - Mean Loss 0.074 - Mean Q Value -28.307 - Time Delta 60.787 - Time 2025-05-06T13:43:09
+Episode 336 - Steps this episode 842606 - Epsilon 1 - Learning Rate 0.0001313916918398061 - Cummulative Reward -3912.992 - Max Length 3 - Mean Loss 0.074 - Mean Q Value -28.337 - Time Delta 81.68 - Time 2025-05-06T13:44:30
+Episode 337 - Steps this episode 843825 - Epsilon 1 - Learning Rate 0.00013126373797098362 - Cummulative Reward -3948.523 - Max Length 3 - Mean Loss 0.074 - Mean Q Value -28.373 - Time Delta 41.514 - Time 2025-05-06T13:45:12
+Episode 338 - Steps this episode 844972 - Epsilon 1 - Learning Rate 0.00013118608533087777 - Cummulative Reward -3950.45 - Max Length 3 - Mean Loss 0.074 - Mean Q Value -28.404 - Time Delta 36.685 - Time 2025-05-06T13:45:48
+Episode 339 - Steps this episode 847749 - Epsilon 1 - Learning Rate 0.00013105746353088725 - Cummulative Reward -3950.831 - Max Length 3 - Mean Loss 0.074 - Mean Q Value -28.417 - Time Delta 83.104 - Time 2025-05-06T13:47:12
+Episode 340 - Steps this episode 848819 - Epsilon 1 - Learning Rate 0.0001309315032763015 - Cummulative Reward -3951.773 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -28.44 - Time Delta 35.922 - Time 2025-05-06T13:47:47
+Episode 341 - Steps this episode 849602 - Epsilon 1 - Learning Rate 0.0001308709279750976 - Cummulative Reward -3958.345 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -28.453 - Time Delta 24.832 - Time 2025-05-06T13:48:12
+Episode 342 - Steps this episode 851327 - Epsilon 1 - Learning Rate 0.00013078890077964422 - Cummulative Reward -3959.753 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -28.482 - Time Delta 51.904 - Time 2025-05-06T13:49:04
+Episode 343 - Steps this episode 852537 - Epsilon 1 - Learning Rate 0.00013069290215313064 - Cummulative Reward -3995.52 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -28.507 - Time Delta 38.551 - Time 2025-05-06T13:49:43
+Episode 344 - Steps this episode 854982 - Epsilon 1 - Learning Rate 0.0001305734768141873 - Cummulative Reward -4100.161 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -28.531 - Time Delta 77.339 - Time 2025-05-06T13:51:00
+Boss HP: 3 → 2, Kirby HP: 6 → 6, Reward: 3000.1
+Episode 345 - Steps this episode 858909 - Epsilon 1 - Learning Rate 0.00013036565152055158 - Cummulative Reward -3998.075 - Max Length 2 - Mean Loss 0.073 - Mean Q Value -28.554 - Time Delta 125.455 - Time 2025-05-06T13:53:06
+Boss HP: 3 → 2, Kirby HP: 3 → 3, Reward: 3000.1
+Episode 346 - Steps this episode 860643 - Epsilon 1 - Learning Rate 0.00013018126505442754 - Cummulative Reward -3967.628 - Max Length 2 - Mean Loss 0.073 - Mean Q Value -28.585 - Time Delta 58.325 - Time 2025-05-06T13:54:04
+Episode 347 - Steps this episode 862782 - Epsilon 1 - Learning Rate 0.00013005528007840222 - Cummulative Reward -3974.173 - Max Length 3 - Mean Loss 0.073 - Mean Q Value -28.61 - Time Delta 66.057 - Time 2025-05-06T13:55:10

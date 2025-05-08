@@ -1,5 +1,5 @@
 gym==0.22.0
-pyboy==1.4.7
+pyboy==1.5.6
 setuptools==65.5.0
 wheel<0.40.0
 matplotlib==3.5.1

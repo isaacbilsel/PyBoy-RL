@@ -1,0 +1,1 @@
+exploration_rate = 1\nexploration_rate_decay = 0.999\nexploration_rate_min = 0.001\ndeque_size = 400000\nbatch_size = 256\ngamma = 0.9\nlearning_rate = 0.00025\nlearning_rate_decay = 0.99999985\nburnin = 10000.0\nlearn_every = 3\nsync_every = 1000.0\nn_step = 3\n

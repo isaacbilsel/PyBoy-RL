@@ -50,7 +50,7 @@ class CustomPyBoyGym(PyBoyGymEnv):
         # release buttons if not pressed now but were pressed in the past
         for pressedFromBefore in [pressed for pressed in self._button_is_pressed if self._button_is_pressed[pressed] == True]: # get all buttons currently pressed
             self.pyboy.send_input(self._release_button[pressedFromBefore])
-        self.button_is_pressed = {button: False for button in self._buttons} # reset all buttons
+        self._button_is_pressed = {button: False for button in self._buttons} # reset all buttons
 
         return self._get_observation()
 
@@ -58,11 +58,12 @@ class CustomPyBoyGym(PyBoyGymEnv):
 class KirbyGymEnv(CustomPyBoyGym):
     def __init__(self, mode="platformer", *args, **kwargs):
         super().__init__(*args, **kwargs)
-        assert mode in ["platformer", "boss"], "Invalid mode for KirbyGymEnv"
+        assert mode in ["platformer", "boss", "tree"], "Invalid mode for KirbyGymEnv"
         self.mode = mode
         self.state_path = {
             "platformer": "states/kirby_platform.gb.state",
-            "boss": "states/kirby_boss.gb.state"
+            "boss": "states/kirby_boss.gb.state",
+            "tree": "states/kirby_tree.gb.state"
         }
 
     def step(self, list_actions):
@@ -99,7 +100,6 @@ class KirbyGymEnv(CustomPyBoyGym):
             raise FileNotFoundError(f"State file not found: {path}")
         with open(path, "rb") as f:
             self.pyboy.load_state(f)
-
 
     def register_state(self, mode, path):
         self.state_path[mode] = path

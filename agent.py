@@ -150,16 +150,20 @@ class AIPlayer:
         else:
             state, next_state, action, reward, done = self.recall()
 
-        self.actions_taken = action
-        td_est = self.td_estimate(state, action)
+        action = action.view(-1).long()
+        self.actions_taken = action 
+
+        td_dist = self.td_estimate(state, action)
+        td_probs = torch.softmax(td_dist, dim=2)
+        td_qvals = (td_probs * self.support).sum(dim=2)
+        td_estimate_mean = td_qvals.gather(1, action.unsqueeze(1)).mean().item()
+
         td_tgt = self.td_target(reward, next_state, done)
 
-        td_estimate_mean = td_est.mean().item()
-
         if self.use_per:
-            loss = self.update_Q_online(td_est, td_tgt, weights)
+            loss = self.update_Q_online(td_dist, td_tgt, weights)
         else:
-            loss = self.update_Q_online(td_est, td_tgt)
+            loss = self.update_Q_online(td_dist, td_tgt)
 
         if self.use_noisy:
             self.net.reset_noise()
