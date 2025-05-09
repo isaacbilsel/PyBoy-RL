@@ -16,7 +16,7 @@ from functions import alphanum_key
 """
   Variables
 """
-episodes = 400
+episodes = 10
 # gym variables  documentation: https://docs.pyboy.dk/openai_gym.html#pyboy.openai_gym.PyBoyGymEnv
 observation_types = ["raw", "tiles", "compressed", "minimal"]
 observation_type = observation_types[1]
@@ -159,6 +159,8 @@ if train:
 	logger = MetricLogger(save_dir_boss)
 	aiPlayer.saveHyperParameters()
 	bossAiPlayer.saveHyperParameters()
+	gif_dir = Path("episodes") / gameNames[choice] / f"{now}-{mode}"
+	gif_dir.mkdir(parents=True, exist_ok=True)
 
 	print("Training mode")
 	print("Total Episodes: ", episodes)
@@ -169,6 +171,7 @@ if train:
 	for e in range(episodes):
 		observation = env.reset()
 		start = time.time()
+		frames = []
 		while True:
 			if aiSettings.IsBossActive(pyboy):
 				player = bossAiPlayer
@@ -194,7 +197,9 @@ if train:
 
 		logger.log_episode()
 		logger.record(episode=e, epsilon=player.exploration_rate, stepsThisEpisode=player.curr_step, maxLength=aiSettings.GetLength(pyboy))
-
+		if (e > (episodes-5)):
+			gif_path = gif_dir / f"episode_{e:04d}.gif"
+			frames[0].save(gif_path, save_all=True, append_images=frames[1:], duration=40, loop=0)
 	aiPlayer.save()
 	bossAiPlayer.save()
 	env.close()
@@ -210,10 +215,13 @@ elif not train and not playtest:
 
 	bossAiPlayer.exploration_rate = 0
 	bossAiPlayer.net.eval()
+	gif_dir = Path("episodes") / gameNames[choice] / f"{now}-{mode}"
+	gif_dir.mkdir(parents=True, exist_ok=True)
 
 	player = aiPlayer
 	for e in range(episodes):
 		observation = env.reset()
+		frames = []
 		while True:
 			if aiSettings.IsBossActive(pyboy):
 				player = bossAiPlayer
@@ -223,6 +231,9 @@ elif not train and not playtest:
 			action = filteredActions[actionId]
 			next_observation, reward, done, info = env.step(action)
 
+			img = pyboy.screen_image().copy()
+			frames.append(img)
+		 
 			logger.log_step(reward, 1, 1, 1)
 
 			print("Reward: ", reward)
@@ -237,6 +248,9 @@ elif not train and not playtest:
 
 		logger.log_episode()
 		logger.record(episode=e, epsilon=player.exploration_rate, stepsThisEpisode=player.curr_step, maxLength=aiSettings.GetLength(pyboy))
+		if (e > (episodes-5)):
+			gif_path = gif_dir / f"episode_{e:04d}.gif"
+			frames[0].save(gif_path, save_all=True, append_images=frames[1:], duration=40, loop=0)
 	env.close()
 
 elif playtest:
