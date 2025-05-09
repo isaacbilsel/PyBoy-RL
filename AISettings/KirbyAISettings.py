@@ -36,9 +36,9 @@ class KirbyAI(AISettingsInterface):
                 reward -= 500
 
             if current_kirby.boss_health < previous_kirby.boss_health: #boss damage
-                streak_bonus = self.boss_hit_streak * 500
+                streak_bonus = current_kirby.boss_hit_streak * 500
                 reward += 4000 + streak_bonus
-                self.boss_hit_streak += 1
+                current_kirby.boss_hit_streak += 1
                 print(f"Boss HP: {previous_kirby.boss_health} → {current_kirby.boss_health}, Reward: {reward}")
 
             # Boss defeated
@@ -85,8 +85,8 @@ class KirbyAI(AISettingsInterface):
             # Warp Star Reached
             if current_kirby.health > 0 and current_kirby.game_state == 6 and previous_kirby.game_state != 6:
                 self._done = True
-                reward += 10000 if self.boss_hit_streak > 0 else 2000
-                if self.boss_hit_streak > 0:
+                reward += 10000 if current_kirby.boss_hit_streak > 0 else 2000
+                if current_kirby.boss_hit_streak > 0:
                     print(f"Boss defeated, Reward: {reward}")
 
             if current_kirby.kirby_x_position == previous_kirby.kirby_x_position and current_kirby.kirby_y_position == previous_kirby.kirby_y_position:
