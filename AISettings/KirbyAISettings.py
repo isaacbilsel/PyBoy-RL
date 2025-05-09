@@ -42,7 +42,7 @@ class KirbyAI(AISettingsInterface):
                 print(f"Boss HP: {previous_kirby.boss_health} → {current_kirby.boss_health}, Reward: {reward}")
 
             # Boss defeated
-            if current_kirby.boss_health == 0 and previous_kirby.boss_health > 0 or self.boss_hit_streak == 6:
+            if current_kirby.boss_health == 0 and previous_kirby.boss_health > 0 or current_kirby.boss_hit_streak == 6:
                 self._done = True
                 reward += 10000
                 print(f"Boss defeated, Reward: {reward}")
