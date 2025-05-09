@@ -189,7 +189,7 @@ if train:
 			# Update state
 			observation = next_observation
 
-			if done or time.time() - start > 500:
+			if done or time.time() - start > 60:
 				break
 
 		logger.log_episode()
