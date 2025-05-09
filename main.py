@@ -202,7 +202,7 @@ if train:
 
 		logger.log_episode()
 		logger.record(episode=e, epsilon=player.exploration_rate, stepsThisEpisode=player.curr_step, maxLength=aiSettings.GetLength(pyboy))
-		if (e > (episodes-5)):
+		if (e==0 or e > (episodes-5)):
 			gif_path = gif_dir / f"episode_{e:04d}.gif"
 			frames[0].save(gif_path, save_all=True, append_images=frames[1:], duration=40, loop=0)
 	aiPlayer.save()
@@ -253,7 +253,7 @@ elif not train and not playtest:
 
 		logger.log_episode()
 		logger.record(episode=e, epsilon=player.exploration_rate, stepsThisEpisode=player.curr_step, maxLength=aiSettings.GetLength(pyboy))
-		if (e > (episodes-5)):
+		if (e==0 or e > (episodes-5)):
 			gif_path = gif_dir / f"episode_{e:04d}.gif"
 			frames[0].save(gif_path, save_all=True, append_images=frames[1:], duration=40, loop=0)
 	env.close()
