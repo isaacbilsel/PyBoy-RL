@@ -74,7 +74,7 @@ fileList = [f for f in os.listdir(checkpoint_dir / folder) if f.endswith(".chkpt
 
 modelPath = checkpoint_dir / folder / fileList[-1]
 
-ai_player.loadModel(checkpoint_path)
+ai_player.loadModel(modelPath)
 # ai_player.memory.clear()
 ai_player.optimizer = torch.optim.Adam(ai_player.net.parameters(), lr=config.learning_rate)
 ai_player.scheduler = torch.optim.lr_scheduler.ExponentialLR(ai_player.optimizer, gamma=config.learning_rate_decay)
