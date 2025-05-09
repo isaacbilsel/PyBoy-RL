@@ -25,6 +25,9 @@ parts/
 sdist/
 var/
 wheels/
+episodes/
+episodes.zip
+backup_pyboy_rl.zip
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
