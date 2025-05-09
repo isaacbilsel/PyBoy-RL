@@ -65,10 +65,6 @@ ai_player = AIPlayer(
     save_dir,
     now,
     config,
-    duel_dqn=True,
-    use_per=True,
-    use_noisy=True,
-    n_step=3
 )
 
 ai_player.loadModel(checkpoint_path)
