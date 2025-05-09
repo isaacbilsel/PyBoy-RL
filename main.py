@@ -183,7 +183,7 @@ if train:
 			# Agent performs action and moves 1 frame
 			next_observation, reward, done, info = env.step(actions)
 			
-			if (e > (episodes-6)):
+			if (e==0 or e > (episodes-6)):
 				# capture frames for gif output
 				img = pyboy.screen_image().copy()
 				frames.append(img)
