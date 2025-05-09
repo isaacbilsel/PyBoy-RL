@@ -182,6 +182,11 @@ if train:
 			actions = filteredActions[actionId]
 			# Agent performs action and moves 1 frame
 			next_observation, reward, done, info = env.step(actions)
+			
+			if (e > (episodes-6)):
+				# capture frames for gif output
+				img = pyboy.screen_image().copy()
+				frames.append(img)
 
 			# Remember
 			player.cache(observation, next_observation, actionId, reward, done)
