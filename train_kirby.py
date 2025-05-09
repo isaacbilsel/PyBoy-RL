@@ -67,6 +67,13 @@ ai_player = AIPlayer(
     config,
 )
 
+checkpoint_dir = Path("checkpoints") /"Kirby_Dream_Land"
+folderList = [name for name in os.listdir(checkpoint_dir) if os.path.isdir(checkpoint_dir / name) and len(os.listdir(checkpoint_dir / name)) != 0]
+folder = folderList[0]
+fileList = [f for f in os.listdir(checkpoint_dir / folder) if f.endswith(".chkpt")]
+
+modelPath = checkpoint_dir / folder / fileList[-1]
+
 ai_player.loadModel(checkpoint_path)
 # ai_player.memory.clear()
 ai_player.optimizer = torch.optim.Adam(ai_player.net.parameters(), lr=config.learning_rate)
